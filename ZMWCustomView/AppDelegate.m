@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "BaseViewController.h"      // 跟视图
+#import "HomeViewController.h"      // 跟视图
 
 @interface AppDelegate ()
 
@@ -22,7 +22,7 @@
     self.window.backgroundColor = [UIColor blueColor];
     [self.window makeKeyAndVisible];
     
-    BaseViewController *vc = [[BaseViewController alloc]init];
+    HomeViewController *vc = [[HomeViewController alloc]init];
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = navi;
     

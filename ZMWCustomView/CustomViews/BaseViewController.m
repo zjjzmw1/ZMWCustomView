@@ -40,8 +40,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorFromHexString:@"333436"];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self baseNextPageTitleButton:@"返回"];
     
 }
 
@@ -62,8 +62,6 @@
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
 }
-
-
 
 #pragma mark - 左边的按钮
 - (void)leftButtonWithName:(NSString *)name image:(NSString *)imageString{
@@ -137,13 +135,17 @@
     
 }
 
-#pragma mark - 下个页面的返回按钮的文字
--(void)nextBackTitle:(NSString *)title{
-    UIBarButtonItem *nextPageButtonItem = [[UIBarButtonItem alloc] init];
-    nextPageButtonItem.title = title;
-//    [[UINavigationBar appearance] setTintColor:[UIColor yellowColor]];
-    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
-    self.navigationItem.backBarButtonItem = nextPageButtonItem;
+#pragma mark - 下个页面的返回按钮------（传空格就是只有一个箭头）。
+-(void)baseNextPageTitleButton:(NSString *)nextPageTitleString {
+    NSString *titleString = nil;
+    if (nextPageTitleString == nil || [nextPageTitleString isEqualToString:@""]) {//传空 ，默认返回。
+        titleString = NSLocalizedString(@"返回", nil);
+    }else{
+        titleString = nextPageTitleString;
+    }
+    //下一级界面返回按钮
+    UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
+    temporaryBarButtonItem.title = titleString;
+    self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
 }
-
 @end

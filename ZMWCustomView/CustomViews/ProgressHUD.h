@@ -46,10 +46,30 @@
 ///自己加了个延迟dismiss的方法。
 + (void)dismissDelay:(NSTimeInterval)delay;
 
+/**
+ *  展示ProgressHud
+ *
+ *  @param status  <#status description#>
+ *  @param wait    <#wait description#>
+ *  @param aEnable 背景是否可点击
+ */
++ (void)show:(NSString *)status wait:(BOOL)wait enableTouchBg:(BOOL) aEnable;
+
+/**
+ *  展示ProgressHud
+ *
+ *  @param status  <#status description#>
+ *  @param wait    <#wait description#>
+ *  @param aEnable 背景是否可点击
+ *  @param delay   延迟消失事件
+ */
++ (void)show:(NSString *)status wait:(BOOL)wait enableTouchBg:(BOOL) aEnable delay:(NSTimeInterval)delay;
+
 @property (atomic, strong) UIWindow *window;
 @property (atomic, strong) UIToolbar *hud;
 @property (atomic, strong) UIActivityIndicatorView *spinner;
 @property (atomic, strong) UIImageView *image;
 @property (atomic, strong) UILabel *label;
+@property (atomic, strong) NSMutableArray *imageArr;//豹子的动画。
 
 @end

@@ -22,6 +22,7 @@
 -(void)leftAction:(UIButton *)button;
 -(void)rightAction:(UIButton *)button;
 
-#pragma mark - 下个页面的返回按钮的文字
--(void)nextBackTitle:(NSString *)title;
+/// 下个页面的返回按钮------（传空格就是只有一个箭头）
+-(void)baseNextPageTitleButton:(NSString *)nextPageTitleString;
+
 @end
