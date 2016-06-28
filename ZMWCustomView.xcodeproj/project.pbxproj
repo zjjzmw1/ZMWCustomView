@@ -21,13 +21,13 @@
 		B2F987F41D1D7902005D60C5 /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987F11D1D7902005D60C5 /* EmptyView.m */; };
 		B2F987FD1D1D795C005D60C5 /* BKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987FC1D1D795C005D60C5 /* BKTextView.m */; };
 		B2F988031D1D799E005D60C5 /* NSString+IOSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F988021D1D799E005D60C5 /* NSString+IOSUtils.m */; };
-		B2F988081D1E08B0005D60C5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F988071D1E08B0005D60C5 /* HomeViewController.m */; };
 		B2F9880B1D1EA9F4005D60C5 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F9880A1D1EA9F4005D60C5 /* HomeCell.m */; };
 		B2F9880E1D1F5E2E005D60C5 /* ToolesDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F9880D1D1F5E2E005D60C5 /* ToolesDemoViewController.m */; };
 		B2F988131D1F9A04005D60C5 /* AllShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F988121D1F9A04005D60C5 /* AllShareView.m */; };
 		B2F988171D1F9A67005D60C5 /* AllShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F988161D1F9A67005D60C5 /* AllShareViewController.m */; };
 		B2F9881B1D1F9C1A005D60C5 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2F988181D1F9C1A005D60C5 /* ProgressHUD.bundle */; };
 		B2F9881C1D1F9C1A005D60C5 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */; };
+		FFBB9FFC1D220FB200901871 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB9FFB1D220FB200901871 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,8 +61,6 @@
 		B2F987FC1D1D795C005D60C5 /* BKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKTextView.m; path = ../Utils/BKTextView.m; sourceTree = "<group>"; };
 		B2F988011D1D799E005D60C5 /* NSString+IOSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IOSUtils.h"; sourceTree = "<group>"; };
 		B2F988021D1D799E005D60C5 /* NSString+IOSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IOSUtils.m"; sourceTree = "<group>"; };
-		B2F988061D1E08B0005D60C5 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = SOURCE_ROOT; };
-		B2F988071D1E08B0005D60C5 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = SOURCE_ROOT; };
 		B2F988091D1EA9F4005D60C5 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeCell.h; path = CustomViews/HomeCell.h; sourceTree = "<group>"; };
 		B2F9880A1D1EA9F4005D60C5 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeCell.m; path = CustomViews/HomeCell.m; sourceTree = "<group>"; };
 		B2F9880C1D1F5E2E005D60C5 /* ToolesDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToolesDemoViewController.h; path = ../CustomViews/ToolesDemoViewController.h; sourceTree = "<group>"; };
@@ -74,6 +72,8 @@
 		B2F988181D1F9C1A005D60C5 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		B2F988191D1F9C1A005D60C5 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		FFBB9FFA1D220FB200901871 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FFBB9FFB1D220FB200901871 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +130,9 @@
 				B2F987C81D1D75A2005D60C5 /* AppDelegate.m */,
 				B2F987DC1D1D7714005D60C5 /* BaseViewController.h */,
 				B2F987DD1D1D7714005D60C5 /* BaseViewController.m */,
-				B2F988061D1E08B0005D60C5 /* HomeViewController.h */,
-				B2F988071D1E08B0005D60C5 /* HomeViewController.m */,
 				B2F988091D1EA9F4005D60C5 /* HomeCell.h */,
+				FFBB9FFA1D220FB200901871 /* HomeViewController.h */,
+				FFBB9FFB1D220FB200901871 /* HomeViewController.m */,
 				B2F9880A1D1EA9F4005D60C5 /* HomeCell.m */,
 				B2F988141D1F9A39005D60C5 /* CustomViewController */,
 				B2F987DB1D1D764C005D60C5 /* CustomViews */,
@@ -326,11 +326,11 @@
 				B2F987F31D1D7902005D60C5 /* DJTextField.m in Sources */,
 				B2F987C91D1D75A2005D60C5 /* AppDelegate.m in Sources */,
 				B2F987EB1D1D78D1005D60C5 /* UIView+Utils.m in Sources */,
+				FFBB9FFC1D220FB200901871 /* HomeViewController.m in Sources */,
 				B2F987F21D1D7902005D60C5 /* DJLabel.m in Sources */,
 				B2F987F41D1D7902005D60C5 /* EmptyView.m in Sources */,
 				B2F9880B1D1EA9F4005D60C5 /* HomeCell.m in Sources */,
 				B2F987EA1D1D78D1005D60C5 /* UIImage+IOSUtils.m in Sources */,
-				B2F988081D1E08B0005D60C5 /* HomeViewController.m in Sources */,
 				B2F987E21D1D7895005D60C5 /* Tooles.m in Sources */,
 				B2F987FD1D1D795C005D60C5 /* BKTextView.m in Sources */,
 				B2F987E91D1D78D1005D60C5 /* UIColor+IOSUtils.m in Sources */,
