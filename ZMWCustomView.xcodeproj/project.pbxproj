@@ -28,6 +28,8 @@
 		B2F9881B1D1F9C1A005D60C5 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2F988181D1F9C1A005D60C5 /* ProgressHUD.bundle */; };
 		B2F9881C1D1F9C1A005D60C5 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */; };
 		FFBB9FFC1D220FB200901871 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB9FFB1D220FB200901871 /* HomeViewController.m */; };
+		FFBB9FFF1D24AB6800901871 /* LabelButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB9FFE1D24AB6800901871 /* LabelButtonView.m */; };
+		FFBBA0021D24B5EF00901871 /* LabelButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBBA0011D24B5EF00901871 /* LabelButtonViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,10 @@
 		B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		FFBB9FFA1D220FB200901871 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		FFBB9FFB1D220FB200901871 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FFBB9FFD1D24AB6800901871 /* LabelButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelButtonView.h; sourceTree = "<group>"; };
+		FFBB9FFE1D24AB6800901871 /* LabelButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelButtonView.m; sourceTree = "<group>"; };
+		FFBBA0001D24B5EF00901871 /* LabelButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelButtonViewController.h; sourceTree = "<group>"; };
+		FFBBA0011D24B5EF00901871 /* LabelButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelButtonViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +174,8 @@
 				B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */,
 				B2F988111D1F9A04005D60C5 /* AllShareView.h */,
 				B2F988121D1F9A04005D60C5 /* AllShareView.m */,
+				FFBB9FFD1D24AB6800901871 /* LabelButtonView.h */,
+				FFBB9FFE1D24AB6800901871 /* LabelButtonView.m */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -197,6 +205,8 @@
 				B2F9880D1D1F5E2E005D60C5 /* ToolesDemoViewController.m */,
 				B2F988151D1F9A67005D60C5 /* AllShareViewController.h */,
 				B2F988161D1F9A67005D60C5 /* AllShareViewController.m */,
+				FFBBA0001D24B5EF00901871 /* LabelButtonViewController.h */,
+				FFBBA0011D24B5EF00901871 /* LabelButtonViewController.m */,
 			);
 			path = CustomViewController;
 			sourceTree = "<group>";
@@ -327,6 +337,7 @@
 				B2F987C91D1D75A2005D60C5 /* AppDelegate.m in Sources */,
 				B2F987EB1D1D78D1005D60C5 /* UIView+Utils.m in Sources */,
 				FFBB9FFC1D220FB200901871 /* HomeViewController.m in Sources */,
+				FFBB9FFF1D24AB6800901871 /* LabelButtonView.m in Sources */,
 				B2F987F21D1D7902005D60C5 /* DJLabel.m in Sources */,
 				B2F987F41D1D7902005D60C5 /* EmptyView.m in Sources */,
 				B2F9880B1D1EA9F4005D60C5 /* HomeCell.m in Sources */,
@@ -337,6 +348,7 @@
 				B2F987DE1D1D7714005D60C5 /* BaseViewController.m in Sources */,
 				B2F987C61D1D75A2005D60C5 /* main.m in Sources */,
 				B2F988171D1F9A67005D60C5 /* AllShareViewController.m in Sources */,
+				FFBBA0021D24B5EF00901871 /* LabelButtonViewController.m in Sources */,
 				B2F988031D1D799E005D60C5 /* NSString+IOSUtils.m in Sources */,
 				B2F9880E1D1F5E2E005D60C5 /* ToolesDemoViewController.m in Sources */,
 			);

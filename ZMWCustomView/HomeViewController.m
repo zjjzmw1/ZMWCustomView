@@ -12,7 +12,7 @@
 // 所有控制测试视图
 #import "ToolesDemoViewController.h"            // Tooles.h 里面 便利的控件初始化
 #import "AllShareViewController.h"              // 分享统一控件
-
+#import "LabelButtonViewController.h"           // 自定义 LabelButton控件
 
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -38,6 +38,7 @@
     self.dataArray = [NSMutableArray array];
     [self.dataArray addObject:@"Tooles.h 里面基本控件"];
     [self.dataArray addObject:@"分享控件"];
+    [self.dataArray addObject:@"自定义 LabelButton 控件"];
 }
 
 /// 初始化表格
@@ -87,6 +88,8 @@
          vc = [[ToolesDemoViewController alloc]init];
     }else if (indexPath.row == 1){
          vc = [[AllShareViewController alloc]init];
+    }else if (indexPath.row == 2){
+        vc = [[LabelButtonViewController alloc]init];
     }
     
     vc.title = self.dataArray[indexPath.row];
