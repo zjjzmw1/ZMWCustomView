@@ -9,15 +9,21 @@
 #import "AppDelegate.h"
 #import "HomeViewController.h"      // 跟视图
 
+#import <MapKit/MapKit.h>
+
 @interface AppDelegate ()
 
+
+@property (strong, nonatomic) CLLocationManager *locManager;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    // 测试定位
+    [self testLocationAction];
+    
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     self.window.backgroundColor = [UIColor blueColor];
     [self.window makeKeyAndVisible];
@@ -25,6 +31,7 @@
     HomeViewController *vc = [[HomeViewController alloc]init];
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = navi;
+    
     
     return YES;
 }
@@ -50,5 +57,14 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+-(void)testLocationAction {
+    self.locManager = [[CLLocationManager alloc] init];
+    [self.locManager stopMonitoringSignificantLocationChanges];
+    [self.locManager stopUpdatingLocation];
+    [self.locManager stopMonitoringVisits];
+    [self.locManager stopUpdatingHeading];
+}
+
 
 @end

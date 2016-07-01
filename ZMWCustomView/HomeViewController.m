@@ -14,12 +14,15 @@
 #import "AllShareViewController.h"              // 分享统一控件
 #import "LabelButtonViewController.h"           // 自定义 LabelButton控件
 
+#import <MapKit/MapKit.h>
 
-@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,CLLocationManagerDelegate>
 
 @property (strong, nonatomic) UITableView       *tableView;
 @property (strong, nonatomic) NSMutableArray    *dataArray;
 
+
+@property (strong, nonatomic) CLLocationManager *loc; // 必须用属性的方式，用局部变量不行。
 @end
 
 @implementation HomeViewController
@@ -31,8 +34,12 @@
     [self initDataArray];
     // 初始化表格
     [self initTableView];
+    
+    // 测试定位功能
+    [self testLocationAction];
 
 }
+
 /// 初始化数据
 -(void)initDataArray {
     self.dataArray = [NSMutableArray array];
@@ -99,6 +106,23 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+/// 测试定位
+-(void)testLocationAction {
+    self.loc = [[CLLocationManager alloc]init];
+    self.loc.delegate = self;
+    self.loc.desiredAccuracy = kCLLocationAccuracyBest;
+    self.loc.pausesLocationUpdatesAutomatically = NO;
+    [self.loc setAllowsBackgroundLocationUpdates:YES];
+    [self.loc requestAlwaysAuthorization];
+    [self.loc startUpdatingHeading];
+    [self.loc startUpdatingLocation];
+    [self.loc stopMonitoringSignificantLocationChanges];
+}
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
+    [self.loc stopUpdatingLocation];
+    [self.loc stopUpdatingHeading];
 }
 
 @end

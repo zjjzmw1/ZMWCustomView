@@ -27,10 +27,29 @@
 		B2F988171D1F9A67005D60C5 /* AllShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F988161D1F9A67005D60C5 /* AllShareViewController.m */; };
 		B2F9881B1D1F9C1A005D60C5 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2F988181D1F9C1A005D60C5 /* ProgressHUD.bundle */; };
 		B2F9881C1D1F9C1A005D60C5 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */; };
+		FF0178771D267980002E400E /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0178761D267980002E400E /* Mapbox.framework */; };
+		FF0178781D267A2E002E400E /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0178761D267980002E400E /* Mapbox.framework */; };
+		FF0178791D267A2E002E400E /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF0178761D267980002E400E /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF45326F1D26667E00B308DD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45326E1D26667E00B308DD /* MapKit.framework */; };
+		FF4532711D26668D00B308DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4532701D26668D00B308DD /* CoreLocation.framework */; };
 		FFBB9FFC1D220FB200901871 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB9FFB1D220FB200901871 /* HomeViewController.m */; };
 		FFBB9FFF1D24AB6800901871 /* LabelButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB9FFE1D24AB6800901871 /* LabelButtonView.m */; };
 		FFBBA0021D24B5EF00901871 /* LabelButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBBA0011D24B5EF00901871 /* LabelButtonViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF45326D1D26664700B308DD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF0178791D267A2E002E400E /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C0BED32EA98CD83052A4169 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +93,9 @@
 		B2F988181D1F9C1A005D60C5 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		B2F988191D1F9C1A005D60C5 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		FF0178761D267980002E400E /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		FF45326E1D26667E00B308DD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FF4532701D26668D00B308DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FFBB9FFA1D220FB200901871 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		FFBB9FFB1D220FB200901871 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		FFBB9FFD1D24AB6800901871 /* LabelButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelButtonView.h; sourceTree = "<group>"; };
@@ -87,7 +109,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4532711D26668D00B308DD /* CoreLocation.framework in Frameworks */,
+				FF45326F1D26667E00B308DD /* MapKit.framework in Frameworks */,
 				4FBD4FEB1778D0EC1252CAA8 /* libPods.a in Frameworks */,
+				FF0178771D267980002E400E /* Mapbox.framework in Frameworks */,
+				FF0178781D267A2E002E400E /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +132,8 @@
 		1E17C5562343401DC7FD5955 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FF4532701D26668D00B308DD /* CoreLocation.framework */,
+				FF45326E1D26667E00B308DD /* MapKit.framework */,
 				622A8519771C8575793A2F44 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -140,6 +168,7 @@
 				FFBB9FFA1D220FB200901871 /* HomeViewController.h */,
 				FFBB9FFB1D220FB200901871 /* HomeViewController.m */,
 				B2F9880A1D1EA9F4005D60C5 /* HomeCell.m */,
+				FF0178741D267980002E400E /* Frameworks */,
 				B2F988141D1F9A39005D60C5 /* CustomViewController */,
 				B2F987DB1D1D764C005D60C5 /* CustomViews */,
 				B2F987DF1D1D786C005D60C5 /* Utils */,
@@ -211,6 +240,22 @@
 			path = CustomViewController;
 			sourceTree = "<group>";
 		};
+		FF0178741D267980002E400E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF0178751D267980002E400E /* mapbox 覆盖安装、点击崩溃都ok_v3.3.0 */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF0178751D267980002E400E /* mapbox 覆盖安装、点击崩溃都ok_v3.3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				FF0178761D267980002E400E /* Mapbox.framework */,
+			);
+			path = "mapbox 覆盖安装、点击崩溃都ok_v3.3.0";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,6 +269,7 @@
 				B2F987BF1D1D75A2005D60C5 /* Resources */,
 				E627BB6B10CD6931F8FBE677 /* Embed Pods Frameworks */,
 				A68D2D8A930621865AB1C6AF /* Copy Pods Resources */,
+				FF45326D1D26664700B308DD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -394,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -432,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -445,8 +491,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZMWCustomView",
+					"$(PROJECT_DIR)/ZMWCustomView/Utils",
+					"$(PROJECT_DIR)/ZMWCustomView/Utils/mapbox",
+					"覆盖安装、点击崩溃都ok",
+					"$(PROJECT_DIR)/ZMWCustomView/Frameworks/mapbox",
+					"覆盖安装、点击崩溃都ok_v3.3.0",
+				);
 				INFOPLIST_FILE = ZMWCustomView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZMWCustomView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -459,8 +514,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZMWCustomView",
+					"$(PROJECT_DIR)/ZMWCustomView/Utils",
+					"$(PROJECT_DIR)/ZMWCustomView/Utils/mapbox",
+					"覆盖安装、点击崩溃都ok",
+					"$(PROJECT_DIR)/ZMWCustomView/Frameworks/mapbox",
+					"覆盖安装、点击崩溃都ok_v3.3.0",
+				);
 				INFOPLIST_FILE = ZMWCustomView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZMWCustomView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
