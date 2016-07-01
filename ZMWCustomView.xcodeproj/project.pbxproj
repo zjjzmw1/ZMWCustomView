@@ -28,8 +28,7 @@
 		B2F9881B1D1F9C1A005D60C5 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2F988181D1F9C1A005D60C5 /* ProgressHUD.bundle */; };
 		B2F9881C1D1F9C1A005D60C5 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */; };
 		FF0178771D267980002E400E /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0178761D267980002E400E /* Mapbox.framework */; };
-		FF0178781D267A2E002E400E /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0178761D267980002E400E /* Mapbox.framework */; };
-		FF0178791D267A2E002E400E /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF0178761D267980002E400E /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF01787D1D267C15002E400E /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF01787C1D267C15002E400E /* Mapbox.framework */; };
 		FF45326F1D26667E00B308DD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45326E1D26667E00B308DD /* MapKit.framework */; };
 		FF4532711D26668D00B308DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4532701D26668D00B308DD /* CoreLocation.framework */; };
 		FFBB9FFC1D220FB200901871 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB9FFB1D220FB200901871 /* HomeViewController.m */; };
@@ -44,7 +43,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FF0178791D267A2E002E400E /* Mapbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,7 +91,8 @@
 		B2F988181D1F9C1A005D60C5 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		B2F988191D1F9C1A005D60C5 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
-		FF0178761D267980002E400E /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		FF0178761D267980002E400E /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = "/Users/speedx/workspace/ZMWCustomView/ZMWCustomView/Frameworks/mapbox 覆盖安装、点击崩溃都ok_v3.3.0/Mapbox.framework"; sourceTree = "<absolute>"; };
+		FF01787C1D267C15002E400E /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 		FF45326E1D26667E00B308DD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FF4532701D26668D00B308DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FFBB9FFA1D220FB200901871 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -113,7 +112,7 @@
 				FF45326F1D26667E00B308DD /* MapKit.framework in Frameworks */,
 				4FBD4FEB1778D0EC1252CAA8 /* libPods.a in Frameworks */,
 				FF0178771D267980002E400E /* Mapbox.framework in Frameworks */,
-				FF0178781D267A2E002E400E /* Mapbox.framework in Frameworks */,
+				FF01787D1D267C15002E400E /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +167,7 @@
 				FFBB9FFA1D220FB200901871 /* HomeViewController.h */,
 				FFBB9FFB1D220FB200901871 /* HomeViewController.m */,
 				B2F9880A1D1EA9F4005D60C5 /* HomeCell.m */,
-				FF0178741D267980002E400E /* Frameworks */,
+				FF01787A1D267C15002E400E /* MyFrameworks */,
 				B2F988141D1F9A39005D60C5 /* CustomViewController */,
 				B2F987DB1D1D764C005D60C5 /* CustomViews */,
 				B2F987DF1D1D786C005D60C5 /* Utils */,
@@ -240,18 +239,18 @@
 			path = CustomViewController;
 			sourceTree = "<group>";
 		};
-		FF0178741D267980002E400E /* Frameworks */ = {
+		FF01787A1D267C15002E400E /* MyFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FF0178751D267980002E400E /* mapbox 覆盖安装、点击崩溃都ok_v3.3.0 */,
+				FF01787B1D267C15002E400E /* mapbox 覆盖安装、点击崩溃都ok_v3.3.0 */,
 			);
-			path = Frameworks;
+			path = MyFrameworks;
 			sourceTree = "<group>";
 		};
-		FF0178751D267980002E400E /* mapbox 覆盖安装、点击崩溃都ok_v3.3.0 */ = {
+		FF01787B1D267C15002E400E /* mapbox 覆盖安装、点击崩溃都ok_v3.3.0 */ = {
 			isa = PBXGroup;
 			children = (
-				FF0178761D267980002E400E /* Mapbox.framework */,
+				FF01787C1D267C15002E400E /* Mapbox.framework */,
 			);
 			path = "mapbox 覆盖安装、点击崩溃都ok_v3.3.0";
 			sourceTree = "<group>";
@@ -499,6 +498,8 @@
 					"覆盖安装、点击崩溃都ok",
 					"$(PROJECT_DIR)/ZMWCustomView/Frameworks/mapbox",
 					"覆盖安装、点击崩溃都ok_v3.3.0",
+					"$(PROJECT_DIR)/ZMWCustomView/MyFrameworks/mapbox",
+					"覆盖安装、点击崩溃都ok_v3.3.0",
 				);
 				INFOPLIST_FILE = ZMWCustomView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -521,6 +522,8 @@
 					"$(PROJECT_DIR)/ZMWCustomView/Utils/mapbox",
 					"覆盖安装、点击崩溃都ok",
 					"$(PROJECT_DIR)/ZMWCustomView/Frameworks/mapbox",
+					"覆盖安装、点击崩溃都ok_v3.3.0",
+					"$(PROJECT_DIR)/ZMWCustomView/MyFrameworks/mapbox",
 					"覆盖安装、点击崩溃都ok_v3.3.0",
 				);
 				INFOPLIST_FILE = ZMWCustomView/Info.plist;
