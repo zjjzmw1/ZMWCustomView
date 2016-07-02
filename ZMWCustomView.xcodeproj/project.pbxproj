@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4FBD4FEB1778D0EC1252CAA8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 622A8519771C8575793A2F44 /* libPods.a */; };
-		B227662C1D27473E00F1C683 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF01787C1D267C15002E400E /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B280432B1D28036100E04DB9 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29BD0DD1D2762BF00675B92 /* Mapbox.framework */; };
+		B280432C1D28036100E04DB9 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B29BD0DD1D2762BF00675B92 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B29BD0DE1D2762BF00675B92 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29BD0DD1D2762BF00675B92 /* Mapbox.framework */; };
 		B2F987C61D1D75A2005D60C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987C51D1D75A2005D60C5 /* main.m */; };
 		B2F987C91D1D75A2005D60C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987C81D1D75A2005D60C5 /* AppDelegate.m */; };
@@ -37,13 +38,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FF45326D1D26664700B308DD /* Embed Frameworks */ = {
+		B280432D1D28036200E04DB9 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B227662C1D27473E00F1C683 /* Mapbox.framework in Embed Frameworks */,
+				B280432C1D28036100E04DB9 /* Mapbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,7 +94,6 @@
 		B2F988181D1F9C1A005D60C5 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		B2F988191D1F9C1A005D60C5 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
-		FF01787C1D267C15002E400E /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = "/Users/xiaoming/workspaces/ZMWCustomView/ZMWCustomView/MyFrameworks/mapbox 覆盖安装、点击崩溃都ok_v3.3.0/Mapbox.framework"; sourceTree = "<absolute>"; };
 		FF45326E1D26667E00B308DD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FF4532701D26668D00B308DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FFBB9FFA1D220FB200901871 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -113,6 +113,7 @@
 				FF45326F1D26667E00B308DD /* MapKit.framework in Frameworks */,
 				4FBD4FEB1778D0EC1252CAA8 /* libPods.a in Frameworks */,
 				B29BD0DE1D2762BF00675B92 /* Mapbox.framework in Frameworks */,
+				B280432B1D28036100E04DB9 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +269,7 @@
 				B2F987BF1D1D75A2005D60C5 /* Resources */,
 				E627BB6B10CD6931F8FBE677 /* Embed Pods Frameworks */,
 				A68D2D8A930621865AB1C6AF /* Copy Pods Resources */,
-				FF45326D1D26664700B308DD /* Embed Frameworks */,
+				B280432D1D28036200E04DB9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -506,6 +507,8 @@
 					"覆盖安装、点击崩溃都ok_v3.3.0",
 					"$(PROJECT_DIR)/ZMWCustomView/MyFrameworks/mapbox",
 					"覆盖安装、点击崩溃都ok_v3.3.0",
+					"$(PROJECT_DIR)/ZMWCustomView/MyFrameworks/mapbox",
+					"覆盖安装、点击崩溃都ok_v3.3.0",
 				);
 				INFOPLIST_FILE = ZMWCustomView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -529,6 +532,8 @@
 					"$(PROJECT_DIR)/ZMWCustomView/Utils/mapbox",
 					"覆盖安装、点击崩溃都ok",
 					"$(PROJECT_DIR)/ZMWCustomView/Frameworks/mapbox",
+					"覆盖安装、点击崩溃都ok_v3.3.0",
+					"$(PROJECT_DIR)/ZMWCustomView/MyFrameworks/mapbox",
 					"覆盖安装、点击崩溃都ok_v3.3.0",
 					"$(PROJECT_DIR)/ZMWCustomView/MyFrameworks/mapbox",
 					"覆盖安装、点击崩溃都ok_v3.3.0",
