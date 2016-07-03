@@ -27,7 +27,7 @@
     self.labelButton.layer.borderColor = [UIColor redColor].CGColor;
     self.labelButton.layer.borderWidth = 1;
     [self.view addSubview:self.labelButton];
-    [self.labelButton updateButtonLabelLabelWithButtonImage:[UIImage imageNamed:@"share_to_facebook"] buttonFontSize:15 buttonTitle:nil buttonTitleColor:nil topTitle:@"里程" topLabelFontSize:16 topAlignment:NSTextAlignmentCenter topTextColor:[UIColor blackColor] bottomTitle:@"15km" bottomLabelFontSize:13 bottomAlignment:NSTextAlignmentCenter bottomTextColor:[UIColor redColor]];
+    [self.labelButton updateButtonLabelLabelWithButtonImage:[UIImage imageNamed:@"test_Little_image"] buttonFontSize:15 buttonTitle:nil buttonTitleColor:nil topTitle:@"里程" topLabelFontSize:16 topTextColor:[UIColor blackColor] bottomTitle:@"15km" bottomLabelFontSize:13 bottomTextColor:[UIColor redColor]];
     
 }
 

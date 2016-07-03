@@ -36,7 +36,7 @@
 }
 
 /**
- *  LabelButtonView  : 上面一个Button 下面两个 label
+ *  LabelButtonView  : 上面 1 个Button 下面 2 个 label
  *
  *  @param buttonImage      button image
  *  @param buttonSize       button 字体大小
@@ -44,14 +44,12 @@
  *  @param buttonTitleColor button 字体颜色
  *  @param topTitle         topLabel 文字
  *  @param topFontSize      topLabel 字体大小
- *  @param topAlignment     topLabel 文字对齐方式
  *  @param topTextColor     topLabel 文字颜色
  *  @param bottomTitle      bottomLabel 文字
  *  @param bottomFontSize   bottomLabel 字体大小
- *  @param bottomAlignment  bottomLabel 文字对齐方式
  *  @param bottomTextColor  bottomLabel 字体颜色
  */
--(void)updateButtonLabelLabelWithButtonImage:(UIImage *)buttonImage buttonFontSize:(float)buttonSize buttonTitle:(NSString *)buttonTitle buttonTitleColor:(UIColor *)buttonTitleColor topTitle:(NSString *)topTitle topLabelFontSize:(float)topFontSize  topAlignment:(NSTextAlignment)topAlignment topTextColor:(UIColor *)topTextColor bottomTitle:(NSString *)bottomTitle bottomLabelFontSize:(float)bottomFontSize  bottomAlignment:(NSTextAlignment)bottomAlignment bottomTextColor:(UIColor *)bottomTextColor {
+-(void)updateButtonLabelLabelWithButtonImage:(UIImage *)buttonImage buttonFontSize:(float)buttonSize buttonTitle:(NSString *)buttonTitle buttonTitleColor:(UIColor *)buttonTitleColor topTitle:(NSString *)topTitle topLabelFontSize:(float)topFontSize  topTextColor:(UIColor *)topTextColor bottomTitle:(NSString *)bottomTitle bottomLabelFontSize:(float)bottomFontSize  bottomTextColor:(UIColor *)bottomTextColor {
     // 按钮
     self.button.frame = CGRectMake(0, 0, self.width, self.height/3.0);
     if (buttonImage) {
@@ -64,13 +62,13 @@
     // topLabel
     self.topLabel.frame = CGRectMake(0, self.button.bottom, self.width, (self.height - self.button.bottom)/2.0f);
     self.topLabel.font = [UIFont systemFontOfSize:topFontSize];
-    self.topLabel.textAlignment = topAlignment;
+    self.topLabel.textAlignment = NSTextAlignmentCenter;
     self.topLabel.textColor = topTextColor;
     self.topLabel.text = topTitle;
     // bottomLabel
     self.bottomLabel.frame = CGRectMake(0, self.topLabel.bottom, self.width, self.topLabel.height);
     self.bottomLabel.font = [UIFont systemFontOfSize:bottomFontSize];
-    self.bottomLabel.textAlignment = bottomAlignment;
+    self.bottomLabel.textAlignment = NSTextAlignmentCenter;
     self.bottomLabel.textColor = bottomTextColor;
     self.bottomLabel.text = bottomTitle;
     

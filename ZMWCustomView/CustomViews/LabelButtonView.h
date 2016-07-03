@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, LabelButtonViewType) {   // 目前默认这三个，�
 
 
 /**
- *  LabelButtonView  : 上面一个Button 下面两个 label
+ *  LabelButtonView  : 上面 1 个Button 下面 2 个 label
  *
  *  @param buttonImage      button image
  *  @param buttonSize       button 字体大小
@@ -36,13 +36,11 @@ typedef NS_ENUM(NSInteger, LabelButtonViewType) {   // 目前默认这三个，�
  *  @param buttonTitleColor button 字体颜色
  *  @param topTitle         topLabel 文字
  *  @param topFontSize      topLabel 字体大小
- *  @param topAlignment     topLabel 文字对齐方式
  *  @param topTextColor     topLabel 文字颜色
  *  @param bottomTitle      bottomLabel 文字
  *  @param bottomFontSize   bottomLabel 字体大小
- *  @param bottomAlignment  bottomLabel 文字对齐方式
  *  @param bottomTextColor  bottomLabel 字体颜色
  */
--(void)updateButtonLabelLabelWithButtonImage:(UIImage *)buttonImage buttonFontSize:(float)buttonSize buttonTitle:(NSString *)buttonTitle buttonTitleColor:(UIColor *)buttonTitleColor topTitle:(NSString *)topTitle topLabelFontSize:(float)topFontSize  topAlignment:(NSTextAlignment)topAlignment topTextColor:(UIColor *)topTextColor bottomTitle:(NSString *)bottomTitle bottomLabelFontSize:(float)bottomFontSize  bottomAlignment:(NSTextAlignment)bottomAlignment bottomTextColor:(UIColor *)bottomTextColor;
+-(void)updateButtonLabelLabelWithButtonImage:(UIImage *)buttonImage buttonFontSize:(float)buttonSize buttonTitle:(NSString *)buttonTitle buttonTitleColor:(UIColor *)buttonTitleColor topTitle:(NSString *)topTitle topLabelFontSize:(float)topFontSize  topTextColor:(UIColor *)topTextColor bottomTitle:(NSString *)bottomTitle bottomLabelFontSize:(float)bottomFontSize  bottomTextColor:(UIColor *)bottomTextColor ;
 
 @end
