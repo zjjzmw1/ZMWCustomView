@@ -25,9 +25,10 @@
 
     self.labelButton = [[LabelButtonView alloc]initWithFrame:CGRectMake(10, 80, 100, 60)];
     self.labelButton.layer.borderColor = [UIColor redColor].CGColor;
-    self.labelButton.layer.borderWidth = 1;
+    self.labelButton.layer.borderWidth = 0;
     [self.view addSubview:self.labelButton];
-    [self.labelButton updateButtonLabelLabelWithButtonImage:[UIImage imageNamed:@"test_Little_image"] buttonFontSize:15 buttonTitle:nil buttonTitleColor:nil topTitle:@"里程" topLabelFontSize:16 topTextColor:[UIColor blackColor] bottomTitle:@"15km" bottomLabelFontSize:13 bottomTextColor:[UIColor redColor]];
+    [self.labelButton updateButtonLabelLabelWithButtonImage:[UIImage imageNamed:@"test_Little_image"] buttonFontSize:15 buttonTitle:nil buttonTitleColor:nil topTitle:@"里程" topLabelFontSize:16 topTextColor:[UIColor blackColor] bottomTitle:@"15km" bottomLabelFontSize:13 bottomTextColor:[UIColor redColor] spacingHeight:3.0f];
+    self.labelButton.topSpacingHeight = 2;
     
 }
 

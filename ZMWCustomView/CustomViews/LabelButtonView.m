@@ -49,28 +49,33 @@
  *  @param bottomFontSize   bottomLabel 字体大小
  *  @param bottomTextColor  bottomLabel 字体颜色
  */
--(void)updateButtonLabelLabelWithButtonImage:(UIImage *)buttonImage buttonFontSize:(float)buttonSize buttonTitle:(NSString *)buttonTitle buttonTitleColor:(UIColor *)buttonTitleColor topTitle:(NSString *)topTitle topLabelFontSize:(float)topFontSize  topTextColor:(UIColor *)topTextColor bottomTitle:(NSString *)bottomTitle bottomLabelFontSize:(float)bottomFontSize  bottomTextColor:(UIColor *)bottomTextColor {
+-(void)updateButtonLabelLabelWithButtonImage:(UIImage *)buttonImage buttonFontSize:(float)buttonSize buttonTitle:(NSString *)buttonTitle buttonTitleColor:(UIColor *)buttonTitleColor topTitle:(NSString *)topTitle topLabelFontSize:(float)topFontSize  topTextColor:(UIColor *)topTextColor bottomTitle:(NSString *)bottomTitle bottomLabelFontSize:(float)bottomFontSize  bottomTextColor:(UIColor *)bottomTextColor  spacingHeight:(float)spacingH{
     // 按钮
-    self.button.frame = CGRectMake(0, 0, self.width, self.height/3.0);
+    self.button.frame = CGRectMake(0, 0 + self.topSpacingHeight, self.width, 0);
     if (buttonImage) {
         [self.button setImage:buttonImage forState:UIControlStateNormal];
-        self.button.frame = CGRectMake(self.width/2.0f - buttonImage.size.width/2.0f, 0, buttonImage.size.width, buttonImage.size.height);
+        self.button.frame = CGRectMake(self.width/2.0f - buttonImage.size.width/2.0f,  + self.topSpacingHeight, buttonImage.size.width, buttonImage.size.height);
     }
     self.button.titleLabel.font = [UIFont systemFontOfSize:buttonSize];
     [self.button setTitle:buttonTitle forState:UIControlStateNormal];
     [self.button setTitleColor:buttonTitleColor forState:UIControlStateNormal];
     // topLabel
-    self.topLabel.frame = CGRectMake(0, self.button.bottom, self.width, (self.height - self.button.bottom)/2.0f);
+    self.topLabel.frame = CGRectMake(0, self.button.bottom + spacingH, self.width, (self.height - self.button.bottom)/2.0f);
     self.topLabel.font = [UIFont systemFontOfSize:topFontSize];
     self.topLabel.textAlignment = NSTextAlignmentCenter;
     self.topLabel.textColor = topTextColor;
     self.topLabel.text = topTitle;
+    [self.topLabel sizeToFit];
+    self.topLabel.frame = CGRectMake(0, self.button.bottom + spacingH, self.width, self.topLabel.size.height);
     // bottomLabel
-    self.bottomLabel.frame = CGRectMake(0, self.topLabel.bottom, self.width, self.topLabel.height);
+    self.bottomLabel.frame = CGRectMake(0, self.topLabel.bottom + spacingH, self.width, self.topLabel.height);
     self.bottomLabel.font = [UIFont systemFontOfSize:bottomFontSize];
     self.bottomLabel.textAlignment = NSTextAlignmentCenter;
     self.bottomLabel.textColor = bottomTextColor;
     self.bottomLabel.text = bottomTitle;
+    [self.bottomLabel sizeToFit];
+    self.bottomLabel.frame =  CGRectMake(0, self.topLabel.bottom + spacingH, self.width, self.bottomLabel.height);
+
     
 }
 

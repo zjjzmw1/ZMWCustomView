@@ -25,7 +25,10 @@ typedef NS_ENUM(NSInteger, LabelButtonViewType) {   // 目前默认这三个，�
 
 /// 控件类型
 @property(nonatomic, assign)  LabelButtonViewType   viewType;
-
+/// 三个控件中间的间隔高度
+@property (assign, nonatomic) float                 spacingHeight;
+/// 距离上面的距离
+@property (assign, nonatomic) float                 topSpacingHeight;
 
 /**
  *  LabelButtonView  : 上面 1 个Button 下面 2 个 label
@@ -41,6 +44,6 @@ typedef NS_ENUM(NSInteger, LabelButtonViewType) {   // 目前默认这三个，�
  *  @param bottomFontSize   bottomLabel 字体大小
  *  @param bottomTextColor  bottomLabel 字体颜色
  */
--(void)updateButtonLabelLabelWithButtonImage:(UIImage *)buttonImage buttonFontSize:(float)buttonSize buttonTitle:(NSString *)buttonTitle buttonTitleColor:(UIColor *)buttonTitleColor topTitle:(NSString *)topTitle topLabelFontSize:(float)topFontSize  topTextColor:(UIColor *)topTextColor bottomTitle:(NSString *)bottomTitle bottomLabelFontSize:(float)bottomFontSize  bottomTextColor:(UIColor *)bottomTextColor ;
+-(void)updateButtonLabelLabelWithButtonImage:(UIImage *)buttonImage buttonFontSize:(float)buttonSize buttonTitle:(NSString *)buttonTitle buttonTitleColor:(UIColor *)buttonTitleColor topTitle:(NSString *)topTitle topLabelFontSize:(float)topFontSize  topTextColor:(UIColor *)topTextColor bottomTitle:(NSString *)bottomTitle bottomLabelFontSize:(float)bottomFontSize  bottomTextColor:(UIColor *)bottomTextColor  spacingHeight:(float)spacingH;
 
 @end
