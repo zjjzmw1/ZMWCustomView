@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BKTextView : UITextView
+@interface CustomTextView : UITextView
 
 ///类似UITextField的默认的文字
 @property (strong, nonatomic) NSString *placeholder;

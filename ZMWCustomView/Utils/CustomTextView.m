@@ -6,9 +6,9 @@
 //  Copyright © 2015年 Beijing Beast Technology Co.,Ltd. All rights reserved.
 //
 
-#import "BKTextView.h"
+#import "CustomTextView.h"
 
-@interface BKTextView(){
+@interface CustomTextView(){
     BOOL _shouldDrawPlaceholder;
 }
 - (void)_initialize;
@@ -17,12 +17,14 @@
 
 @end
 
-@implementation BKTextView
+@implementation CustomTextView
 
 - (id)initWithFrame:(CGRect)frame {
     if ((self = [super initWithFrame:frame])) {
         _placeholerFontSize = 16;
         [self _initialize];
+        
+        
     }
     return self;
 }
@@ -53,17 +55,6 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextViewTextDidChangeNotification object:self];
 }
 
-
-#pragma mark - UIView
-
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    if ((self = [super initWithCoder:aDecoder])) {
-        [self _initialize];
-    }
-    return self;
-}
-
-
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
     
@@ -72,9 +63,12 @@
             if (self.placeholerFontSize <= 1) {
                 self.placeholerFontSize = 16;
             }
-            CGSize size = [_placeholder boundingRectWithSize:CGSizeMake(rect.size.width, 100) options:NSStringDrawingTruncatesLastVisibleLine attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:self.placeholerFontSize]} context:nil].size;
+            CGSize size = [_placeholder boundingRectWithSize:CGSizeMake(rect.size.width, 0) options:NSStringDrawingTruncatesLastVisibleLine attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:self.placeholerFontSize]} context:nil].size;
             
-            [_placeholder drawInRect:CGRectMake(0.0f, 8.0, size.width, size.height) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:self.placeholerFontSize], NSForegroundColorAttributeName:self.placeholderColor}];
+            // 距离 边框的，左 ，上，宽，高
+            [_placeholder drawInRect:CGRectMake(0.0f + 5, 8.0 - 64, size.width, size.height) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:self.placeholerFontSize], NSForegroundColorAttributeName:self.placeholderColor}];
+            
+            
         }
     }
 }
@@ -87,6 +81,7 @@
     ///默认的文字的颜色。。。也可以自己设定。
     self.placeholderColor = [UIColor colorWithWhite:0.702f alpha:1.0f];
     _shouldDrawPlaceholder = NO;
+
 }
 
 
