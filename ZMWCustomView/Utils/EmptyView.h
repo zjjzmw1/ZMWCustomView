@@ -10,12 +10,17 @@
 
 @interface EmptyView : UIView
 
-@property (nonatomic, strong) UIImageView *imageV;      //默认图。
-@property (nonatomic, strong) UILabel *label;           //默认文字。
+/// 默认图。
+@property (nonatomic, strong) UIImageView *imageV;
+/// 默认文字。
+@property (nonatomic, strong) UILabel *label;
 
-///常用的
-- (void)imageString:(NSString *)imageString labelString:(NSString *)labelString;
+/**
+ * 默认的背景、字体大小和颜色都是项目中常用的 。如果有特殊效果，单独调用上面的两个属性设置就可以了。
+ *
+ *  @param image      图片
+ *  @param labelTitle 文字
+ */
+- (void)image:(UIImage *)image labelTitle:(NSString *)labelTitle;
 
-/// 不常用的、自定义很多属性的.
-- (void)imageString:(NSString *)imageString labelString:(NSString *)labelString font:(UIFont *)font fontColor:(UIColor *)color;
 @end

@@ -13,6 +13,7 @@
 #import "ToolesDemoViewController.h"            // Tooles.h 里面 便利的控件初始化
 #import "AllShareViewController.h"              // 分享统一控件
 #import "LabelButtonViewController.h"           // 自定义 LabelButton控件
+#import "EmptyViewController.h"                 // 默认页面
 
 #import <MapKit/MapKit.h>
 
@@ -46,6 +47,7 @@
     [self.dataArray addObject:@"Tooles.h 里面基本控件"];
     [self.dataArray addObject:@"分享控件"];
     [self.dataArray addObject:@"自定义 LabelButton 控件"];
+    [self.dataArray addObject:@"统一的默认页面"];
 }
 
 /// 初始化表格
@@ -97,6 +99,8 @@
          vc = [[AllShareViewController alloc]init];
     }else if (indexPath.row == 2){
         vc = [[LabelButtonViewController alloc]init];
+    }else if (indexPath.row == 3){
+        vc = [[EmptyViewController alloc]init];
     }
     
     vc.title = self.dataArray[indexPath.row];

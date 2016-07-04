@@ -12,7 +12,6 @@
 
 @interface EmptyView()
 
-
 @end
 
 
@@ -32,9 +31,9 @@
         _label = [[UILabel alloc]init];
         [self addSubview:_label];
         _label.backgroundColor = [UIColor clearColor];
-        _label.frame = CGRectMake(80, 50, self.width - 80*2, 20);
+        _label.frame = CGRectMake(20, 50, self.width - 20*2, 20);
         _label.numberOfLines = 0;
-        _label.font = [UIFont systemFontOfSize:12];
+        _label.font = [UIFont systemFontOfSize:16];
         _label.textAlignment = NSTextAlignmentCenter;
         _label.textColor = [UIColor colorFromHexString:@"#333333"];
         
@@ -42,20 +41,21 @@
     }
     return self;
 }
-#pragma mark - 常用的方法
-- (void)imageString:(NSString *)imageString labelString:(NSString *)labelString {
-    self.imageV.image = [UIImage imageNamed:imageString];
-    self.label.text = labelString;
-    [self.label sizeToFit];
-
-}
-#pragma mark - 不常用的、自定义很多属性的.
-- (void)imageString:(NSString *)imageString labelString:(NSString *)labelString font:(UIFont *)font fontColor:(UIColor *)color{
-    self.imageV.image = [UIImage imageNamed:imageString];
-    self.label.text = labelString;
-    self.label.font = font;
-    self.label.textColor = color;
+/**
+ * 默认的背景、字体大小和颜色都是项目中常用的 。如果有特殊效果，单独调用上面的两个属性设置就可以了。
+ *
+ *  @param image      图片
+ *  @param labelTitle 文字
+ */
+- (void)image:(UIImage *)image labelTitle:(NSString *)labelTitle{
+    self.imageV.image = image;
+    self.label.text = labelTitle;
     [self.label sizeToFit];
     
+    self.imageV.frame = CGRectMake(self.width/2.0f - image.size.width/2.0f, 80, image.size.width, image.size.height);
+    self.label.frame = CGRectMake(20, self.imageV.bottom + 15, self.width - 20*2, self.label.height);
+
 }
+
+
 @end
