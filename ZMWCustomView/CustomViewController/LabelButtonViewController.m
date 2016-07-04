@@ -38,7 +38,16 @@
     self.labelButton2.layer.borderColor = [UIColor redColor].CGColor;
     self.labelButton2.layer.borderWidth = 1;
     [self.view addSubview:self.labelButton2];
+    self.labelButton2.topSpacingHeight = 6;
     [self.labelButton2 updateButtonLabelWithButtonImage:[UIImage imageNamed:@"test_Little_image"] buttonFontSize:15 buttonTitle:nil buttonTitleColor:nil topTitle:@"距离" topLabelFontSize:15 topTextColor:[UIColor redColor] spacingHeight:4];
+    
+    /// 上下两个label
+    self.labelButton3 = [[LabelButtonView alloc]initWithFrame:CGRectMake(self.labelButton.left, self.labelButton2.bottom + 30, 100, 60)];
+    self.labelButton3.layer.borderColor = [UIColor redColor].CGColor;
+    self.labelButton3.layer.borderWidth = 1;
+    [self.view addSubview:self.labelButton3];
+    self.labelButton3.topSpacingHeight = 6;
+    [self.labelButton3 updateTwoLabelWithTopTitle:@"项目" topLabelFontSize:18 topTextColor:[UIColor blueColor] bottomTitle:@"测试项目" bottomLabelFontSize:14 bottomTextColor:[UIColor blackColor] spacingHeight:5];
     
     
 }

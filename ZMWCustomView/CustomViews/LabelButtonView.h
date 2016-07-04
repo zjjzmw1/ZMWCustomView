@@ -61,4 +61,17 @@ typedef NS_ENUM(NSInteger, LabelButtonViewType) {   // 目前默认这三个，�
  */
 -(void)updateButtonLabelWithButtonImage:(UIImage *)buttonImage buttonFontSize:(float)buttonSize buttonTitle:(NSString *)buttonTitle buttonTitleColor:(UIColor *)buttonTitleColor topTitle:(NSString *)topTitle topLabelFontSize:(float)topFontSize  topTextColor:(UIColor *)topTextColor spacingHeight:(float)spacingH;
 
+/**
+ *  LabelButtonView  : 上面 1 个 label 下面 1 个 label  ----------  kTwoLabel
+ *
+ *  @param topTitle        上面label 文字
+ *  @param topFontSize     上面label 文字大小
+ *  @param topTextColor    上面label 文字颜色
+ *  @param bottomTitle     下面label 文字
+ *  @param bottomFontSize  下面label 文字大小
+ *  @param bottomTextColor 下面label 文字颜色
+ *  @param spacingH        上面label 和 下面label 间隔的距离
+ */
+-(void)updateTwoLabelWithTopTitle:(NSString *)topTitle topLabelFontSize:(float)topFontSize  topTextColor:(UIColor *)topTextColor bottomTitle:(NSString *)bottomTitle bottomLabelFontSize:(float)bottomFontSize  bottomTextColor:(UIColor *)bottomTextColor spacingHeight:(float)spacingH;
+
 @end

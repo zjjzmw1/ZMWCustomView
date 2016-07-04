@@ -115,7 +115,38 @@
     
 }
 
-
+/**
+ *  LabelButtonView  : 上面 1 个 label 下面 1 个 label  ----------  kTwoLabel
+ *
+ *  @param topTitle        上面label 文字
+ *  @param topFontSize     上面label 文字大小
+ *  @param topTextColor    上面label 文字颜色
+ *  @param bottomTitle     下面label 文字
+ *  @param bottomFontSize  下面label 文字大小
+ *  @param bottomTextColor 下面label 文字颜色
+ *  @param spacingH        上面label 和 下面label 间隔的距离
+ */
+-(void)updateTwoLabelWithTopTitle:(NSString *)topTitle topLabelFontSize:(float)topFontSize  topTextColor:(UIColor *)topTextColor bottomTitle:(NSString *)bottomTitle bottomLabelFontSize:(float)bottomFontSize  bottomTextColor:(UIColor *)bottomTextColor spacingHeight:(float)spacingH {
+    
+    // topLabel
+    self.topLabel.frame = CGRectMake(0, spacingH, self.width, (self.height - self.button.bottom)/2.0f);
+    self.topLabel.font = [UIFont systemFontOfSize:topFontSize];
+    self.topLabel.textAlignment = NSTextAlignmentCenter;
+    self.topLabel.textColor = topTextColor;
+    self.topLabel.text = topTitle;
+    [self.topLabel sizeToFit];
+    self.topLabel.frame = CGRectMake(0,spacingH, self.width, self.topLabel.size.height);
+    
+    // bottomLabel
+    self.bottomLabel.frame = CGRectMake(0, self.topLabel.bottom + spacingH, self.width, self.topLabel.height);
+    self.bottomLabel.font = [UIFont systemFontOfSize:bottomFontSize];
+    self.bottomLabel.textAlignment = NSTextAlignmentCenter;
+    self.bottomLabel.textColor = bottomTextColor;
+    self.bottomLabel.text = bottomTitle;
+    [self.bottomLabel sizeToFit];
+    self.bottomLabel.frame =  CGRectMake(0, self.topLabel.bottom + spacingH, self.width, self.bottomLabel.height);
+    
+}
 
 
 
