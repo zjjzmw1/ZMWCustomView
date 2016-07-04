@@ -36,7 +36,7 @@
 }
 
 /**
- *  LabelButtonView  : 上面 1 个Button 下面 2 个 label
+ *  LabelButtonView  : 上面 1 个Button 下面 2 个 label ----------  kButtonLabelLabel
  *
  *  @param buttonImage      button image
  *  @param buttonSize       button 字体大小
@@ -80,6 +80,40 @@
 }
 
 
+/**
+ *  LabelButtonView  : 上面 1 个Button 下面 1 个 label  ----------  kButtonLabel
+ *
+ *  @param buttonImage      按钮 图片
+ *  @param buttonSize       按钮字体大小
+ *  @param buttonTitle      按钮 title
+ *  @param buttonTitleColor 按钮 title color
+ *  @param topTitle         label title
+ *  @param topFontSize      label 字体大小
+ *  @param topTextColor     label 字体颜色
+ *  @param spacingH         按钮和label 间隔的距离
+ */
+-(void)updateButtonLabelWithButtonImage:(UIImage *)buttonImage buttonFontSize:(float)buttonSize buttonTitle:(NSString *)buttonTitle buttonTitleColor:(UIColor *)buttonTitleColor topTitle:(NSString *)topTitle topLabelFontSize:(float)topFontSize  topTextColor:(UIColor *)topTextColor spacingHeight:(float)spacingH {
+    
+    self.bottomLabel.hidden = YES;
+    // 按钮
+    self.button.frame = CGRectMake(0, 0 + self.topSpacingHeight, self.width, 0);
+    if (buttonImage) {
+        [self.button setImage:buttonImage forState:UIControlStateNormal];
+        self.button.frame = CGRectMake(self.width/2.0f - buttonImage.size.width/2.0f,  + self.topSpacingHeight, buttonImage.size.width, buttonImage.size.height);
+    }
+    self.button.titleLabel.font = [UIFont systemFontOfSize:buttonSize];
+    [self.button setTitle:buttonTitle forState:UIControlStateNormal];
+    [self.button setTitleColor:buttonTitleColor forState:UIControlStateNormal];
+    // topLabel
+    self.topLabel.frame = CGRectMake(0, self.button.bottom + spacingH, self.width, (self.height - self.button.bottom)/2.0f);
+    self.topLabel.font = [UIFont systemFontOfSize:topFontSize];
+    self.topLabel.textAlignment = NSTextAlignmentCenter;
+    self.topLabel.textColor = topTextColor;
+    self.topLabel.text = topTitle;
+    [self.topLabel sizeToFit];
+    self.topLabel.frame = CGRectMake(0, self.button.bottom + spacingH, self.width, self.topLabel.size.height);
+    
+}
 
 
 
