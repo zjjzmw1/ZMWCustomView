@@ -23,8 +23,6 @@
     if ((self = [super initWithFrame:frame])) {
         _placeholerFontSize = 16;
         [self _initialize];
-        
-        
     }
     return self;
 }
@@ -65,14 +63,12 @@
             }
             CGSize size = [_placeholder boundingRectWithSize:CGSizeMake(rect.size.width, 0) options:NSStringDrawingTruncatesLastVisibleLine attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:self.placeholerFontSize]} context:nil].size;
             
-            // 距离 边框的，左 ，上，宽，高
-            [_placeholder drawInRect:CGRectMake(0.0f + 5, 8.0 - 64, size.width, size.height) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:self.placeholerFontSize], NSForegroundColorAttributeName:self.placeholderColor}];
-            
+            // 距离 边框的，左 ，上，宽，高  -- 必要的时候，可以添加 属性控制 上、左的 距离
+            [_placeholder drawInRect:CGRectMake(0.0f + 5, 8.0, size.width, size.height) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:self.placeholerFontSize], NSForegroundColorAttributeName:self.placeholderColor}];
             
         }
     }
 }
-
 
 #pragma mark - Private
 
@@ -84,7 +80,6 @@
 
 }
 
-
 - (void)_updateShouldDrawPlaceholder {
     BOOL prev = _shouldDrawPlaceholder;
     _shouldDrawPlaceholder = self.placeholder && self.placeholderColor && self.text.length == 0;
@@ -93,7 +88,6 @@
         [self setNeedsDisplay];
     }
 }
-
 
 - (void)_textChanged:(NSNotification *)notificaiton {
     [self _updateShouldDrawPlaceholder];

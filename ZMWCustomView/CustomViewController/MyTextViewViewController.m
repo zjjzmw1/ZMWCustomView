@@ -20,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    ///凡是继承UIScrollView的控件都会受到UIViewController的这个automaticallyAdjustsScrollViewInsets属性的影响 默认为YES 当有navigationbar的时候,UITextView的表现就是上面空白设为NO,UITextView就正常了
+    self.automaticallyAdjustsScrollViewInsets = NO;
 
     self.view.backgroundColor = [UIColor lightGrayColor];
     
@@ -27,8 +29,6 @@
     self.myTextView.placeholder = @"请输入默认文字";
     [self.view addSubview:self.myTextView];
     
-//    self.myTextView.showsVerticalScrollIndicator = NO; // 是否隐藏滚动条竖的
-
 }
 
 @end
