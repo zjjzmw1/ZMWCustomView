@@ -55,7 +55,7 @@
 
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
-    
+    self.font = [UIFont systemFontOfSize:16];// 默认文字。
     if (_shouldDrawPlaceholder) {
         if(self.placeholderColor){
             if (self.placeholerFontSize <= 1) {
