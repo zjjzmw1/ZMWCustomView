@@ -16,7 +16,7 @@
 		B2F987E91D1D78D1005D60C5 /* UIColor+IOSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987E41D1D78D1005D60C5 /* UIColor+IOSUtils.m */; };
 		B2F987EA1D1D78D1005D60C5 /* UIImage+IOSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987E61D1D78D1005D60C5 /* UIImage+IOSUtils.m */; };
 		B2F987EB1D1D78D1005D60C5 /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987E81D1D78D1005D60C5 /* UIView+Utils.m */; };
-		B2F987F21D1D7902005D60C5 /* DJLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987ED1D1D7902005D60C5 /* DJLabel.m */; };
+		B2F987F21D1D7902005D60C5 /* CustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987ED1D1D7902005D60C5 /* CustomLabel.m */; };
 		B2F987F31D1D7902005D60C5 /* DJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987EF1D1D7902005D60C5 /* DJTextField.m */; };
 		B2F987F41D1D7902005D60C5 /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987F11D1D7902005D60C5 /* EmptyView.m */; };
 		B2F987FD1D1D795C005D60C5 /* CustomTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987FC1D1D795C005D60C5 /* CustomTextView.m */; };
@@ -32,6 +32,7 @@
 		FFBB9FFC1D220FB200901871 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB9FFB1D220FB200901871 /* HomeViewController.m */; };
 		FFBB9FFF1D24AB6800901871 /* LabelButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB9FFE1D24AB6800901871 /* LabelButtonView.m */; };
 		FFBBA0021D24B5EF00901871 /* LabelButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBBA0011D24B5EF00901871 /* LabelButtonViewController.m */; };
+		FFDAAB571D2C94FB00937B8F /* MyLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDAAB561D2C94FB00937B8F /* MyLabelViewController.m */; };
 		FFFFDDB61D2A725600EB259F /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFFDDB51D2A725600EB259F /* EmptyViewController.m */; };
 		FFFFDDB91D2A7A8900EB259F /* MyTextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFFDDB81D2A7A8900EB259F /* MyTextViewViewController.m */; };
 /* End PBXBuildFile section */
@@ -69,8 +70,8 @@
 		B2F987E61D1D78D1005D60C5 /* UIImage+IOSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+IOSUtils.m"; sourceTree = "<group>"; };
 		B2F987E71D1D78D1005D60C5 /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
 		B2F987E81D1D78D1005D60C5 /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
-		B2F987EC1D1D7902005D60C5 /* DJLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJLabel.h; path = ../Utils/DJLabel.h; sourceTree = "<group>"; };
-		B2F987ED1D1D7902005D60C5 /* DJLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJLabel.m; path = ../Utils/DJLabel.m; sourceTree = "<group>"; };
+		B2F987EC1D1D7902005D60C5 /* CustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomLabel.h; path = ../Utils/CustomLabel.h; sourceTree = "<group>"; };
+		B2F987ED1D1D7902005D60C5 /* CustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomLabel.m; path = ../Utils/CustomLabel.m; sourceTree = "<group>"; };
 		B2F987EE1D1D7902005D60C5 /* DJTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJTextField.h; path = ../Utils/DJTextField.h; sourceTree = "<group>"; };
 		B2F987EF1D1D7902005D60C5 /* DJTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJTextField.m; path = ../Utils/DJTextField.m; sourceTree = "<group>"; };
 		B2F987F01D1D7902005D60C5 /* EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmptyView.h; path = ../Utils/EmptyView.h; sourceTree = "<group>"; };
@@ -99,6 +100,8 @@
 		FFBB9FFE1D24AB6800901871 /* LabelButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelButtonView.m; sourceTree = "<group>"; };
 		FFBBA0001D24B5EF00901871 /* LabelButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelButtonViewController.h; sourceTree = "<group>"; };
 		FFBBA0011D24B5EF00901871 /* LabelButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelButtonViewController.m; sourceTree = "<group>"; };
+		FFDAAB551D2C94FB00937B8F /* MyLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLabelViewController.h; sourceTree = "<group>"; };
+		FFDAAB561D2C94FB00937B8F /* MyLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLabelViewController.m; sourceTree = "<group>"; };
 		FFFFDDB41D2A725600EB259F /* EmptyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyViewController.h; sourceTree = "<group>"; };
 		FFFFDDB51D2A725600EB259F /* EmptyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewController.m; sourceTree = "<group>"; };
 		FFFFDDB71D2A7A8900EB259F /* MyTextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextViewViewController.h; sourceTree = "<group>"; };
@@ -193,8 +196,8 @@
 				B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */,
 				B2F987FB1D1D795C005D60C5 /* CustomTextView.h */,
 				B2F987FC1D1D795C005D60C5 /* CustomTextView.m */,
-				B2F987EC1D1D7902005D60C5 /* DJLabel.h */,
-				B2F987ED1D1D7902005D60C5 /* DJLabel.m */,
+				B2F987EC1D1D7902005D60C5 /* CustomLabel.h */,
+				B2F987ED1D1D7902005D60C5 /* CustomLabel.m */,
 				B2F987EE1D1D7902005D60C5 /* DJTextField.h */,
 				B2F987EF1D1D7902005D60C5 /* DJTextField.m */,
 				B2F987F01D1D7902005D60C5 /* EmptyView.h */,
@@ -238,6 +241,8 @@
 				FFFFDDB51D2A725600EB259F /* EmptyViewController.m */,
 				FFFFDDB71D2A7A8900EB259F /* MyTextViewViewController.h */,
 				FFFFDDB81D2A7A8900EB259F /* MyTextViewViewController.m */,
+				FFDAAB551D2C94FB00937B8F /* MyLabelViewController.h */,
+				FFDAAB561D2C94FB00937B8F /* MyLabelViewController.m */,
 			);
 			path = CustomViewController;
 			sourceTree = "<group>";
@@ -372,13 +377,14 @@
 				B2F987EB1D1D78D1005D60C5 /* UIView+Utils.m in Sources */,
 				FFBB9FFC1D220FB200901871 /* HomeViewController.m in Sources */,
 				FFBB9FFF1D24AB6800901871 /* LabelButtonView.m in Sources */,
-				B2F987F21D1D7902005D60C5 /* DJLabel.m in Sources */,
+				B2F987F21D1D7902005D60C5 /* CustomLabel.m in Sources */,
 				B2F987F41D1D7902005D60C5 /* EmptyView.m in Sources */,
 				B2F9880B1D1EA9F4005D60C5 /* HomeCell.m in Sources */,
 				B2F987EA1D1D78D1005D60C5 /* UIImage+IOSUtils.m in Sources */,
 				B2F987E21D1D7895005D60C5 /* Tooles.m in Sources */,
 				B2F987FD1D1D795C005D60C5 /* CustomTextView.m in Sources */,
 				B2F987E91D1D78D1005D60C5 /* UIColor+IOSUtils.m in Sources */,
+				FFDAAB571D2C94FB00937B8F /* MyLabelViewController.m in Sources */,
 				B2F987DE1D1D7714005D60C5 /* BaseViewController.m in Sources */,
 				FFFFDDB91D2A7A8900EB259F /* MyTextViewViewController.m in Sources */,
 				B2F987C61D1D75A2005D60C5 /* main.m in Sources */,
