@@ -91,8 +91,8 @@
     }
     
     [button setTitle:name forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
     button.titleLabel.font = [UIFont systemFontOfSize:16];
     
     UIBarButtonItem* leftItem = [[UIBarButtonItem alloc] initWithCustomView:button];
@@ -128,8 +128,8 @@
     }
     
     [button setTitle:name forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
     button.titleLabel.font = [UIFont systemFontOfSize:16];
     if (![name isEmptyString]) {
         [button.titleLabel sizeToFit];
@@ -171,8 +171,8 @@
     }
     
     [button setTitle:name forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
     button.titleLabel.font = [UIFont systemFontOfSize:16];
     if (![name isEmptyString]) {
         [button.titleLabel sizeToFit];
