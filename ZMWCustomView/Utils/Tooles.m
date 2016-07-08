@@ -5,6 +5,16 @@
 //  Created by 小明 on 15-12-26.
 //  Copyright (c) 2014年 Beijing Beast Technology Co.,Ltd. All rights reserved.
 //
+/*
+    speedx项目：UILabel alloc  384 个地方。 平均每个地方 8 行代码 用marsony 的话 再加 5 行。
+    自己封装的 getLabel 3 行代码     总计 减少 ： (8-3)*380 = 1900 行 代码。
+    UIButton alloc 38 个地方 平均每个地方 平均 7 行代码 
+    自己封装的 getButton 2 行代码    总结减少 ： （7-2）*38  = 190 行 代码 
+    UIImageView alloc 254 个地方 平均每个地方 平均 5 行代码
+    自己封装的 getImageView 3 行代码    总结减少 ： （5-3）*254  = 508 行 代码
+ 
+ 
+ */
 
 #import "Tooles.h"
 #import "UIColor+IOSUtils.h"
