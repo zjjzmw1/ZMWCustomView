@@ -31,6 +31,11 @@
 		FF4532711D26668D00B308DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4532701D26668D00B308DD /* CoreLocation.framework */; };
 		FFB6FE4E1D2F3F0300008868 /* BigImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6FE4D1D2F3F0300008868 /* BigImageBrowser.m */; };
 		FFB6FE511D2F429F00008868 /* BigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6FE501D2F429F00008868 /* BigImageViewController.m */; };
+		FFB6FE581D2FA33D00008868 /* RequestBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6FE571D2FA33D00008868 /* RequestBaseManager.m */; };
+		FFB6FE5C1D2FA6BE00008868 /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6FE5B1D2FA6BE00008868 /* UserManager.m */; };
+		FFB6FE5F1D2FA6CF00008868 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6FE5E1D2FA6CF00008868 /* UserModel.m */; };
+		FFB6FE641D2FAC5D00008868 /* NSArray+CodeFragments.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6FE611D2FAC5D00008868 /* NSArray+CodeFragments.m */; };
+		FFB6FE651D2FAC5D00008868 /* NSDictionary+CodeFragments.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6FE631D2FAC5D00008868 /* NSDictionary+CodeFragments.m */; };
 		FFBB9FFC1D220FB200901871 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB9FFB1D220FB200901871 /* HomeViewController.m */; };
 		FFBB9FFF1D24AB6800901871 /* LabelButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB9FFE1D24AB6800901871 /* LabelButtonView.m */; };
 		FFBBA0021D24B5EF00901871 /* LabelButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBBA0011D24B5EF00901871 /* LabelButtonViewController.m */; };
@@ -100,6 +105,16 @@
 		FFB6FE4D1D2F3F0300008868 /* BigImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigImageBrowser.m; sourceTree = "<group>"; };
 		FFB6FE4F1D2F429F00008868 /* BigImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigImageViewController.h; sourceTree = "<group>"; };
 		FFB6FE501D2F429F00008868 /* BigImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigImageViewController.m; sourceTree = "<group>"; };
+		FFB6FE561D2FA33D00008868 /* RequestBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestBaseManager.h; sourceTree = "<group>"; };
+		FFB6FE571D2FA33D00008868 /* RequestBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestBaseManager.m; sourceTree = "<group>"; };
+		FFB6FE5A1D2FA6BE00008868 /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
+		FFB6FE5B1D2FA6BE00008868 /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
+		FFB6FE5D1D2FA6CF00008868 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		FFB6FE5E1D2FA6CF00008868 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		FFB6FE601D2FAC5D00008868 /* NSArray+CodeFragments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CodeFragments.h"; sourceTree = "<group>"; };
+		FFB6FE611D2FAC5D00008868 /* NSArray+CodeFragments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CodeFragments.m"; sourceTree = "<group>"; };
+		FFB6FE621D2FAC5D00008868 /* NSDictionary+CodeFragments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CodeFragments.h"; sourceTree = "<group>"; };
+		FFB6FE631D2FAC5D00008868 /* NSDictionary+CodeFragments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CodeFragments.m"; sourceTree = "<group>"; };
 		FFBB9FFA1D220FB200901871 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		FFBB9FFB1D220FB200901871 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		FFBB9FFD1D24AB6800901871 /* LabelButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelButtonView.h; sourceTree = "<group>"; };
@@ -167,9 +182,11 @@
 				FFBB9FFA1D220FB200901871 /* HomeViewController.h */,
 				FFBB9FFB1D220FB200901871 /* HomeViewController.m */,
 				B2F9880A1D1EA9F4005D60C5 /* HomeCell.m */,
+				FFB6FE591D2FA6AA00008868 /* User */,
 				B2F988141D1F9A39005D60C5 /* CustomViewController */,
 				B2F987DB1D1D764C005D60C5 /* CustomViews */,
 				B2F987DF1D1D786C005D60C5 /* Utils */,
+				FFB6FE551D2FA32500008868 /* RequestSDK */,
 				B2F987C41D1D75A2005D60C5 /* Supporting Files */,
 			);
 			path = ZMWCustomView;
@@ -255,6 +272,30 @@
 				6786BDE48FB0EC4EA4C4183A /* Pods-ZMWCustomView.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFB6FE551D2FA32500008868 /* RequestSDK */ = {
+			isa = PBXGroup;
+			children = (
+				FFB6FE561D2FA33D00008868 /* RequestBaseManager.h */,
+				FFB6FE571D2FA33D00008868 /* RequestBaseManager.m */,
+				FFB6FE601D2FAC5D00008868 /* NSArray+CodeFragments.h */,
+				FFB6FE611D2FAC5D00008868 /* NSArray+CodeFragments.m */,
+				FFB6FE621D2FAC5D00008868 /* NSDictionary+CodeFragments.h */,
+				FFB6FE631D2FAC5D00008868 /* NSDictionary+CodeFragments.m */,
+			);
+			path = RequestSDK;
+			sourceTree = "<group>";
+		};
+		FFB6FE591D2FA6AA00008868 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				FFB6FE5A1D2FA6BE00008868 /* UserManager.h */,
+				FFB6FE5B1D2FA6BE00008868 /* UserManager.m */,
+				FFB6FE5D1D2FA6CF00008868 /* UserModel.h */,
+				FFB6FE5E1D2FA6CF00008868 /* UserModel.m */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,16 +422,20 @@
 			files = (
 				B2F9881C1D1F9C1A005D60C5 /* ProgressHUD.m in Sources */,
 				B2F988131D1F9A04005D60C5 /* AllShareView.m in Sources */,
+				FFB6FE5F1D2FA6CF00008868 /* UserModel.m in Sources */,
 				B2F987F31D1D7902005D60C5 /* DJTextField.m in Sources */,
 				B2F987C91D1D75A2005D60C5 /* AppDelegate.m in Sources */,
 				FFFFDDB61D2A725600EB259F /* EmptyViewController.m in Sources */,
 				B2F987EB1D1D78D1005D60C5 /* UIView+Utils.m in Sources */,
+				FFB6FE581D2FA33D00008868 /* RequestBaseManager.m in Sources */,
 				FFBB9FFC1D220FB200901871 /* HomeViewController.m in Sources */,
 				FFBB9FFF1D24AB6800901871 /* LabelButtonView.m in Sources */,
 				B2F987F21D1D7902005D60C5 /* CustomLabel.m in Sources */,
+				FFB6FE5C1D2FA6BE00008868 /* UserManager.m in Sources */,
 				B2F987F41D1D7902005D60C5 /* EmptyView.m in Sources */,
 				B2F9880B1D1EA9F4005D60C5 /* HomeCell.m in Sources */,
 				B2F987EA1D1D78D1005D60C5 /* UIImage+IOSUtils.m in Sources */,
+				FFB6FE651D2FAC5D00008868 /* NSDictionary+CodeFragments.m in Sources */,
 				FFB6FE511D2F429F00008868 /* BigImageViewController.m in Sources */,
 				B2F987E21D1D7895005D60C5 /* Tooles.m in Sources */,
 				FFB6FE4E1D2F3F0300008868 /* BigImageBrowser.m in Sources */,
@@ -398,6 +443,7 @@
 				B2F987E91D1D78D1005D60C5 /* UIColor+IOSUtils.m in Sources */,
 				FFDAAB571D2C94FB00937B8F /* MyLabelViewController.m in Sources */,
 				B2F987DE1D1D7714005D60C5 /* BaseViewController.m in Sources */,
+				FFB6FE641D2FAC5D00008868 /* NSArray+CodeFragments.m in Sources */,
 				FFFFDDB91D2A7A8900EB259F /* MyTextViewViewController.m in Sources */,
 				B2F987C61D1D75A2005D60C5 /* main.m in Sources */,
 				B2F988171D1F9A67005D60C5 /* AllShareViewController.m in Sources */,

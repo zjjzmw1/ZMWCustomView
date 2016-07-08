@@ -36,6 +36,14 @@
 #define kIs_IPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size)) : NO)
 #define kIs_IPhone6plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
 
+/// -----------------------------字符串、Number 保护-------------------------BEGIN
+#define kSafe_Get_String(presence, key) \
+([presence objectForKey: key] != nil && [presence objectForKey: key] != [NSNull null]) && [[presence objectForKey: key] isKindOfClass:[NSString class]] && ![[presence objectForKey: key] isEqualToString:@"null"] && ![[presence objectForKey: key] isEqualToString:@"<null>"] ? [presence objectForKey: key] : @"" \
+
+#define kSaft_Get_Number(presence, key)  \
+([presence objectForKey: key] != nil && [presence objectForKey: key] != [NSNull null]) ? [presence objectForKey: key] : @0 \
+/// -----------------------------字符串、Number 保护-------------------------END
+
 
 #pragma mark - 单例化一个类 instanceMothed:单例的方法名称
 
