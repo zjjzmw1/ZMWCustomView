@@ -36,3 +36,36 @@
 #define kIs_IPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size)) : NO)
 #define kIs_IPhone6plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
 
+
+#pragma mark - 单例化一个类 instanceMothed:单例的方法名称
+
+#define instance_interface(className, instanceMothed)   \
+\
++(instancetype)instanceMothed;
+
+//实现方法
+#define instance_implementation(className, instanceMothed)   \
+\
+static className *_instance;\
+\
++(instancetype)instanceMothed\
+{   static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, ^{\
+_instance = [[self alloc]init];\
+});\
+return _instance;\
+}\
+\
++(id)allocWithZone:(struct _NSZone *)zone{\
+static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, ^{\
+_instance = [super allocWithZone:zone];\
+});\
+return _instance;\
+}\
+\
+-(id)copyWithZone:(NSZone *)zone{\
+return _instance;\
+}
+
+

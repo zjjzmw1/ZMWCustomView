@@ -16,6 +16,7 @@
 #import "EmptyViewController.h"                 // 默认页面
 #import "MyTextViewViewController.h"            // 自定义TextView
 #import "MyLabelViewController.h"               // 自定义Label 多颜色的
+#import "BigImageViewController.h"              // 浏览大图
 
 #import <MapKit/MapKit.h>
 
@@ -52,6 +53,7 @@
     [self.dataArray addObject:@"统一的默认页面"];
     [self.dataArray addObject:@"自定义textView"];
     [self.dataArray addObject:@"自定义Label - 多颜色字体"];
+    [self.dataArray addObject:@"点击查看大图"];
 }
 
 /// 初始化表格
@@ -109,6 +111,8 @@
         vc = [[MyTextViewViewController alloc]init];
     }else if (indexPath.row == 5){
         vc = [[MyLabelViewController alloc]init];
+    }else if (indexPath.row == 6){
+        vc = [[BigImageViewController alloc]init];
     }
     
     vc.title = self.dataArray[indexPath.row];

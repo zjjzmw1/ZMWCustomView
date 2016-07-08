@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4FBD4FEB1778D0EC1252CAA8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 622A8519771C8575793A2F44 /* libPods.a */; };
 		B2F987C61D1D75A2005D60C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987C51D1D75A2005D60C5 /* main.m */; };
 		B2F987C91D1D75A2005D60C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987C81D1D75A2005D60C5 /* AppDelegate.m */; };
 		B2F987D11D1D75A2005D60C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F987D01D1D75A2005D60C5 /* Assets.xcassets */; };
@@ -27,8 +26,11 @@
 		B2F988171D1F9A67005D60C5 /* AllShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F988161D1F9A67005D60C5 /* AllShareViewController.m */; };
 		B2F9881B1D1F9C1A005D60C5 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2F988181D1F9C1A005D60C5 /* ProgressHUD.bundle */; };
 		B2F9881C1D1F9C1A005D60C5 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */; };
+		BCC44EAC3D6AD284E4C77FFE /* libPods-ZMWCustomView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F18190ED82448B20666E3725 /* libPods-ZMWCustomView.a */; };
 		FF45326F1D26667E00B308DD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45326E1D26667E00B308DD /* MapKit.framework */; };
 		FF4532711D26668D00B308DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4532701D26668D00B308DD /* CoreLocation.framework */; };
+		FFB6FE4E1D2F3F0300008868 /* BigImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6FE4D1D2F3F0300008868 /* BigImageBrowser.m */; };
+		FFB6FE511D2F429F00008868 /* BigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6FE501D2F429F00008868 /* BigImageViewController.m */; };
 		FFBB9FFC1D220FB200901871 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB9FFB1D220FB200901871 /* HomeViewController.m */; };
 		FFBB9FFF1D24AB6800901871 /* LabelButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB9FFE1D24AB6800901871 /* LabelButtonView.m */; };
 		FFBBA0021D24B5EF00901871 /* LabelButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBBA0011D24B5EF00901871 /* LabelButtonViewController.m */; };
@@ -51,9 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1C0BED32EA98CD83052A4169 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		47BB2574F7C3BD69D350E4D6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		622A8519771C8575793A2F44 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6786BDE48FB0EC4EA4C4183A /* Pods-ZMWCustomView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMWCustomView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZMWCustomView/Pods-ZMWCustomView.release.xcconfig"; sourceTree = "<group>"; };
+		A7A317D4FBA2CBD59C6F3E2B /* Pods-ZMWCustomView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMWCustomView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZMWCustomView/Pods-ZMWCustomView.debug.xcconfig"; sourceTree = "<group>"; };
 		B2F987C11D1D75A2005D60C5 /* ZMWCustomView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMWCustomView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F987C51D1D75A2005D60C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2F987C71D1D75A2005D60C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,8 +93,13 @@
 		B2F988181D1F9C1A005D60C5 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		B2F988191D1F9C1A005D60C5 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		F18190ED82448B20666E3725 /* libPods-ZMWCustomView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZMWCustomView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF45326E1D26667E00B308DD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FF4532701D26668D00B308DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FFB6FE4C1D2F3F0300008868 /* BigImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigImageBrowser.h; sourceTree = "<group>"; };
+		FFB6FE4D1D2F3F0300008868 /* BigImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigImageBrowser.m; sourceTree = "<group>"; };
+		FFB6FE4F1D2F429F00008868 /* BigImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigImageViewController.h; sourceTree = "<group>"; };
+		FFB6FE501D2F429F00008868 /* BigImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigImageViewController.m; sourceTree = "<group>"; };
 		FFBB9FFA1D220FB200901871 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		FFBB9FFB1D220FB200901871 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		FFBB9FFD1D24AB6800901871 /* LabelButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelButtonView.h; sourceTree = "<group>"; };
@@ -115,28 +121,19 @@
 			files = (
 				FF4532711D26668D00B308DD /* CoreLocation.framework in Frameworks */,
 				FF45326F1D26667E00B308DD /* MapKit.framework in Frameworks */,
-				4FBD4FEB1778D0EC1252CAA8 /* libPods.a in Frameworks */,
+				BCC44EAC3D6AD284E4C77FFE /* libPods-ZMWCustomView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A12C34F66006350B40EF2E6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1C0BED32EA98CD83052A4169 /* Pods.debug.xcconfig */,
-				47BB2574F7C3BD69D350E4D6 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		1E17C5562343401DC7FD5955 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				FF4532701D26668D00B308DD /* CoreLocation.framework */,
 				FF45326E1D26667E00B308DD /* MapKit.framework */,
-				622A8519771C8575793A2F44 /* libPods.a */,
+				F18190ED82448B20666E3725 /* libPods-ZMWCustomView.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,8 +143,8 @@
 			children = (
 				B2F987C31D1D75A2005D60C5 /* ZMWCustomView */,
 				B2F987C21D1D75A2005D60C5 /* Products */,
-				0A12C34F66006350B40EF2E6 /* Pods */,
 				1E17C5562343401DC7FD5955 /* Frameworks */,
+				BD1098041BBFB54685228E3A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,6 +221,8 @@
 				B2F987E81D1D78D1005D60C5 /* UIView+Utils.m */,
 				B2F988011D1D799E005D60C5 /* NSString+IOSUtils.h */,
 				B2F988021D1D799E005D60C5 /* NSString+IOSUtils.m */,
+				FFB6FE4C1D2F3F0300008868 /* BigImageBrowser.h */,
+				FFB6FE4D1D2F3F0300008868 /* BigImageBrowser.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -243,8 +242,19 @@
 				FFFFDDB81D2A7A8900EB259F /* MyTextViewViewController.m */,
 				FFDAAB551D2C94FB00937B8F /* MyLabelViewController.h */,
 				FFDAAB561D2C94FB00937B8F /* MyLabelViewController.m */,
+				FFB6FE4F1D2F429F00008868 /* BigImageViewController.h */,
+				FFB6FE501D2F429F00008868 /* BigImageViewController.m */,
 			);
 			path = CustomViewController;
+			sourceTree = "<group>";
+		};
+		BD1098041BBFB54685228E3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7A317D4FBA2CBD59C6F3E2B /* Pods-ZMWCustomView.debug.xcconfig */,
+				6786BDE48FB0EC4EA4C4183A /* Pods-ZMWCustomView.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,13 +264,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2F987D81D1D75A3005D60C5 /* Build configuration list for PBXNativeTarget "ZMWCustomView" */;
 			buildPhases = (
-				536784A291EB955E76B362B3 /* Check Pods Manifest.lock */,
+				9B359EC19F4A682D0EFC00B0 /* [CP] Check Pods Manifest.lock */,
 				B2F987BD1D1D75A2005D60C5 /* Sources */,
 				B2F987BE1D1D75A2005D60C5 /* Frameworks */,
 				B2F987BF1D1D75A2005D60C5 /* Resources */,
-				E627BB6B10CD6931F8FBE677 /* Embed Pods Frameworks */,
-				A68D2D8A930621865AB1C6AF /* Copy Pods Resources */,
 				B281DA091D28C6E40045E4C9 /* Embed Frameworks */,
+				BAEC17C0552A62526968376F /* [CP] Embed Pods Frameworks */,
+				807EE6281683C070FBA08ED8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -317,14 +327,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		536784A291EB955E76B362B3 /* Check Pods Manifest.lock */ = {
+		807EE6281683C070FBA08ED8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZMWCustomView/Pods-ZMWCustomView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B359EC19F4A682D0EFC00B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,34 +357,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A68D2D8A930621865AB1C6AF /* Copy Pods Resources */ = {
+		BAEC17C0552A62526968376F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E627BB6B10CD6931F8FBE677 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZMWCustomView/Pods-ZMWCustomView-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -381,7 +391,9 @@
 				B2F987F41D1D7902005D60C5 /* EmptyView.m in Sources */,
 				B2F9880B1D1EA9F4005D60C5 /* HomeCell.m in Sources */,
 				B2F987EA1D1D78D1005D60C5 /* UIImage+IOSUtils.m in Sources */,
+				FFB6FE511D2F429F00008868 /* BigImageViewController.m in Sources */,
 				B2F987E21D1D7895005D60C5 /* Tooles.m in Sources */,
+				FFB6FE4E1D2F3F0300008868 /* BigImageBrowser.m in Sources */,
 				B2F987FD1D1D795C005D60C5 /* CustomTextView.m in Sources */,
 				B2F987E91D1D78D1005D60C5 /* UIColor+IOSUtils.m in Sources */,
 				FFDAAB571D2C94FB00937B8F /* MyLabelViewController.m in Sources */,
@@ -482,7 +494,7 @@
 		};
 		B2F987D91D1D75A3005D60C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C0BED32EA98CD83052A4169 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = A7A317D4FBA2CBD59C6F3E2B /* Pods-ZMWCustomView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -504,7 +516,7 @@
 		};
 		B2F987DA1D1D75A3005D60C5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47BB2574F7C3BD69D350E4D6 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 6786BDE48FB0EC4EA4C4183A /* Pods-ZMWCustomView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
