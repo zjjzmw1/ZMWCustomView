@@ -12,6 +12,7 @@
 #import "UIView+Utils.h"
 #import "NSString+IOSUtils.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "NSString+IOSUtils.h"
 
 @interface BaseViewController () {
     
@@ -51,95 +52,17 @@
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    if (_emptyView == nil) {//尽量在后面加加入，不容易被子视图的view覆盖了
-        self.emptyView = [[EmptyView alloc]initWithFrame:CGRectMake(0, self.view.top, kScreen_Width, kScreen_Height - kNavigation_Bar_Height)];
-        [self.view addSubview:self.emptyView];
-        self.emptyView.backgroundColor = [UIColor colorFromHexString:@"#181818"];
-        self.emptyView.hidden = YES;///暂时隐藏。
-    }
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
 }
 
-#pragma mark - 左边的按钮
-- (void)leftButtonWithName:(NSString *)name image:(NSString *)imageString{
-    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setFrame:CGRectMake(0, 0, 70, 44)];
-//    button.backgroundColor = [UIColor blueColor];
-    if (![imageString isEmptyString]) {
-//        [button setImage:[UIImage imageNamed:@"navigator_btn_back"] forState:UIControlStateNormal];
-//        [button setImage:[UIImage imageNamed:@"navigator_btn_back"] forState:UIControlStateHighlighted];
-        [button setImage:[UIImage imageNamed:imageString] forState:UIControlStateNormal];
-        [button setImage:[UIImage imageNamed:imageString] forState:UIControlStateHighlighted];
-    }
-    
-    [button setTitle:name forState:UIControlStateNormal];
-    [button setTitle:name forState:UIControlStateHighlighted];
-    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
-    button.titleLabel.font = [UIFont systemFontOfSize:16];
-    
-    [button addTarget:self action:@selector(leftAction:) forControlEvents:UIControlEventTouchUpInside];
-    
-//    [button setContentEdgeInsets:UIEdgeInsetsMake(0, -12, 0, 50)];
-    
-    UIBarButtonItem* leftItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-    negativeSpacer.width = -18;
-    self.navigationItem.leftBarButtonItems = @[negativeSpacer, leftItem];
-    
-}
-#pragma mark 左边按钮的点击方法
--(void)leftAction:(UIButton *)button {
-    
-}
-
-#pragma mark - 左边的按钮
-- (void)rightButtonWithName:(NSString *)name image:(NSString *)imageString block:(void(^)(UIButton *btn))block{
-    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setFrame:CGRectMake(0, 0, 70, 44)];
-//    button.backgroundColor = [UIColor blueColor];
-
-    if (![imageString isEmptyString]) {
-        [button setImage:[UIImage imageNamed:imageString] forState:UIControlStateNormal];
-        [button setImage:[UIImage imageNamed:imageString] forState:UIControlStateHighlighted];
-    }
-    
-    [button setTitle:name forState:UIControlStateNormal];
-//    [button setTitle:name forState:UIControlStateHighlighted];
-    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
-    button.titleLabel.font = [UIFont systemFontOfSize:16];
-    
-    UIBarButtonItem* rightItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-    self.navigationItem.rightBarButtonItem = rightItem;
-    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-    negativeSpacer.width = -18;
-    self.navigationItem.rightBarButtonItems = @[negativeSpacer, rightItem];
-   
-    if (block == nil) {
-        return;
-    }
-    
-    [[button rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(UIButton *btn) {
-        block(button);
-    }];
-
-    //传统的封装按钮的点击事件
-    //    [button addTarget:self action:@selector(rightAction:) forControlEvents:UIControlEventTouchUpInside];
-}
-#pragma mark 左边按钮的点击方法
--(void)rightAction:(UIButton *)button{
-    
-}
-
 #pragma mark - 下个页面的返回按钮------（传空格就是只有一个箭头）。
 -(void)baseNextPageTitleButton:(NSString *)nextPageTitleString {
     NSString *titleString = nil;
     if (nextPageTitleString == nil || [nextPageTitleString isEqualToString:@""]) {//传空 ，默认返回。
-        titleString = NSLocalizedString(@"返回", nil);
+        titleString = NSLocalizedString(@"kAll_back", nil);
     }else{
         titleString = nextPageTitleString;
     }
@@ -147,5 +70,165 @@
     UIBarButtonItem *temporaryBarButtonItem = [[UIBarButtonItem alloc] init];
     temporaryBarButtonItem.title = titleString;
     self.navigationItem.backBarButtonItem = temporaryBarButtonItem;
+    
 }
+
+/**
+ *  导航栏左边按钮  重写返回按钮
+ *
+ *  @param name        按钮名称
+ *  @param imageString 按钮图片
+ *  @param block       返回导航栏左边按钮
+ */
+- (void)leftButtonWithName:(NSString *)name image:(NSString *)imageString block:(void(^)(UIButton *btn))block{
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setFrame:CGRectMake(0, 0, 12, 21)];
+    // 右边按钮  右对齐
+    [button setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    if (![imageString isEmptyString]) {
+        [button setImage:[UIImage imageNamed:imageString] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:imageString] forState:UIControlStateHighlighted];
+    }
+    
+    [button setTitle:name forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+    button.titleLabel.font = [UIFont systemFontOfSize:16];
+    
+    UIBarButtonItem* leftItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.leftBarButtonItem = leftItem;
+    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    negativeSpacer.width = 0;// 值越大越靠左边
+    self.navigationItem.leftBarButtonItems = @[negativeSpacer, leftItem];
+    
+    /// block 回调方法。
+    if (block == nil) {
+        return;
+    }
+    [[button rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(UIButton *btn) {
+        block(button);
+    }];
+}
+
+/**
+ *  导航栏右边按钮
+ *
+ *  @param name        按钮名称
+ *  @param imageString 按钮图片
+ *  @param block       返回导航栏右边按钮
+ */
+- (void)rightButtonWithName:(NSString *)name image:(NSString *)imageString block:(void(^)(UIButton *btn))block{
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setFrame:CGRectMake(0, 0, 100, 44)];
+    // 右边按钮  右对齐
+    [button setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
+    if (![imageString isEmptyString]) {
+        [button setImage:[UIImage imageNamed:imageString] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:imageString] forState:UIControlStateHighlighted];
+    }
+    
+    [button setTitle:name forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+    button.titleLabel.font = [UIFont systemFontOfSize:16];
+    if (![name isEmptyString]) {
+        [button.titleLabel sizeToFit];
+        [button setFrame:CGRectMake(0, 0, button.titleLabel.width, 44)];
+    }else{
+        [button setFrame:CGRectMake(0, 0, 60, 44)];// 太大的话，影响title
+    }
+    
+    UIBarButtonItem* rightItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.rightBarButtonItem = rightItem;
+    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    negativeSpacer.width = -5;// 值越大越靠左边
+    self.navigationItem.rightBarButtonItems = @[negativeSpacer, rightItem];
+    
+    /// block 回调方法。
+    if (block == nil) {
+        return;
+    }
+    [[button rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(UIButton *btn) {
+        block(button);
+    }];
+}
+
+/**
+ *  导航栏右边按钮---靠右边的(点击事件小，在titleView太长的时候正好有个按钮和rightBtn太近的时候用的)
+ *
+ *  @param name        按钮名称
+ *  @param imageString 按钮图片
+ *  @param block       返回导航栏右边按钮
+ */
+- (void)rightButtonWithNameRight:(NSString *)name image:(NSString *)imageString block:(void(^)(UIButton *btn))block{
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setFrame:CGRectMake(0, 0, 80, 44)];
+    // 右边按钮  右对齐
+    [button setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
+    if (![imageString isEmptyString]) {
+        [button setImage:[UIImage imageNamed:imageString] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:imageString] forState:UIControlStateHighlighted];
+    }
+    
+    [button setTitle:name forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+    button.titleLabel.font = [UIFont systemFontOfSize:16];
+    if (![name isEmptyString]) {
+        [button.titleLabel sizeToFit];
+        [button setFrame:CGRectMake(0, 0, button.titleLabel.width, 44)];
+    }else{
+        [button setFrame:CGRectMake(0, 0, 40, 44)];// 太大的话，影响title
+    }
+    
+    UIBarButtonItem* rightItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.rightBarButtonItem = rightItem;
+    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    negativeSpacer.width = -5;// 值越大越靠左边
+    self.navigationItem.rightBarButtonItems = @[negativeSpacer, rightItem];
+    
+    /// block 回调方法。
+    if (block == nil) {
+        return;
+    }
+    [[button rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(UIButton *btn) {
+        block(button);
+    }];
+}
+
+/**
+ *  导航栏右边按钮 自己传入自定义的view 给右按钮
+ *
+ *  @param view        自定义按钮
+ *  @param block       返回导航栏右边按钮
+ */
+- (void)rightButtonWithView:(UIView *)view block:(void(^)(UIView *view))block{
+    
+    UIBarButtonItem* rightItem = [[UIBarButtonItem alloc] initWithCustomView:view];
+    self.navigationItem.rightBarButtonItem = rightItem;
+    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    negativeSpacer.width = -5;// 值越大越靠左边
+    self.navigationItem.rightBarButtonItems = @[negativeSpacer, rightItem];
+    
+    /// block 回调方法。
+    if (block == nil) {
+        return;
+    }
+    __weak typeof(view) weakView = view;
+    [view setTapActionWithBlock:^{
+        block(weakView);
+    }];
+}
+
+/// 获取当前控制器，把UIViewController替换为需要的控制器就OK了
+- (UIViewController *)viewController {
+    for (UIView* next = [self.view superview]; next; next = next.superview) {
+        UIResponder* nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController*)nextResponder;
+        }
+    }
+    return nil;
+}
+
 @end
