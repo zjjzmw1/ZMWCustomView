@@ -9,4 +9,7 @@ pod 'SDWebImage', '~> 3.7.6'
 
 pod 'ReactiveCocoa', '~> 2.5'
 
+pod 'AFNetworking', '~> 3.1.0'
+
+
 end
