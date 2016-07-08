@@ -12,6 +12,13 @@
 
 @interface Tooles : NSObject
 
+typedef enum  {
+    topToBottom = 0,//从上到小
+    leftToRight = 1,//从左到右
+    upleftTolowRight = 2,//左上到右下
+    uprightTolowLeft = 3,//右上到左下
+}GradientType;
+
 /**
  *  获取 UILabel 便利方法
  *
@@ -61,4 +68,6 @@
  */
 +(UIButton *)getButtonWithImageAndTitle:(CGRect)frame title:(NSString *)title image:(UIImage *)image titleColor:(UIColor *)titleColor titleSize:(float)titleSize kSpacing:(float)kSpacing alignmentType:(int)type;
 
+/// - 根据色值 获取渐变 UIImage
++ (UIImage*) getImageFromColors:(NSArray*)colors ByGradientType:(GradientType)gradientType frame:(CGRect)frame;
 @end
