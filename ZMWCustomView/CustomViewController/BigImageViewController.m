@@ -30,7 +30,7 @@
     // 测试url  : http://zhangmingwei.qiniudn.com/1-130422091545.jpg
     [self.mySmallImageV setTapActionWithBlock:^{
         [[BigImageBrowser defaultManager]showImage:wSelf.mySmallImageV superView:wSelf.view.window];
-        [[BigImageBrowser defaultManager].bigImageView sd_setImageWithURL:[NSURL URLWithString:@"http://zhangmingwei.qiniudn.com/1-130422091545.jpg"]];
+        [[BigImageBrowser defaultManager].bigImageView sd_setImageWithURL:[NSURL URLWithString:@"http://zhangmingwei.qiniudn.com/1-130422091545.jpg"] placeholderImage:[UIImage imageNamed:@"Default_Image"]];
         [wSelf.mySmallImageV sd_setImageWithURL:[NSURL URLWithString:@"http://zhangmingwei.qiniudn.com/1-130422091545.jpg"]];
     }];
     
