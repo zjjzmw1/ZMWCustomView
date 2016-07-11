@@ -20,7 +20,6 @@
 		B2F987F41D1D7902005D60C5 /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987F11D1D7902005D60C5 /* EmptyView.m */; };
 		B2F987FD1D1D795C005D60C5 /* CustomTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987FC1D1D795C005D60C5 /* CustomTextView.m */; };
 		B2F988031D1D799E005D60C5 /* NSString+IOSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F988021D1D799E005D60C5 /* NSString+IOSUtils.m */; };
-		B2F9880B1D1EA9F4005D60C5 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F9880A1D1EA9F4005D60C5 /* HomeCell.m */; };
 		B2F9880E1D1F5E2E005D60C5 /* ToolesDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F9880D1D1F5E2E005D60C5 /* ToolesDemoViewController.m */; };
 		B2F988131D1F9A04005D60C5 /* AllShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F988121D1F9A04005D60C5 /* AllShareView.m */; };
 		B2F988171D1F9A67005D60C5 /* AllShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F988161D1F9A67005D60C5 /* AllShareViewController.m */; };
@@ -29,6 +28,10 @@
 		BCC44EAC3D6AD284E4C77FFE /* libPods-ZMWCustomView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F18190ED82448B20666E3725 /* libPods-ZMWCustomView.a */; };
 		FF45326F1D26667E00B308DD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45326E1D26667E00B308DD /* MapKit.framework */; };
 		FF4532711D26668D00B308DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4532701D26668D00B308DD /* CoreLocation.framework */; };
+		FF91B5911D3395EB00999AEC /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF91B5901D3395EB00999AEC /* HomeCell.m */; };
+		FF91B5941D33961E00999AEC /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF91B5931D33961E00999AEC /* TestCollectionViewController.m */; };
+		FF91B5971D33968500999AEC /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF91B5961D33968500999AEC /* TestCollectionViewCell.m */; };
+		FF91B59B1D33A87C00999AEC /* XLPlainFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FF91B59A1D33A87C00999AEC /* XLPlainFlowLayout.m */; };
 		FFB6FE4E1D2F3F0300008868 /* BigImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6FE4D1D2F3F0300008868 /* BigImageBrowser.m */; };
 		FFB6FE511D2F429F00008868 /* BigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6FE501D2F429F00008868 /* BigImageViewController.m */; };
 		FFB6FE581D2FA33D00008868 /* RequestBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6FE571D2FA33D00008868 /* RequestBaseManager.m */; };
@@ -87,8 +90,6 @@
 		B2F987FC1D1D795C005D60C5 /* CustomTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTextView.m; path = ../Utils/CustomTextView.m; sourceTree = "<group>"; };
 		B2F988011D1D799E005D60C5 /* NSString+IOSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IOSUtils.h"; sourceTree = "<group>"; };
 		B2F988021D1D799E005D60C5 /* NSString+IOSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IOSUtils.m"; sourceTree = "<group>"; };
-		B2F988091D1EA9F4005D60C5 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeCell.h; path = CustomViews/HomeCell.h; sourceTree = "<group>"; };
-		B2F9880A1D1EA9F4005D60C5 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeCell.m; path = CustomViews/HomeCell.m; sourceTree = "<group>"; };
 		B2F9880C1D1F5E2E005D60C5 /* ToolesDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToolesDemoViewController.h; path = ../CustomViews/ToolesDemoViewController.h; sourceTree = "<group>"; };
 		B2F9880D1D1F5E2E005D60C5 /* ToolesDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToolesDemoViewController.m; path = ../CustomViews/ToolesDemoViewController.m; sourceTree = "<group>"; };
 		B2F988111D1F9A04005D60C5 /* AllShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllShareView.h; sourceTree = "<group>"; };
@@ -101,6 +102,14 @@
 		F18190ED82448B20666E3725 /* libPods-ZMWCustomView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZMWCustomView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF45326E1D26667E00B308DD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FF4532701D26668D00B308DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FF91B58F1D3395EB00999AEC /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		FF91B5901D3395EB00999AEC /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		FF91B5921D33961E00999AEC /* TestCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewController.h; sourceTree = "<group>"; };
+		FF91B5931D33961E00999AEC /* TestCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewController.m; sourceTree = "<group>"; };
+		FF91B5951D33968500999AEC /* TestCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewCell.h; sourceTree = "<group>"; };
+		FF91B5961D33968500999AEC /* TestCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewCell.m; sourceTree = "<group>"; };
+		FF91B5991D33A87C00999AEC /* XLPlainFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPlainFlowLayout.h; sourceTree = "<group>"; };
+		FF91B59A1D33A87C00999AEC /* XLPlainFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPlainFlowLayout.m; sourceTree = "<group>"; };
 		FFB6FE4C1D2F3F0300008868 /* BigImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigImageBrowser.h; sourceTree = "<group>"; };
 		FFB6FE4D1D2F3F0300008868 /* BigImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigImageBrowser.m; sourceTree = "<group>"; };
 		FFB6FE4F1D2F429F00008868 /* BigImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigImageViewController.h; sourceTree = "<group>"; };
@@ -178,10 +187,9 @@
 				B2F987C81D1D75A2005D60C5 /* AppDelegate.m */,
 				B2F987DC1D1D7714005D60C5 /* BaseViewController.h */,
 				B2F987DD1D1D7714005D60C5 /* BaseViewController.m */,
-				B2F988091D1EA9F4005D60C5 /* HomeCell.h */,
 				FFBB9FFA1D220FB200901871 /* HomeViewController.h */,
 				FFBB9FFB1D220FB200901871 /* HomeViewController.m */,
-				B2F9880A1D1EA9F4005D60C5 /* HomeCell.m */,
+				FF91B58E1D3395EB00999AEC /* Cells */,
 				FFB6FE591D2FA6AA00008868 /* User */,
 				B2F988141D1F9A39005D60C5 /* CustomViewController */,
 				B2F987DB1D1D764C005D60C5 /* CustomViews */,
@@ -261,6 +269,8 @@
 				FFDAAB561D2C94FB00937B8F /* MyLabelViewController.m */,
 				FFB6FE4F1D2F429F00008868 /* BigImageViewController.h */,
 				FFB6FE501D2F429F00008868 /* BigImageViewController.m */,
+				FF91B5921D33961E00999AEC /* TestCollectionViewController.h */,
+				FF91B5931D33961E00999AEC /* TestCollectionViewController.m */,
 			);
 			path = CustomViewController;
 			sourceTree = "<group>";
@@ -272,6 +282,27 @@
 				6786BDE48FB0EC4EA4C4183A /* Pods-ZMWCustomView.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF91B58E1D3395EB00999AEC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FF91B58F1D3395EB00999AEC /* HomeCell.h */,
+				FF91B5901D3395EB00999AEC /* HomeCell.m */,
+				FF91B5951D33968500999AEC /* TestCollectionViewCell.h */,
+				FF91B5961D33968500999AEC /* TestCollectionViewCell.m */,
+				FF91B5981D33A87C00999AEC /* XLPlainFlowLayout */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FF91B5981D33A87C00999AEC /* XLPlainFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				FF91B5991D33A87C00999AEC /* XLPlainFlowLayout.h */,
+				FF91B59A1D33A87C00999AEC /* XLPlainFlowLayout.m */,
+			);
+			path = XLPlainFlowLayout;
 			sourceTree = "<group>";
 		};
 		FFB6FE551D2FA32500008868 /* RequestSDK */ = {
@@ -427,13 +458,15 @@
 				B2F987C91D1D75A2005D60C5 /* AppDelegate.m in Sources */,
 				FFFFDDB61D2A725600EB259F /* EmptyViewController.m in Sources */,
 				B2F987EB1D1D78D1005D60C5 /* UIView+Utils.m in Sources */,
+				FF91B59B1D33A87C00999AEC /* XLPlainFlowLayout.m in Sources */,
 				FFB6FE581D2FA33D00008868 /* RequestBaseManager.m in Sources */,
 				FFBB9FFC1D220FB200901871 /* HomeViewController.m in Sources */,
+				FF91B5941D33961E00999AEC /* TestCollectionViewController.m in Sources */,
 				FFBB9FFF1D24AB6800901871 /* LabelButtonView.m in Sources */,
 				B2F987F21D1D7902005D60C5 /* CustomLabel.m in Sources */,
 				FFB6FE5C1D2FA6BE00008868 /* UserManager.m in Sources */,
+				FF91B5911D3395EB00999AEC /* HomeCell.m in Sources */,
 				B2F987F41D1D7902005D60C5 /* EmptyView.m in Sources */,
-				B2F9880B1D1EA9F4005D60C5 /* HomeCell.m in Sources */,
 				B2F987EA1D1D78D1005D60C5 /* UIImage+IOSUtils.m in Sources */,
 				FFB6FE651D2FAC5D00008868 /* NSDictionary+CodeFragments.m in Sources */,
 				FFB6FE511D2F429F00008868 /* BigImageViewController.m in Sources */,
@@ -445,6 +478,7 @@
 				B2F987DE1D1D7714005D60C5 /* BaseViewController.m in Sources */,
 				FFB6FE641D2FAC5D00008868 /* NSArray+CodeFragments.m in Sources */,
 				FFFFDDB91D2A7A8900EB259F /* MyTextViewViewController.m in Sources */,
+				FF91B5971D33968500999AEC /* TestCollectionViewCell.m in Sources */,
 				B2F987C61D1D75A2005D60C5 /* main.m in Sources */,
 				B2F988171D1F9A67005D60C5 /* AllShareViewController.m in Sources */,
 				FFBBA0021D24B5EF00901871 /* LabelButtonViewController.m in Sources */,
