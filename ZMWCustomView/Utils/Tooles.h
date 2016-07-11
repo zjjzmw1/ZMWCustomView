@@ -70,4 +70,12 @@ typedef enum  {
 
 /// - 根据色值 获取渐变 UIImage
 + (UIImage*) getImageFromColors:(NSArray*)colors ByGradientType:(GradientType)gradientType frame:(CGRect)frame;
+
+/**
+ *  设置状态栏字体的颜色
+ *
+ *  @param color 色值
+ */
++(void)setStatusBarTitleColor:(UIColor *)color;
+
 @end

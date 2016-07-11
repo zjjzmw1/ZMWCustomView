@@ -198,4 +198,17 @@
     return image;
 }
 
+/**
+ *  设置状态栏字体的颜色
+ *
+ *  @param color 色值
+ */
++(void)setStatusBarTitleColor:(UIColor *)color {
+    if ([color isEqual:[UIColor whiteColor]]) {
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    }else{
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    }
+}
+
 @end
