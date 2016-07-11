@@ -21,6 +21,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // 在这里显示在 General 里面 Hide status bar 勾选上。启动的时候就不会显示了。
+    application.statusBarHidden = NO;
     // 测试定位
     [self testLocationAction];
     
