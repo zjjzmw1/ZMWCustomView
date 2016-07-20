@@ -236,7 +236,7 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
 }
 
 #pragma mark - 根据色值 获取渐变 UIImage
-+ (UIImage*) getImageFromColors:(NSArray*)colors ByGradientType:(GradientType)gradientType frame:(CGRect)frame{
++ (UIImage*) getImageFromColors:(NSArray*)colors ByGradientType:(ImageGradientType)gradientType frame:(CGRect)frame{
     NSMutableArray *ar = [NSMutableArray array];
     for(UIColor *c in colors) {
         [ar addObject:(id)c.CGColor];
@@ -501,6 +501,31 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWi
     }
     UIGraphicsEndImageContext();
     return newImage;
+}
+
+/**
+ *  高性能设置UIImage圆角
+ *
+ *  @param sizeToFit 图片大小
+ *  @param radius    圆角大小
+ *
+ *  @return UIImage
+ */
+- (UIImage *)imageWithRoundedCornersAndSize:(CGSize)sizeToFit andCornerRadius:(CGFloat)radius
+{
+    CGRect rect = (CGRect){0.f, 0.f, sizeToFit};
+    
+    UIGraphicsBeginImageContextWithOptions(sizeToFit, NO, UIScreen.mainScreen.scale);
+    CGContextAddPath(UIGraphicsGetCurrentContext(),
+                     [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:radius].CGPath);
+    CGContextClip(UIGraphicsGetCurrentContext());
+    
+    [self drawInRect:rect];
+    UIImage *output = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return output;
 }
 
 @end

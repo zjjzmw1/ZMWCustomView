@@ -11,11 +11,11 @@
 @interface UIImage (IOSUtils)
 
 typedef enum  {
-    topToBottom = 0,//从上到小
-    leftToRight = 1,//从左到右
-    upleftTolowRight = 2,//左上到右下
-    uprightTolowLeft = 3,//右上到左下
-}GradientType;
+    imageTopToBottom = 0,//从上到小
+    imageLeftToRight = 1,//从左到右
+    imageUpleftTolowRight = 2,//左上到右下
+    imageUprightTolowLeft = 3,//右上到左下
+}ImageGradientType;
 
 /**
  *  获取pathForResource 本地的图片。代替 imageNamed 的方法。---除非是cell 的或者重复很多的默认图用imageNamed 否则都不建议用。
@@ -90,7 +90,7 @@ typedef enum  {
  *
  *  @return UIImage
  */
-+ (UIImage*) getImageFromColors:(NSArray*)colors ByGradientType:(GradientType)gradientType frame:(CGRect)frame;
++ (UIImage*) getImageFromColors:(NSArray*)colors ByGradientType:(ImageGradientType)gradientType frame:(CGRect)frame;
 
 /**
  *  把横屏倒转过来 拍照的时候，经常横屏。
@@ -122,5 +122,15 @@ typedef enum  {
  *  @return 结果图片
  */
 +(UIImage *) imageCompressForWidth:(UIImage *)sourceImage targetWidth:(CGFloat)defineWidth;
+
+/**
+ *  高性能设置UIImage圆角
+ *
+ *  @param sizeToFit 图片大小
+ *  @param radius    圆角大小
+ *
+ *  @return UIImage
+ */
+- (UIImage *)imageWithRoundedCornersAndSize:(CGSize)sizeToFit andCornerRadius:(CGFloat)radius;
 
 @end

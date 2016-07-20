@@ -86,7 +86,7 @@
     imageView.frame = frame;
     imageView.layer.cornerRadius = cornerRadius;
     if (cornerRadius > 0) {
-        imageView.layer.masksToBounds = YES;
+        imageView.layer.masksToBounds = YES;// 因为离屏渲染，导致很卡
     }
     imageView.contentMode = UIViewContentModeScaleAspectFill;     ///这个是取中间的一部分。。不压缩的。
     imageView.backgroundColor = [UIColor clearColor];
