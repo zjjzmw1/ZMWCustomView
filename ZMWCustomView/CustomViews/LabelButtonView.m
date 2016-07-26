@@ -65,6 +65,7 @@
     self.topLabel.textAlignment = NSTextAlignmentCenter;
     self.topLabel.textColor = topTextColor;
     self.topLabel.text = topTitle;
+    self.topLabel.numberOfLines = 0;
     [self.topLabel sizeToFit];
     self.topLabel.frame = CGRectMake(0, self.button.bottom + spacingH, self.width, self.topLabel.size.height);
     // bottomLabel
@@ -73,10 +74,13 @@
     self.bottomLabel.textAlignment = NSTextAlignmentCenter;
     self.bottomLabel.textColor = bottomTextColor;
     self.bottomLabel.text = bottomTitle;
+    self.bottomLabel.numberOfLines = 0;
     [self.bottomLabel sizeToFit];
     self.bottomLabel.frame =  CGRectMake(0, self.topLabel.bottom + spacingH, self.width, self.bottomLabel.height);
 
-    
+    if (self.bottomLabel.top + self.bottomLabel.height > self.height) {
+        self.frame = CGRectMake(self.left, self.top,self.width, self.bottomLabel.top + self.bottomLabel.height + spacingH);
+    }
 }
 
 
@@ -110,8 +114,13 @@
     self.topLabel.textAlignment = NSTextAlignmentCenter;
     self.topLabel.textColor = topTextColor;
     self.topLabel.text = topTitle;
+    self.topLabel.numberOfLines = 0;
     [self.topLabel sizeToFit];
     self.topLabel.frame = CGRectMake(0, self.button.bottom + spacingH, self.width, self.topLabel.size.height);
+    
+    if (self.topLabel.top + self.topLabel.height > self.height) {
+        self.frame = CGRectMake(self.left, self.top,self.width, self.topLabel.top + self.topLabel.height + spacingH);
+    }
     
 }
 
@@ -134,6 +143,7 @@
     self.topLabel.textAlignment = NSTextAlignmentCenter;
     self.topLabel.textColor = topTextColor;
     self.topLabel.text = topTitle;
+    self.topLabel.numberOfLines = 0;
     [self.topLabel sizeToFit];
     self.topLabel.frame = CGRectMake(0,spacingH, self.width, self.topLabel.size.height);
     
@@ -143,9 +153,13 @@
     self.bottomLabel.textAlignment = NSTextAlignmentCenter;
     self.bottomLabel.textColor = bottomTextColor;
     self.bottomLabel.text = bottomTitle;
+    self.bottomLabel.numberOfLines = 0;
     [self.bottomLabel sizeToFit];
     self.bottomLabel.frame =  CGRectMake(0, self.topLabel.bottom + spacingH, self.width, self.bottomLabel.height);
     
+    if (self.bottomLabel.top + self.bottomLabel.height > self.height) {
+        self.frame = CGRectMake(self.left, self.top,self.width, self.bottomLabel.top + self.bottomLabel.height + spacingH);
+    }
 }
 
 

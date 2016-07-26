@@ -56,24 +56,6 @@
     [self.dataArray addObject:@"点击查看大图"];
     [self.dataArray addObject:@"CollectionView Demo"];
     
-    
-    
-    [self.dataArray addObject:@"Tooles.h 里面基本控件"];
-    [self.dataArray addObject:@"分享控件"];
-    [self.dataArray addObject:@"自定义 LabelButton 控件"];
-    [self.dataArray addObject:@"统一的默认页面"];
-    [self.dataArray addObject:@"自定义textView"];
-    [self.dataArray addObject:@"自定义Label - 多颜色字体"];
-    [self.dataArray addObject:@"点击查看大图"];
-    [self.dataArray addObject:@"CollectionView Demo"];
-    [self.dataArray addObject:@"Tooles.h 里面基本控件"];
-    [self.dataArray addObject:@"分享控件"];
-    [self.dataArray addObject:@"自定义 LabelButton 控件"];
-    [self.dataArray addObject:@"统一的默认页面"];
-    [self.dataArray addObject:@"自定义textView"];
-    [self.dataArray addObject:@"自定义Label - 多颜色字体"];
-    [self.dataArray addObject:@"点击查看大图"];
-    [self.dataArray addObject:@"CollectionView Demo"];
 }
 
 /// 初始化表格
