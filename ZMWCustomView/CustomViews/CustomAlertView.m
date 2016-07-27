@@ -30,12 +30,38 @@
     return self;
 }
 
+/**
+ *  自定义AlertView弹出框
+ *
+ *  @param currentViewController 调用弹出框的viewController
+ *  @param image                 图片
+ *  @param title                 标题
+ *  @param message               内容
+ *  @param leftTitle             左边按钮文字
+ *  @param rightTitle            右边按钮文字
+ *  @param block                 点击事件block
+ */
 - (void) initializationView:(UIViewController *)currentViewController image:(UIImage *)image title:(NSString *)title message:(NSString *)message leftButtonTitle:(NSString *)leftTitle rightButtonTitle:(NSString *)rightTitle block:(void(^)(UIButton *btn))block {
     [self initializationViewNomal:currentViewController image:image title:title message:message name1:nil detail1:nil name2:nil detail2:nil leftButtonTitle:leftTitle rightButtonTitle:rightTitle block:^(UIButton *btn) {
         block(btn);
     }];
 }
 
+/**
+ *  自定义AlertView弹出框
+ *
+ *  @param currentViewController 调用弹出框的viewController
+ *  @param image                 图片
+ *  @param title                 标题
+ *  @param message               内容
+ *  @param name1                 附加名字1
+ *  @param detail1               附加内容1
+ *  @param name2                 附加名字2
+ *  @param detail2               附加内容2
+ *  @param leftTitle             左边按钮文字
+ *  @param rightTitle            右边按钮文字
+ *  @param block                 点击事件block
+ */
 - (void) initializationViewNomal:(UIViewController *)currentViewController image:(UIImage *)image title:(NSString *)title message:(NSString *)message name1:(NSString *)name1 detail1:(NSString *)detail1 name2:(NSString *)name2 detail2:(NSString *)detail2 leftButtonTitle:(NSString *)leftTitle rightButtonTitle:(NSString *)rightTitle block:(void(^)(UIButton *btn))block {
     __weak typeof(self) wSelf = self;
     self.hidden = YES;
@@ -118,7 +144,7 @@
 }
 
 /**
- *  隐藏分享控件
+ *  隐藏控件
  */
 - (void)hide{
     __weak typeof(self) wSelf = self;
