@@ -28,6 +28,8 @@
 		BCC44EAC3D6AD284E4C77FFE /* libPods-ZMWCustomView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F18190ED82448B20666E3725 /* libPods-ZMWCustomView.a */; };
 		FF45326F1D26667E00B308DD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45326E1D26667E00B308DD /* MapKit.framework */; };
 		FF4532711D26668D00B308DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4532701D26668D00B308DD /* CoreLocation.framework */; };
+		FF53D1C71D476851000E9500 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF53D1C61D476851000E9500 /* CustomAlertView.m */; };
+		FF53D1CA1D486523000E9500 /* CustomAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF53D1C91D486523000E9500 /* CustomAlertViewController.m */; };
 		FF91B5911D3395EB00999AEC /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF91B5901D3395EB00999AEC /* HomeCell.m */; };
 		FF91B5941D33961E00999AEC /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF91B5931D33961E00999AEC /* TestCollectionViewController.m */; };
 		FF91B5971D33968500999AEC /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF91B5961D33968500999AEC /* TestCollectionViewCell.m */; };
@@ -102,6 +104,10 @@
 		F18190ED82448B20666E3725 /* libPods-ZMWCustomView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZMWCustomView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF45326E1D26667E00B308DD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FF4532701D26668D00B308DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FF53D1C51D476851000E9500 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
+		FF53D1C61D476851000E9500 /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
+		FF53D1C81D486523000E9500 /* CustomAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertViewController.h; sourceTree = "<group>"; };
+		FF53D1C91D486523000E9500 /* CustomAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertViewController.m; sourceTree = "<group>"; };
 		FF91B58F1D3395EB00999AEC /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
 		FF91B5901D3395EB00999AEC /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
 		FF91B5921D33961E00999AEC /* TestCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewController.h; sourceTree = "<group>"; };
@@ -228,6 +234,8 @@
 				B2F988121D1F9A04005D60C5 /* AllShareView.m */,
 				FFBB9FFD1D24AB6800901871 /* LabelButtonView.h */,
 				FFBB9FFE1D24AB6800901871 /* LabelButtonView.m */,
+				FF53D1C51D476851000E9500 /* CustomAlertView.h */,
+				FF53D1C61D476851000E9500 /* CustomAlertView.m */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -271,6 +279,8 @@
 				FFB6FE501D2F429F00008868 /* BigImageViewController.m */,
 				FF91B5921D33961E00999AEC /* TestCollectionViewController.h */,
 				FF91B5931D33961E00999AEC /* TestCollectionViewController.m */,
+				FF53D1C81D486523000E9500 /* CustomAlertViewController.h */,
+				FF53D1C91D486523000E9500 /* CustomAlertViewController.m */,
 			);
 			path = CustomViewController;
 			sourceTree = "<group>";
@@ -453,6 +463,7 @@
 			files = (
 				B2F9881C1D1F9C1A005D60C5 /* ProgressHUD.m in Sources */,
 				B2F988131D1F9A04005D60C5 /* AllShareView.m in Sources */,
+				FF53D1C71D476851000E9500 /* CustomAlertView.m in Sources */,
 				FFB6FE5F1D2FA6CF00008868 /* UserModel.m in Sources */,
 				B2F987F31D1D7902005D60C5 /* DJTextField.m in Sources */,
 				B2F987C91D1D75A2005D60C5 /* AppDelegate.m in Sources */,
@@ -471,6 +482,7 @@
 				FFB6FE651D2FAC5D00008868 /* NSDictionary+CodeFragments.m in Sources */,
 				FFB6FE511D2F429F00008868 /* BigImageViewController.m in Sources */,
 				B2F987E21D1D7895005D60C5 /* Tooles.m in Sources */,
+				FF53D1CA1D486523000E9500 /* CustomAlertViewController.m in Sources */,
 				FFB6FE4E1D2F3F0300008868 /* BigImageBrowser.m in Sources */,
 				B2F987FD1D1D795C005D60C5 /* CustomTextView.m in Sources */,
 				B2F987E91D1D78D1005D60C5 /* UIColor+IOSUtils.m in Sources */,

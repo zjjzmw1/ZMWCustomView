@@ -18,6 +18,8 @@
 #import "MyLabelViewController.h"               // 自定义Label 多颜色的
 #import "BigImageViewController.h"              // 浏览大图
 #import "TestCollectionViewController.h"        // CollectionView Demo
+#import "CustomAlertViewController.h"           // 自定义alertView
+
 #import <MapKit/MapKit.h>
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,CLLocationManagerDelegate>
@@ -55,6 +57,7 @@
     [self.dataArray addObject:@"自定义Label - 多颜色字体"];
     [self.dataArray addObject:@"点击查看大图"];
     [self.dataArray addObject:@"CollectionView Demo"];
+    [self.dataArray addObject:@"自定义alertView"];
     
 }
 
@@ -129,6 +132,8 @@
         vc = [[BigImageViewController alloc]init];
     }else if (indexPath.row == 7){
         vc = [[TestCollectionViewController alloc]init];
+    }else if (indexPath.row == 8){
+        vc = [[CustomAlertViewController alloc]init];
     }
     
     vc.title = self.dataArray[indexPath.row];
