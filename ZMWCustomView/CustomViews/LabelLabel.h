@@ -19,12 +19,12 @@
  *  LabelLabel  : 左边 1 个 label 右边 1 个 label  ----------
  *
  *  @param leftTitle        左边label 文字
- *  @param leftFontSize     左边label 文字大小
+ *  @param font             左边label 文字大小
  *  @param leftTextColor    左边label 文字颜色
  *  @param rightTitle     右边label 文字
- *  @param rightFontSize  右边label 文字大小
+ *  @param rightFont      右边label 文字大小
  *  @param rightTextColor 右边label 文字颜色
  */
--(void)updateTwoLabelWithleftTitle:(NSString *)leftTitle leftLabelFontSize:(float)leftFontSize  leftTextColor:(UIColor *)leftTextColor rightTitle:(NSString *)rightTitle rightLabelFontSize:(float)rightFontSize  rightTextColor:(UIColor *)rightTextColor;
+-(void)updateTwoLabelWithleftTitle:(NSString *)leftTitle leftLabelFont:(UIFont *)font  leftTextColor:(UIColor *)leftTextColor rightTitle:(NSString *)rightTitle rightLabelFont:(UIFont *)rightFont  rightTextColor:(UIColor *)rightTextColor;
 
 @end
