@@ -19,6 +19,7 @@
 #import "BigImageViewController.h"              // 浏览大图
 #import "TestCollectionViewController.h"        // CollectionView Demo
 #import "CustomAlertViewController.h"           // 自定义alertView
+#import "LabelLabelViewController.h"            // 自定义左右两个Label的控件
 
 #import <MapKit/MapKit.h>
 
@@ -58,7 +59,7 @@
     [self.dataArray addObject:@"点击查看大图"];
     [self.dataArray addObject:@"CollectionView Demo"];
     [self.dataArray addObject:@"自定义alertView"];
-    
+    [self.dataArray addObject:@"自定义两个label的控件"];
 }
 
 /// 初始化表格
@@ -134,6 +135,8 @@
         vc = [[TestCollectionViewController alloc]init];
     }else if (indexPath.row == 8){
         vc = [[CustomAlertViewController alloc]init];
+    }else if (indexPath.row == 9){
+        vc = [[LabelLabelViewController alloc]init];
     }
     
     vc.title = self.dataArray[indexPath.row];

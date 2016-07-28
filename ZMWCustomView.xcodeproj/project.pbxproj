@@ -26,6 +26,8 @@
 		B2F9881B1D1F9C1A005D60C5 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2F988181D1F9C1A005D60C5 /* ProgressHUD.bundle */; };
 		B2F9881C1D1F9C1A005D60C5 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */; };
 		BCC44EAC3D6AD284E4C77FFE /* libPods-ZMWCustomView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F18190ED82448B20666E3725 /* libPods-ZMWCustomView.a */; };
+		FF23BE4B1D49E87D00F92EA0 /* LabelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF23BE4A1D49E87D00F92EA0 /* LabelLabel.m */; };
+		FF23BE4E1D49EF3600F92EA0 /* LabelLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF23BE4D1D49EF3600F92EA0 /* LabelLabelViewController.m */; };
 		FF45326F1D26667E00B308DD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45326E1D26667E00B308DD /* MapKit.framework */; };
 		FF4532711D26668D00B308DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4532701D26668D00B308DD /* CoreLocation.framework */; };
 		FF53D1C71D476851000E9500 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF53D1C61D476851000E9500 /* CustomAlertView.m */; };
@@ -102,6 +104,10 @@
 		B2F988191D1F9C1A005D60C5 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		F18190ED82448B20666E3725 /* libPods-ZMWCustomView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZMWCustomView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF23BE491D49E87D00F92EA0 /* LabelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelLabel.h; sourceTree = "<group>"; };
+		FF23BE4A1D49E87D00F92EA0 /* LabelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelLabel.m; sourceTree = "<group>"; };
+		FF23BE4C1D49EF3600F92EA0 /* LabelLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelLabelViewController.h; sourceTree = "<group>"; };
+		FF23BE4D1D49EF3600F92EA0 /* LabelLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelLabelViewController.m; sourceTree = "<group>"; };
 		FF45326E1D26667E00B308DD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FF4532701D26668D00B308DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FF53D1C51D476851000E9500 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
@@ -234,6 +240,8 @@
 				B2F988121D1F9A04005D60C5 /* AllShareView.m */,
 				FFBB9FFD1D24AB6800901871 /* LabelButtonView.h */,
 				FFBB9FFE1D24AB6800901871 /* LabelButtonView.m */,
+				FF23BE491D49E87D00F92EA0 /* LabelLabel.h */,
+				FF23BE4A1D49E87D00F92EA0 /* LabelLabel.m */,
 				FF53D1C51D476851000E9500 /* CustomAlertView.h */,
 				FF53D1C61D476851000E9500 /* CustomAlertView.m */,
 			);
@@ -281,6 +289,8 @@
 				FF91B5931D33961E00999AEC /* TestCollectionViewController.m */,
 				FF53D1C81D486523000E9500 /* CustomAlertViewController.h */,
 				FF53D1C91D486523000E9500 /* CustomAlertViewController.m */,
+				FF23BE4C1D49EF3600F92EA0 /* LabelLabelViewController.h */,
+				FF23BE4D1D49EF3600F92EA0 /* LabelLabelViewController.m */,
 			);
 			path = CustomViewController;
 			sourceTree = "<group>";
@@ -374,7 +384,7 @@
 				TargetAttributes = {
 					B2F987C01D1D75A2005D60C5 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = ZSJKLZ2359;
+						DevelopmentTeam = 72D439SU53;
 					};
 				};
 			};
@@ -463,6 +473,7 @@
 			files = (
 				B2F9881C1D1F9C1A005D60C5 /* ProgressHUD.m in Sources */,
 				B2F988131D1F9A04005D60C5 /* AllShareView.m in Sources */,
+				FF23BE4E1D49EF3600F92EA0 /* LabelLabelViewController.m in Sources */,
 				FF53D1C71D476851000E9500 /* CustomAlertView.m in Sources */,
 				FFB6FE5F1D2FA6CF00008868 /* UserModel.m in Sources */,
 				B2F987F31D1D7902005D60C5 /* DJTextField.m in Sources */,
@@ -472,6 +483,7 @@
 				FF91B59B1D33A87C00999AEC /* XLPlainFlowLayout.m in Sources */,
 				FFB6FE581D2FA33D00008868 /* RequestBaseManager.m in Sources */,
 				FFBB9FFC1D220FB200901871 /* HomeViewController.m in Sources */,
+				FF23BE4B1D49E87D00F92EA0 /* LabelLabel.m in Sources */,
 				FF91B5941D33961E00999AEC /* TestCollectionViewController.m in Sources */,
 				FFBB9FFF1D24AB6800901871 /* LabelButtonView.m in Sources */,
 				B2F987F21D1D7902005D60C5 /* CustomLabel.m in Sources */,
