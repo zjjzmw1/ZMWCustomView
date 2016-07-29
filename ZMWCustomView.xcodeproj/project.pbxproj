@@ -28,6 +28,7 @@
 		BCC44EAC3D6AD284E4C77FFE /* libPods-ZMWCustomView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F18190ED82448B20666E3725 /* libPods-ZMWCustomView.a */; };
 		FF23BE4B1D49E87D00F92EA0 /* LabelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF23BE4A1D49E87D00F92EA0 /* LabelLabel.m */; };
 		FF23BE4E1D49EF3600F92EA0 /* LabelLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF23BE4D1D49EF3600F92EA0 /* LabelLabelViewController.m */; };
+		FF23BE821D4B4DFC00F92EA0 /* LabelLabelMasonry.m in Sources */ = {isa = PBXBuildFile; fileRef = FF23BE811D4B4DFC00F92EA0 /* LabelLabelMasonry.m */; };
 		FF45326F1D26667E00B308DD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45326E1D26667E00B308DD /* MapKit.framework */; };
 		FF4532711D26668D00B308DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4532701D26668D00B308DD /* CoreLocation.framework */; };
 		FF53D1C71D476851000E9500 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF53D1C61D476851000E9500 /* CustomAlertView.m */; };
@@ -108,6 +109,8 @@
 		FF23BE4A1D49E87D00F92EA0 /* LabelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelLabel.m; sourceTree = "<group>"; };
 		FF23BE4C1D49EF3600F92EA0 /* LabelLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelLabelViewController.h; sourceTree = "<group>"; };
 		FF23BE4D1D49EF3600F92EA0 /* LabelLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelLabelViewController.m; sourceTree = "<group>"; };
+		FF23BE801D4B4DFC00F92EA0 /* LabelLabelMasonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelLabelMasonry.h; sourceTree = "<group>"; };
+		FF23BE811D4B4DFC00F92EA0 /* LabelLabelMasonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelLabelMasonry.m; sourceTree = "<group>"; };
 		FF45326E1D26667E00B308DD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FF4532701D26668D00B308DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FF53D1C51D476851000E9500 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
@@ -204,8 +207,9 @@
 				FF91B58E1D3395EB00999AEC /* Cells */,
 				FFB6FE591D2FA6AA00008868 /* User */,
 				B2F988141D1F9A39005D60C5 /* CustomViewController */,
-				B2F987DB1D1D764C005D60C5 /* CustomViews */,
 				B2F987DF1D1D786C005D60C5 /* Utils */,
+				B2F987DB1D1D764C005D60C5 /* CustomViews */,
+				FF23BE7F1D4B4DB800F92EA0 /* CustomViewsMasonry */,
 				FFB6FE551D2FA32500008868 /* RequestSDK */,
 				B2F987C41D1D75A2005D60C5 /* Supporting Files */,
 			);
@@ -302,6 +306,15 @@
 				6786BDE48FB0EC4EA4C4183A /* Pods-ZMWCustomView.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF23BE7F1D4B4DB800F92EA0 /* CustomViewsMasonry */ = {
+			isa = PBXGroup;
+			children = (
+				FF23BE801D4B4DFC00F92EA0 /* LabelLabelMasonry.h */,
+				FF23BE811D4B4DFC00F92EA0 /* LabelLabelMasonry.m */,
+			);
+			path = CustomViewsMasonry;
 			sourceTree = "<group>";
 		};
 		FF91B58E1D3395EB00999AEC /* Cells */ = {
@@ -472,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2F9881C1D1F9C1A005D60C5 /* ProgressHUD.m in Sources */,
+				FF23BE821D4B4DFC00F92EA0 /* LabelLabelMasonry.m in Sources */,
 				B2F988131D1F9A04005D60C5 /* AllShareView.m in Sources */,
 				FF23BE4E1D49EF3600F92EA0 /* LabelLabelViewController.m in Sources */,
 				FF53D1C71D476851000E9500 /* CustomAlertView.m in Sources */,
