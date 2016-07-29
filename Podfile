@@ -11,5 +11,6 @@ pod 'ReactiveCocoa', '~> 2.5'
 
 pod 'AFNetworking', '~> 3.1.0'
 
+pod 'Masonry', '~> 1.0.1'
 
 end
