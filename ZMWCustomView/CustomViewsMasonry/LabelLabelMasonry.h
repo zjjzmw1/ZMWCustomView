@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import 
+
 @interface LabelLabelMasonry : UIView
 
 /// 左边的 label
@@ -16,7 +16,7 @@
 @property (strong, nonatomic) UILabel               *rightLabel;
 
 /**
- *  LabelLabel  : 左边 1 个 label 右边 1 个 label  ----------
+ *  LabelLabelMasonry  : 左边 1 个 label 右边 1 个 label  ----------
  *
  *  @param leftTitle        左边label 文字
  *  @param font             左边label 文字大小
