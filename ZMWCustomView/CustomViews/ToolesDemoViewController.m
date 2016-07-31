@@ -15,6 +15,7 @@
 @interface ToolesDemoViewController ()
 
 @property (strong, nonatomic) UILabel       *myLabel;
+@property (strong, nonatomic) UILabel       *myLabelMasonry;
 @property (strong, nonatomic) UIButton      *myButton;
 @property (strong, nonatomic) UIImageView   *myImageV;
 @property (strong, nonatomic) UIButton      *myImageTitleButton;    // 带image和title的按钮
@@ -30,6 +31,15 @@
     self.myLabel = [Tooles getLabel:CGRectMake(20, kNavigation_Bar_Height + 10, kScreen_Width, 30) fontSize:16 alignment:NSTextAlignmentLeft textColor:[UIColor blackColor]];
     [self.view addSubview:self.myLabel];
     self.myLabel.text = @"测试文本";
+    
+    self.myLabelMasonry = [Tooles getLabelMasonryFont:[UIFont systemFontOfSize:17] alignment:NSTextAlignmentLeft textColor:[UIColor redColor]];
+    [self.view addSubview:self.myLabelMasonry];
+    self.myLabelMasonry.text = @"测试文本Masonry";
+    self.myLabelMasonry.backgroundColor = [UIColor blueColor];
+    [self.myLabelMasonry mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(wSelf.myLabel.mas_left).offset(10);
+        make.top.equalTo(wSelf.myLabel.mas_bottom).offset(200);
+    }];
     
     // 创建UIButton; ----------------------------------------------------------
     self.myButton = [Tooles getButton:CGRectMake(self.myLabel.left, self.myLabel.bottom + 5, 100, 40) title:@"测试按钮" titleColor:[UIColor redColor] titleSize:15];

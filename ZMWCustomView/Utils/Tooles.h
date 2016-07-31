@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>         //各种方便的block封装
+#import <Masonry.h>
 
 @interface Tooles : NSObject
 
@@ -30,6 +31,17 @@ typedef enum  {
  *  @return UILabel
  */
 +(UILabel *)getLabel:(CGRect)frame fontSize:(float)fontSize alignment:(NSTextAlignment)alignment textColor:(UIColor *)textColor;
+
+/**
+ *  获取UILabel - masonry方式
+ *
+ *  @param font      UIFont字体
+ *  @param alignment 对齐方式
+ *  @param textColor 字体颜色
+ *
+ *  @return UILabel
+ */
++ (UILabel *) getLabelMasonryFont:(UIFont *)font alignment:(NSTextAlignment)alignment textColor:(UIColor *)textColor;
 
 /**
  *  获取 UIButton 便利方法
