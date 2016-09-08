@@ -37,6 +37,8 @@
 		FF91B5941D33961E00999AEC /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF91B5931D33961E00999AEC /* TestCollectionViewController.m */; };
 		FF91B5971D33968500999AEC /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF91B5961D33968500999AEC /* TestCollectionViewCell.m */; };
 		FF91B59B1D33A87C00999AEC /* XLPlainFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FF91B59A1D33A87C00999AEC /* XLPlainFlowLayout.m */; };
+		FF97A7041D811FE3001580FC /* TopButtomLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97A7011D811FE3001580FC /* TopButtomLabelView.m */; };
+		FF97A7051D811FE3001580FC /* UILabel+MutableFont.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97A7031D811FE3001580FC /* UILabel+MutableFont.m */; };
 		FFB6FE4E1D2F3F0300008868 /* BigImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6FE4D1D2F3F0300008868 /* BigImageBrowser.m */; };
 		FFB6FE511D2F429F00008868 /* BigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6FE501D2F429F00008868 /* BigImageViewController.m */; };
 		FFB6FE581D2FA33D00008868 /* RequestBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6FE571D2FA33D00008868 /* RequestBaseManager.m */; };
@@ -125,6 +127,10 @@
 		FF91B5961D33968500999AEC /* TestCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewCell.m; sourceTree = "<group>"; };
 		FF91B5991D33A87C00999AEC /* XLPlainFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPlainFlowLayout.h; sourceTree = "<group>"; };
 		FF91B59A1D33A87C00999AEC /* XLPlainFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPlainFlowLayout.m; sourceTree = "<group>"; };
+		FF97A7001D811FE3001580FC /* TopButtomLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopButtomLabelView.h; sourceTree = "<group>"; };
+		FF97A7011D811FE3001580FC /* TopButtomLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopButtomLabelView.m; sourceTree = "<group>"; };
+		FF97A7021D811FE3001580FC /* UILabel+MutableFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+MutableFont.h"; sourceTree = "<group>"; };
+		FF97A7031D811FE3001580FC /* UILabel+MutableFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MutableFont.m"; sourceTree = "<group>"; };
 		FFB6FE4C1D2F3F0300008868 /* BigImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigImageBrowser.h; sourceTree = "<group>"; };
 		FFB6FE4D1D2F3F0300008868 /* BigImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigImageBrowser.m; sourceTree = "<group>"; };
 		FFB6FE4F1D2F429F00008868 /* BigImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigImageViewController.h; sourceTree = "<group>"; };
@@ -248,6 +254,10 @@
 				FF23BE4A1D49E87D00F92EA0 /* LabelLabel.m */,
 				FF53D1C51D476851000E9500 /* CustomAlertView.h */,
 				FF53D1C61D476851000E9500 /* CustomAlertView.m */,
+				FF97A7001D811FE3001580FC /* TopButtomLabelView.h */,
+				FF97A7011D811FE3001580FC /* TopButtomLabelView.m */,
+				FF97A7021D811FE3001580FC /* UILabel+MutableFont.h */,
+				FF97A7031D811FE3001580FC /* UILabel+MutableFont.m */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -518,7 +528,9 @@
 				FFFFDDB91D2A7A8900EB259F /* MyTextViewViewController.m in Sources */,
 				FF91B5971D33968500999AEC /* TestCollectionViewCell.m in Sources */,
 				B2F987C61D1D75A2005D60C5 /* main.m in Sources */,
+				FF97A7051D811FE3001580FC /* UILabel+MutableFont.m in Sources */,
 				B2F988171D1F9A67005D60C5 /* AllShareViewController.m in Sources */,
+				FF97A7041D811FE3001580FC /* TopButtomLabelView.m in Sources */,
 				FFBBA0021D24B5EF00901871 /* LabelButtonViewController.m in Sources */,
 				B2F988031D1D799E005D60C5 /* NSString+IOSUtils.m in Sources */,
 				B2F9880E1D1F5E2E005D60C5 /* ToolesDemoViewController.m in Sources */,

@@ -44,6 +44,20 @@
     
     // 测试定位功能
     [self testLocationAction];
+    
+    
+    NSString *str = nil;
+    [str uppercaseString];
+    
+//    NSLog(@"a === %d",a);
+    
+//    char *p = NULL;
+    
+//    char m = *p;
+    
+//    NSLog(@"m === %c",m);
+    
+    
 
 }
 
