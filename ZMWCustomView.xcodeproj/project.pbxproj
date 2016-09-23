@@ -51,6 +51,7 @@
 		FFBBA0021D24B5EF00901871 /* LabelButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBBA0011D24B5EF00901871 /* LabelButtonViewController.m */; };
 		FFDAAB571D2C94FB00937B8F /* MyLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDAAB561D2C94FB00937B8F /* MyLabelViewController.m */; };
 		FFF220101D94D80000CF2E15 /* GaoDeNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF2200F1D94D80000CF2E15 /* GaoDeNaviViewController.m */; };
+		FFF220191D94E88900CF2E15 /* GaodeDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF220181D94E88900CF2E15 /* GaodeDataViewController.m */; };
 		FFFFDDB61D2A725600EB259F /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFFDDB51D2A725600EB259F /* EmptyViewController.m */; };
 		FFFFDDB91D2A7A8900EB259F /* MyTextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFFDDB81D2A7A8900EB259F /* MyTextViewViewController.m */; };
 /* End PBXBuildFile section */
@@ -159,6 +160,8 @@
 		FFF220121D94DA5200CF2E15 /* SizeMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SizeMarco.h; sourceTree = "<group>"; };
 		FFF220151D94DA9900CF2E15 /* ApiMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiMarco.h; sourceTree = "<group>"; };
 		FFF220161D94DAA600CF2E15 /* PathMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathMarco.h; sourceTree = "<group>"; };
+		FFF220171D94E88900CF2E15 /* GaodeDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaodeDataViewController.h; sourceTree = "<group>"; };
+		FFF220181D94E88900CF2E15 /* GaodeDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaodeDataViewController.m; sourceTree = "<group>"; };
 		FFFFDDB41D2A725600EB259F /* EmptyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyViewController.h; sourceTree = "<group>"; };
 		FFFFDDB51D2A725600EB259F /* EmptyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewController.m; sourceTree = "<group>"; };
 		FFFFDDB71D2A7A8900EB259F /* MyTextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextViewViewController.h; sourceTree = "<group>"; };
@@ -316,6 +319,8 @@
 				FF23BE4D1D49EF3600F92EA0 /* LabelLabelViewController.m */,
 				FFF2200E1D94D80000CF2E15 /* GaoDeNaviViewController.h */,
 				FFF2200F1D94D80000CF2E15 /* GaoDeNaviViewController.m */,
+				FFF220171D94E88900CF2E15 /* GaodeDataViewController.h */,
+				FFF220181D94E88900CF2E15 /* GaodeDataViewController.m */,
 			);
 			path = CustomViewController;
 			sourceTree = "<group>";
@@ -546,6 +551,7 @@
 				B2F988031D1D799E005D60C5 /* NSString+IOSUtils.m in Sources */,
 				B2F9880E1D1F5E2E005D60C5 /* ToolesDemoViewController.m in Sources */,
 				FFF220101D94D80000CF2E15 /* GaoDeNaviViewController.m in Sources */,
+				FFF220191D94E88900CF2E15 /* GaodeDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

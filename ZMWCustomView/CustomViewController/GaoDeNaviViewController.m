@@ -8,21 +8,18 @@
 
 #import "GaoDeNaviViewController.h"
 #import "SizeMarco.h"
+#import "GaodeDataViewController.h"
 
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <AMapNaviKit/AMapNaviKit.h>
 
-@interface GaoDeNaviViewController ()<MAMapViewDelegate,AMapNaviDriveManagerDelegate,AMapNaviDriveViewDelegate>
+@interface GaoDeNaviViewController ()<AMapNaviDriveViewDelegate,AMapNaviDriveManagerDelegate>
 
 
 @property (nonatomic, strong) AMapNaviPoint             *startPoint;
 @property (nonatomic, strong) AMapNaviPoint             *endPoint;
-@property (nonatomic, strong) MAMapView                 *mapView;
-@property (nonatomic, strong) AMapNaviDriveManager      *driveManager;
-
-// 实时导航相关
 @property (nonatomic, strong) AMapNaviDriveView         *driveView;
-
+@property (nonatomic, strong) AMapNaviDriveManager      *driveManager;
 
 @end
 
@@ -32,22 +29,22 @@
     [super viewDidLoad];
     self.title = @"高德导航调研";
     
-    // 导航路线规划
-    [self initProperties];
-//    [self initMapView];
-//    [self initDriveManager];
-
     // 实时导航
+    [self initProperties];
     [self initDriveView];
-    [self initDriveManager2];
-
-    
-    // 导航公用的。
+    [self initDriveManager];
     [self singleRoutePlanAction:nil];
+    
+    __weak typeof(self) wSelf = self;
+    [self rightButtonWithName:@"导航数据展示" image:nil block:^(UIButton *btn) {
+        GaodeDataViewController *vc = [[GaodeDataViewController alloc] init];
+        [wSelf.navigationController pushViewController:vc animated:YES];
+    }];
+    
 }
 
 
-#pragma mark - 导航路线规划相关
+#pragma mark - 实时导航相关
 
 - (void)initProperties
 {
@@ -55,27 +52,6 @@
 //    self.endPoint   = [AMapNaviPoint locationWithLatitude:39.908791 longitude:116.321257];
     self.endPoint   = [AMapNaviPoint locationWithLatitude:39.808791 longitude:116.421257];
 
-}
-
-- (void)initMapView
-{
-    if (self.mapView == nil)
-    {
-        self.mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 64,
-                                                                   self.view.bounds.size.width,
-                                                                   self.view.bounds.size.height - 64)];
-        [self.mapView setDelegate:self];
-        [self.view addSubview:self.mapView];
-    }
-}
-
-- (void)initDriveManager
-{
-    if (self.driveManager == nil)
-    {
-        self.driveManager = [[AMapNaviDriveManager alloc] init];
-        [self.driveManager setDelegate:self];
-    }
 }
 
 - (void)singleRoutePlanAction:(id)sender
@@ -90,14 +66,9 @@
 {
     NSLog(@"onCalculateRouteSuccess");
     
-    //算路成功后显示路径
-//    [self showNaviRoutes];
-    
     //算路成功后开始GPS导航
     [self.driveManager startGPSNavi];
 }
-
-#pragma mark - 实时导航相关
 
 - (void)initDriveView
 {
@@ -111,7 +82,7 @@
     }
 }
 
-- (void)initDriveManager2
+- (void)initDriveManager
 {
     if (self.driveManager == nil)
     {
@@ -121,9 +92,5 @@
         [self.driveManager addDataRepresentative:self.driveView];
     }
 }
-
-
-
-
 
 @end
