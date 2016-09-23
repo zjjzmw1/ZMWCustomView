@@ -7,7 +7,7 @@
 //
 
 #import "ProgressHUD.h"
-#import "IOSUtilsConfig.h"
+#import "UtilMarco.h"
 
 @interface ProgressHUD() {
 

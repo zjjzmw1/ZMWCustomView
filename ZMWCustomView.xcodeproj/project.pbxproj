@@ -93,7 +93,6 @@
 		B2F987EF1D1D7902005D60C5 /* DJTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJTextField.m; path = ../Utils/DJTextField.m; sourceTree = "<group>"; };
 		B2F987F01D1D7902005D60C5 /* EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmptyView.h; path = ../Utils/EmptyView.h; sourceTree = "<group>"; };
 		B2F987F11D1D7902005D60C5 /* EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmptyView.m; path = ../Utils/EmptyView.m; sourceTree = "<group>"; };
-		B2F987F51D1D7914005D60C5 /* IOSUtilsConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSUtilsConfig.h; sourceTree = "<group>"; };
 		B2F987FB1D1D795C005D60C5 /* CustomTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTextView.h; path = ../Utils/CustomTextView.h; sourceTree = "<group>"; };
 		B2F987FC1D1D795C005D60C5 /* CustomTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTextView.m; path = ../Utils/CustomTextView.m; sourceTree = "<group>"; };
 		B2F988011D1D799E005D60C5 /* NSString+IOSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IOSUtils.h"; sourceTree = "<group>"; };
@@ -156,6 +155,10 @@
 		FFDAAB561D2C94FB00937B8F /* MyLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLabelViewController.m; sourceTree = "<group>"; };
 		FFF2200E1D94D80000CF2E15 /* GaoDeNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaoDeNaviViewController.h; sourceTree = "<group>"; };
 		FFF2200F1D94D80000CF2E15 /* GaoDeNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaoDeNaviViewController.m; sourceTree = "<group>"; };
+		FFF220111D94DA3E00CF2E15 /* UtilMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilMarco.h; sourceTree = "<group>"; };
+		FFF220121D94DA5200CF2E15 /* SizeMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SizeMarco.h; sourceTree = "<group>"; };
+		FFF220151D94DA9900CF2E15 /* ApiMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiMarco.h; sourceTree = "<group>"; };
+		FFF220161D94DAA600CF2E15 /* PathMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathMarco.h; sourceTree = "<group>"; };
 		FFFFDDB41D2A725600EB259F /* EmptyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyViewController.h; sourceTree = "<group>"; };
 		FFFFDDB51D2A725600EB259F /* EmptyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewController.m; sourceTree = "<group>"; };
 		FFFFDDB71D2A7A8900EB259F /* MyTextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextViewViewController.h; sourceTree = "<group>"; };
@@ -228,6 +231,10 @@
 		B2F987C41D1D75A2005D60C5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FFF220111D94DA3E00CF2E15 /* UtilMarco.h */,
+				FFF220121D94DA5200CF2E15 /* SizeMarco.h */,
+				FFF220151D94DA9900CF2E15 /* ApiMarco.h */,
+				FFF220161D94DAA600CF2E15 /* PathMarco.h */,
 				B2F987C51D1D75A2005D60C5 /* main.m */,
 				B2F987D51D1D75A2005D60C5 /* Info.plist */,
 				B2F987D01D1D75A2005D60C5 /* Assets.xcassets */,
@@ -268,7 +275,6 @@
 		B2F987DF1D1D786C005D60C5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				B2F987F51D1D7914005D60C5 /* IOSUtilsConfig.h */,
 				B2F987E01D1D7895005D60C5 /* Tooles.h */,
 				B2F987E11D1D7895005D60C5 /* Tooles.m */,
 				B2F987E31D1D78D1005D60C5 /* UIColor+IOSUtils.h */,

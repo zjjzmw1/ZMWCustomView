@@ -7,7 +7,7 @@
 //
 
 #import "BaseViewController.h"
-#import "IOSUtilsConfig.h"
+#import "UtilMarco.h"
 #import "UIColor+IOSUtils.h"
 #import "UIView+Utils.h"
 #import "NSString+IOSUtils.h"

@@ -7,7 +7,7 @@
 //
 
 #import "EmptyViewController.h"
-#import "IOSUtilsConfig.h"
+#import "UtilMarco.h"
 
 #import "EmptyView.h"               // 默认空页面
 

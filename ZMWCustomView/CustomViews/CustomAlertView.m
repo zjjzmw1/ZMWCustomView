@@ -12,7 +12,7 @@
 #import "ProgressHUD.h"
 #import "Tooles.h"
 #import "UIColor+IOSUtils.h"
-#import "IOSUtilsConfig.h"
+#import "UtilMarco.h"
 #import "NSString+IOSUtils.h"
 #import "Tooles.h"
 

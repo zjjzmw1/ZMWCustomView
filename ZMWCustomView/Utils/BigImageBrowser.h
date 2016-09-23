@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "IOSUtilsConfig.h"
+#import "UtilMarco.h"
 
 @interface BigImageBrowser : NSObject
 

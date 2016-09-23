@@ -10,7 +10,7 @@
 #import <netinet/in.h>
 
 #import "AFNetworking.h"
-#import "IOSUtilsConfig.h"
+#import "UtilMarco.h"
 
 /// 服务器API版本号
 #define kCurrent_Api_Version                  @"/v2.4"
