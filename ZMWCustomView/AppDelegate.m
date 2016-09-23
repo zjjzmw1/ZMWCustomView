@@ -8,8 +8,9 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"      // 跟视图
-
 #import <MapKit/MapKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>         // 高德导航测试
+#import "ApiMarco.h"
 
 @interface AppDelegate ()
 
@@ -25,6 +26,8 @@
     application.statusBarHidden = NO;
     // 测试定位
     [self testLocationAction];
+    // 测试高德导航
+    [self gaodeNaviAction];
     
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     self.window.backgroundColor = [UIColor blueColor];
@@ -60,12 +63,18 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - 测试定位
 -(void)testLocationAction {
     self.locManager = [[CLLocationManager alloc] init];
     [self.locManager stopMonitoringSignificantLocationChanges];
     [self.locManager stopUpdatingLocation];
     [self.locManager stopMonitoringVisits];
     [self.locManager stopUpdatingHeading];
+}
+
+#pragma mark - 测试高德导航
+- (void)gaodeNaviAction {
+    [AMapServices sharedServices].apiKey = kGaodeKey;
 }
 
 
