@@ -112,7 +112,7 @@
     }
     
     NSString *message = [NSString stringWithFormat:@"导航总长度 ： %d米 , 总时间 ： %d秒, 起点纬度： %f, 终点纬度 : %f 分段数组：%@，段数： %d",totalLength,totalTime,startLat,endLat,routeSegments,segmentCount];
-    UIAlertView *alertV = [[UIAlertView alloc] initWithTitle:@"" message:message delegate:nil cancelButtonTitle:@"" otherButtonTitles:nil, nil];
+    UIAlertView *alertV = [[UIAlertView alloc] initWithTitle:@"" message:message delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
     [alertV show];
     
 }
