@@ -8,9 +8,8 @@
 
 #import "TopButtomLabelView.h"
 #import "UIView+Utils.h"
-#import "UIColor+Hex.h"
+#import "UIColor+IOSUtils.h"
 #import "Masonry.h"
-#import "UIColor+CodeFragments.h"
 
 @implementation TopButtomLabelView
 

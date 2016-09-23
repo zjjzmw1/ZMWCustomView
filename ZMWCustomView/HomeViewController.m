@@ -20,6 +20,7 @@
 #import "TestCollectionViewController.h"        // CollectionView Demo
 #import "CustomAlertViewController.h"           // 自定义alertView
 #import "LabelLabelViewController.h"            // 自定义左右两个Label的控件
+#import "GaoDeNaviViewController.h"             // 高德导航调研。
 
 #import <MapKit/MapKit.h>
 
@@ -49,16 +50,6 @@
     NSString *str = nil;
     [str uppercaseString];
     
-//    NSLog(@"a === %d",a);
-    
-//    char *p = NULL;
-    
-//    char m = *p;
-    
-//    NSLog(@"m === %c",m);
-    
-    
-
 }
 
 /// 初始化数据
@@ -74,6 +65,7 @@
     [self.dataArray addObject:@"CollectionView Demo"];
     [self.dataArray addObject:@"自定义alertView"];
     [self.dataArray addObject:@"自定义两个label的控件"];
+    [self.dataArray addObject:@"高德导航调研"];
 }
 
 /// 初始化表格
@@ -151,15 +143,12 @@
         vc = [[CustomAlertViewController alloc]init];
     }else if (indexPath.row == 9){
         vc = [[LabelLabelViewController alloc]init];
+    } else if (indexPath.row == 10) {
+        vc = [[GaoDeNaviViewController alloc] init];
     }
     
     vc.title = self.dataArray[indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /// 测试定位

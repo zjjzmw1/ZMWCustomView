@@ -50,6 +50,7 @@
 		FFBB9FFF1D24AB6800901871 /* LabelButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBB9FFE1D24AB6800901871 /* LabelButtonView.m */; };
 		FFBBA0021D24B5EF00901871 /* LabelButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBBA0011D24B5EF00901871 /* LabelButtonViewController.m */; };
 		FFDAAB571D2C94FB00937B8F /* MyLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDAAB561D2C94FB00937B8F /* MyLabelViewController.m */; };
+		FFF220101D94D80000CF2E15 /* GaoDeNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF2200F1D94D80000CF2E15 /* GaoDeNaviViewController.m */; };
 		FFFFDDB61D2A725600EB259F /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFFDDB51D2A725600EB259F /* EmptyViewController.m */; };
 		FFFFDDB91D2A7A8900EB259F /* MyTextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFFDDB81D2A7A8900EB259F /* MyTextViewViewController.m */; };
 /* End PBXBuildFile section */
@@ -153,6 +154,8 @@
 		FFBBA0011D24B5EF00901871 /* LabelButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelButtonViewController.m; sourceTree = "<group>"; };
 		FFDAAB551D2C94FB00937B8F /* MyLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLabelViewController.h; sourceTree = "<group>"; };
 		FFDAAB561D2C94FB00937B8F /* MyLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLabelViewController.m; sourceTree = "<group>"; };
+		FFF2200E1D94D80000CF2E15 /* GaoDeNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaoDeNaviViewController.h; sourceTree = "<group>"; };
+		FFF2200F1D94D80000CF2E15 /* GaoDeNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaoDeNaviViewController.m; sourceTree = "<group>"; };
 		FFFFDDB41D2A725600EB259F /* EmptyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyViewController.h; sourceTree = "<group>"; };
 		FFFFDDB51D2A725600EB259F /* EmptyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewController.m; sourceTree = "<group>"; };
 		FFFFDDB71D2A7A8900EB259F /* MyTextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextViewViewController.h; sourceTree = "<group>"; };
@@ -305,6 +308,8 @@
 				FF53D1C91D486523000E9500 /* CustomAlertViewController.m */,
 				FF23BE4C1D49EF3600F92EA0 /* LabelLabelViewController.h */,
 				FF23BE4D1D49EF3600F92EA0 /* LabelLabelViewController.m */,
+				FFF2200E1D94D80000CF2E15 /* GaoDeNaviViewController.h */,
+				FFF2200F1D94D80000CF2E15 /* GaoDeNaviViewController.m */,
 			);
 			path = CustomViewController;
 			sourceTree = "<group>";
@@ -534,6 +539,7 @@
 				FFBBA0021D24B5EF00901871 /* LabelButtonViewController.m in Sources */,
 				B2F988031D1D799E005D60C5 /* NSString+IOSUtils.m in Sources */,
 				B2F9880E1D1F5E2E005D60C5 /* ToolesDemoViewController.m in Sources */,
+				FFF220101D94D80000CF2E15 /* GaoDeNaviViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
