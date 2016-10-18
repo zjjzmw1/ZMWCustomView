@@ -10,6 +10,8 @@
 #import "HomeCell.h"
 
 // 所有控制测试视图
+#import "AnimationListViewController.h"         // 动画大全！！！
+
 #import "ToolesDemoViewController.h"            // Tooles.h 里面 便利的控件初始化
 #import "AllShareViewController.h"              // 分享统一控件
 #import "LabelButtonViewController.h"           // 自定义 LabelButton控件
@@ -52,6 +54,7 @@
 /// 初始化数据
 -(void)initDataArray {
     self.dataArray = [NSMutableArray array];
+    [self.dataArray addObject:@"动画大全！！！"];
     [self.dataArray addObject:@"Tooles.h 里面基本控件"];
     [self.dataArray addObject:@"分享控件"];
     [self.dataArray addObject:@"自定义 LabelButton 控件"];
@@ -116,26 +119,28 @@
     BaseViewController *vc = [[BaseViewController alloc]init];
     
     if (indexPath.row == 0) {
+        vc = [[AnimationListViewController alloc]init];
+    }else if (indexPath.row == 1) {
          vc = [[ToolesDemoViewController alloc]init];
-    }else if (indexPath.row == 1){
-         vc = [[AllShareViewController alloc]init];
     }else if (indexPath.row == 2){
-        vc = [[LabelButtonViewController alloc]init];
+         vc = [[AllShareViewController alloc]init];
     }else if (indexPath.row == 3){
-        vc = [[EmptyViewController alloc]init];
+        vc = [[LabelButtonViewController alloc]init];
     }else if (indexPath.row == 4){
-        vc = [[MyTextViewViewController alloc]init];
+        vc = [[EmptyViewController alloc]init];
     }else if (indexPath.row == 5){
-        vc = [[MyLabelViewController alloc]init];
+        vc = [[MyTextViewViewController alloc]init];
     }else if (indexPath.row == 6){
-        vc = [[BigImageViewController alloc]init];
+        vc = [[MyLabelViewController alloc]init];
     }else if (indexPath.row == 7){
-        vc = [[TestCollectionViewController alloc]init];
+        vc = [[BigImageViewController alloc]init];
     }else if (indexPath.row == 8){
-        vc = [[CustomAlertViewController alloc]init];
+        vc = [[TestCollectionViewController alloc]init];
     }else if (indexPath.row == 9){
+        vc = [[CustomAlertViewController alloc]init];
+    }else if (indexPath.row == 10){
         vc = [[LabelLabelViewController alloc]init];
-    } else if (indexPath.row == 10) {
+    } else if (indexPath.row == 11) {
         vc = [[GaoDeNaviViewController alloc] init];
     }
     
