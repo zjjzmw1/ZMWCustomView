@@ -70,7 +70,7 @@
     [self addSubview:self.alertView];
     [self.alertView setBackgroundColor:[UIColor whiteColor]];
     [self.alertView setUserInteractionEnabled:YES];
-    self.alertView.frame = CGRectMake(25, 120, kScreen_Width - 25*2, 200);
+    self.alertView.frame = CGRectMake(25, 120, Screen_Width - 25*2, 200);
     self.alertView.layer.cornerRadius = 13;
     self.alertView.layer.masksToBounds = YES;
     // 自定义label和button的view
@@ -131,7 +131,7 @@
         block(wSelf.rightButton);
     }];
     
-    self.alertView.frame = CGRectMake(25, 120, kScreen_Width - 25*2, self.leftButton.bottom);
+    self.alertView.frame = CGRectMake(25, 120, Screen_Width - 25*2, self.leftButton.bottom);
     self.hidden = NO;
     self.alertView.alpha = 0;
     self.maskView.alpha = 0;

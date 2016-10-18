@@ -9,6 +9,10 @@
 #import "AnimationListViewController.h"
 #import "AnimationListCell.h"
 
+#import "SimpleAnimationViewController.h"       // 简单动画
+
+
+
 @interface AnimationListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView       *tableView;
@@ -29,7 +33,7 @@
 
 -(void)initDataArray {
     self.dataArray = [NSMutableArray array];
-    [self.dataArray addObject:@"动画1"];
+    [self.dataArray addObject:@"简单动画"];
 }
 
 -(void)initTableView {
@@ -79,7 +83,7 @@
     BaseViewController *vc = [[BaseViewController alloc]init];
 
     if (indexPath.row == 0) {
-//        vc = [[ToolesDemoViewController alloc]init];
+        vc = [[SimpleAnimationViewController alloc]init];
     }
     
     vc.title = self.dataArray[indexPath.row];

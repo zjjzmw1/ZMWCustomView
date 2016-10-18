@@ -11,8 +11,8 @@
 
 #define kNavigation_Bar_Height 64.0f
 #define kTabbar_Height                       49.0f
-#define kScreen_Height [[UIScreen mainScreen] bounds].size.height
-#define kScreen_Width [[UIScreen mainScreen] bounds].size.width
+#define Screen_Height [[UIScreen mainScreen] bounds].size.height
+#define Screen_Width [[UIScreen mainScreen] bounds].size.width
 
 #define kCurrent_System_Version ([[UIDevice currentDevice] systemVersion])
 

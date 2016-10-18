@@ -23,7 +23,7 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.nameLabel = [Tooles getLabel:CGRectMake(20, 10, kScreen_Width, 40) fontSize:16 alignment:NSTextAlignmentLeft textColor:[UIColor blackColor]];
+        self.nameLabel = [Tooles getLabel:CGRectMake(20, 10, Screen_Width, 40) fontSize:16 alignment:NSTextAlignmentLeft textColor:[UIColor blackColor]];
         [self.contentView addSubview:self.nameLabel];
         
         self.selectionStyle = UITableViewCellSelectionStyleNone;

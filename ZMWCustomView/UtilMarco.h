@@ -13,6 +13,8 @@
 #import "ApiMarco.h"
 #import "PathMarco.h"
 
+#define aaScreen_Width [[UIScreen mainScreen] bounds].size.width
+
 #if DEBUG
 ///debug模式下-----------------Begin--------------------------
 #define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);

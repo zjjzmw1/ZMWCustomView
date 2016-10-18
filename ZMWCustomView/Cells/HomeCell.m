@@ -24,10 +24,10 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.nameLabel = [Tooles getLabel:CGRectMake(20, 10, kScreen_Width, 40) fontSize:16 alignment:NSTextAlignmentLeft textColor:[UIColor blackColor]];
+        self.nameLabel = [Tooles getLabel:CGRectMake(20, 10, Screen_Width, 40) fontSize:16 alignment:NSTextAlignmentLeft textColor:[UIColor blackColor]];
         [self.contentView addSubview:self.nameLabel];
         
-        self.iconImageView = [Tooles getImageView:CGRectMake(kScreen_Width - 50, 10, 30, 30) cornerRadius:0];
+        self.iconImageView = [Tooles getImageView:CGRectMake(Screen_Width - 50, 10, 30, 30) cornerRadius:0];
         [self.contentView addSubview:self.iconImageView];
         
         self.selectionStyle = UITableViewCellSelectionStyleNone;

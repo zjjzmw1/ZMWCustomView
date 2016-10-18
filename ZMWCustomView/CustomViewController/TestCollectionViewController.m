@@ -32,7 +32,7 @@
     layout.naviHeight = 0;
     
 
-    self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64 , kScreen_Width, kScreen_Height - 64) collectionViewLayout:layout];
+    self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64 , Screen_Width, Screen_Height - 64) collectionViewLayout:layout];
     [self.view addSubview:self.collectionView];
     [self.collectionView registerClass:[TestCollectionViewCell class] forCellWithReuseIdentifier:@"TestCollectionViewCell"];
     self.collectionView.delegate = self;
@@ -45,7 +45,7 @@
 
     // 设置表头 ！！！！！！！！！！！！！！
     self.collectionView.contentInset = UIEdgeInsetsMake(50, 0, 0, 0);
-    UIImageView *imagev = [[UIImageView alloc]initWithFrame:CGRectMake(0, -50, kScreen_Width, 50)];
+    UIImageView *imagev = [[UIImageView alloc]initWithFrame:CGRectMake(0, -50, Screen_Width, 50)];
     imagev.backgroundColor = [UIColor yellowColor];
     [self.collectionView addSubview: imagev];
     
@@ -92,7 +92,7 @@
 }
 //返回头headerView的大小
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-    return CGSizeMake(kScreen_Width,30);
+    return CGSizeMake(Screen_Width,30);
 }
 #pragma mark - 表头 设置   ------------------ END  ---------------------------
 

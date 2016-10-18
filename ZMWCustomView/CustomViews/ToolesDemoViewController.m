@@ -28,7 +28,7 @@
     [super viewDidLoad];
     __weak typeof(self) wSelf = self;
     // 创建UILabel;--------------------------------------------------------------
-    self.myLabel = [Tooles getLabel:CGRectMake(20, kNavigation_Bar_Height + 10, kScreen_Width, 30) fontSize:16 alignment:NSTextAlignmentLeft textColor:[UIColor blackColor]];
+    self.myLabel = [Tooles getLabel:CGRectMake(20, kNavigation_Bar_Height + 10, Screen_Width, 30) fontSize:16 alignment:NSTextAlignmentLeft textColor:[UIColor blackColor]];
     [self.view addSubview:self.myLabel];
     self.myLabel.text = @"测试文本";
     

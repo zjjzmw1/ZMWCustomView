@@ -76,7 +76,7 @@
     [self.shareView setBackgroundColor:[UIColor colorFromHexString:@"363636"]];
     [self.shareView setUserInteractionEnabled:YES];
     [self addSubview:self.shareView];
-    self.shareView.frame = CGRectMake(0, kScreen_Height - 200, kScreen_Width, 200);
+    self.shareView.frame = CGRectMake(0, Screen_Height - 200, Screen_Width, 200);
     
     UILabel *titleL = [[UILabel alloc] init];
     titleL.backgroundColor = [UIColor clearColor];
@@ -85,9 +85,9 @@
     titleL.textAlignment = NSTextAlignmentCenter;
     titleL.text = NSLocalizedString(@"把这个消息告诉小伙伴吧", nil) ;
     [self.shareView addSubview:titleL];
-    titleL.frame = CGRectMake(0, 15, kScreen_Width, 30);
+    titleL.frame = CGRectMake(0, 15, Screen_Width, 30);
     
-    CGFloat scrollViewWidth = kScreen_Width + 100;
+    CGFloat scrollViewWidth = Screen_Width + 100;
     UIScrollView *shareScrollView  = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0 + 50, scrollViewWidth, 100)];
     shareScrollView.backgroundColor = [UIColor clearColor];
     // 是否滚动
@@ -112,9 +112,9 @@
         [[button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
             
             [wSelf hide];
-            wSelf.shareView.frame = CGRectMake(0, kScreen_Height - 200, kScreen_Width, 200);
+            wSelf.shareView.frame = CGRectMake(0, Screen_Height - 200, Screen_Width, 200);
             [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                wSelf.shareView.frame = CGRectMake(0, kScreen_Height, kScreen_Width, 200);
+                wSelf.shareView.frame = CGRectMake(0, Screen_Height, Screen_Width, 200);
             } completion:^(BOOL finished) {
                 
             }];
@@ -224,11 +224,11 @@
     self.hidden = NO;
     self.shareView.alpha = 0;
     self.maskView.alpha = 0;
-    self.shareView.frame = CGRectMake(0, kScreen_Height, kScreen_Width, 200);
+    self.shareView.frame = CGRectMake(0, Screen_Height, Screen_Width, 200);
     [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         wSelf.shareView.alpha = 1;
         wSelf.maskView.alpha = 0.6f;
-        wSelf.shareView.frame = CGRectMake(0, kScreen_Height - 200, kScreen_Width, 200);
+        wSelf.shareView.frame = CGRectMake(0, Screen_Height - 200, Screen_Width, 200);
     } completion:^(BOOL finished) {
         
     }];

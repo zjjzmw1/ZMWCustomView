@@ -257,7 +257,7 @@
     CGFloat rotate = 0.0;
     UIInterfaceOrientation orient = [[UIApplication sharedApplication] statusBarOrientation];
     if (orient == UIInterfaceOrientationPortrait)			rotate = 0.0;
-    if (!kIS_IOS_8 < 8.0 && kScreen_Height == 480.0) {
+    if (!kIS_IOS_8 < 8.0 && Screen_Height == 480.0) {
         if (orient == UIInterfaceOrientationPortraitUpsideDown)	rotate = M_PI;
         if (orient == UIInterfaceOrientationLandscapeLeft)		rotate = - M_PI_2;
         if (orient == UIInterfaceOrientationLandscapeRight)		rotate = + M_PI_2;

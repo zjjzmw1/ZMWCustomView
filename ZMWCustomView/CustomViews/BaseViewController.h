@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UtilMarco.h"
 #import "EmptyView.h"                   ///空视图.
 
 @interface BaseViewController : UIViewController

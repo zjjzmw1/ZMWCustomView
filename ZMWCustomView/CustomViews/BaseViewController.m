@@ -47,6 +47,9 @@
     // 设置导航栏的 title 颜色 大小 如果修改的多的话，封装成类方法。
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
                                                            [UIColor redColor], NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:20], NSFontAttributeName, nil]];
+    // 导航栏从0开始计算
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.navigationController.navigationBar.translucent = NO;
     
 }
 

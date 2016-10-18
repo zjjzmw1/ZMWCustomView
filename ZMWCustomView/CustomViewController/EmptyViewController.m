@@ -34,7 +34,7 @@
     }];
     
     
-    self.myEmptView = [[EmptyView alloc]initWithFrame:CGRectMake(0, 64, kScreen_Width, kScreen_Height - 64)];
+    self.myEmptView = [[EmptyView alloc]initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height - 64)];
     [self.myEmptView image:[UIImage imageNamed:@"share_to_qq"] labelTitle:@"请检查您的网络"];
     [self.view addSubview:self.myEmptView];
 

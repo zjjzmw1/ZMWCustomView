@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B294D4281DB62A1400372280 /* SimpleMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B294D4271DB62A1400372280 /* SimpleMasonryViewController.m */; };
+		B294D42B1DB62F5300372280 /* SimpleSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B294D42A1DB62F5300372280 /* SimpleSwiftViewController.swift */; };
 		B2F2DB071DB61EAC00BAD3CF /* AnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F2DB061DB61EAC00BAD3CF /* AnimationListViewController.m */; };
 		B2F2DB0A1DB61ED500BAD3CF /* AnimationListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F2DB091DB61ED500BAD3CF /* AnimationListCell.m */; };
+		B2F2DB0D1DB6253500BAD3CF /* SimpleAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F2DB0C1DB6253500BAD3CF /* SimpleAnimationViewController.m */; };
 		B2F987C61D1D75A2005D60C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987C51D1D75A2005D60C5 /* main.m */; };
 		B2F987C91D1D75A2005D60C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F987C81D1D75A2005D60C5 /* AppDelegate.m */; };
 		B2F987D11D1D75A2005D60C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F987D01D1D75A2005D60C5 /* Assets.xcassets */; };
@@ -74,10 +77,16 @@
 /* Begin PBXFileReference section */
 		6786BDE48FB0EC4EA4C4183A /* Pods-ZMWCustomView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMWCustomView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZMWCustomView/Pods-ZMWCustomView.release.xcconfig"; sourceTree = "<group>"; };
 		A7A317D4FBA2CBD59C6F3E2B /* Pods-ZMWCustomView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMWCustomView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZMWCustomView/Pods-ZMWCustomView.debug.xcconfig"; sourceTree = "<group>"; };
+		B294D4261DB62A1400372280 /* SimpleMasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleMasonryViewController.h; sourceTree = "<group>"; };
+		B294D4271DB62A1400372280 /* SimpleMasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleMasonryViewController.m; sourceTree = "<group>"; };
+		B294D4291DB62F5300372280 /* SimpleSwiftViewController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleSwiftViewController-Bridging-Header.h"; sourceTree = "<group>"; };
+		B294D42A1DB62F5300372280 /* SimpleSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSwiftViewController.swift; sourceTree = "<group>"; };
 		B2F2DB051DB61EAC00BAD3CF /* AnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationListViewController.h; sourceTree = "<group>"; };
 		B2F2DB061DB61EAC00BAD3CF /* AnimationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationListViewController.m; sourceTree = "<group>"; };
 		B2F2DB081DB61ED500BAD3CF /* AnimationListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationListCell.h; sourceTree = "<group>"; };
 		B2F2DB091DB61ED500BAD3CF /* AnimationListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationListCell.m; sourceTree = "<group>"; };
+		B2F2DB0B1DB6253500BAD3CF /* SimpleAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAnimationViewController.h; sourceTree = "<group>"; };
+		B2F2DB0C1DB6253500BAD3CF /* SimpleAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAnimationViewController.m; sourceTree = "<group>"; };
 		B2F987C11D1D75A2005D60C5 /* ZMWCustomView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMWCustomView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F987C51D1D75A2005D60C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2F987C71D1D75A2005D60C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -198,9 +207,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B294D4241DB629F500372280 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				B294D4261DB62A1400372280 /* SimpleMasonryViewController.h */,
+				B294D4271DB62A1400372280 /* SimpleMasonryViewController.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		B294D4251DB629F500372280 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				B294D4291DB62F5300372280 /* SimpleSwiftViewController-Bridging-Header.h */,
+				B294D42A1DB62F5300372280 /* SimpleSwiftViewController.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 		B2F2DB021DB61E5A00BAD3CF /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				B294D4241DB629F500372280 /* Masonry */,
+				B294D4251DB629F500372280 /* Swift */,
 				B2F2DB031DB61E8400BAD3CF /* Cells */,
 				B2F2DB041DB61E8400BAD3CF /* ViewControllers */,
 			);
@@ -221,6 +250,8 @@
 			children = (
 				B2F2DB051DB61EAC00BAD3CF /* AnimationListViewController.h */,
 				B2F2DB061DB61EAC00BAD3CF /* AnimationListViewController.m */,
+				B2F2DB0B1DB6253500BAD3CF /* SimpleAnimationViewController.h */,
+				B2F2DB0C1DB6253500BAD3CF /* SimpleAnimationViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -458,6 +489,7 @@
 					B2F987C01D1D75A2005D60C5 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 72D439SU53;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -550,6 +582,7 @@
 				FF23BE4E1D49EF3600F92EA0 /* LabelLabelViewController.m in Sources */,
 				FF53D1C71D476851000E9500 /* CustomAlertView.m in Sources */,
 				FFB6FE5F1D2FA6CF00008868 /* UserModel.m in Sources */,
+				B294D42B1DB62F5300372280 /* SimpleSwiftViewController.swift in Sources */,
 				B2F987F31D1D7902005D60C5 /* DJTextField.m in Sources */,
 				B2F987C91D1D75A2005D60C5 /* AppDelegate.m in Sources */,
 				FFFFDDB61D2A725600EB259F /* EmptyViewController.m in Sources */,
@@ -562,6 +595,7 @@
 				FFBB9FFF1D24AB6800901871 /* LabelButtonView.m in Sources */,
 				B2F987F21D1D7902005D60C5 /* CustomLabel.m in Sources */,
 				FFB6FE5C1D2FA6BE00008868 /* UserManager.m in Sources */,
+				B294D4281DB62A1400372280 /* SimpleMasonryViewController.m in Sources */,
 				FF91B5911D3395EB00999AEC /* HomeCell.m in Sources */,
 				B2F987F41D1D7902005D60C5 /* EmptyView.m in Sources */,
 				B2F987EA1D1D78D1005D60C5 /* UIImage+IOSUtils.m in Sources */,
@@ -584,6 +618,7 @@
 				B2F988171D1F9A67005D60C5 /* AllShareViewController.m in Sources */,
 				FF97A7041D811FE3001580FC /* TopButtomLabelView.m in Sources */,
 				FFBBA0021D24B5EF00901871 /* LabelButtonViewController.m in Sources */,
+				B2F2DB0D1DB6253500BAD3CF /* SimpleAnimationViewController.m in Sources */,
 				B2F988031D1D799E005D60C5 /* NSString+IOSUtils.m in Sources */,
 				B2F9880E1D1F5E2E005D60C5 /* ToolesDemoViewController.m in Sources */,
 				FFF220101D94D80000CF2E15 /* GaoDeNaviViewController.m in Sources */,
@@ -682,8 +717,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZMWCustomView",
@@ -695,6 +732,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZMWCustomView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZMWCustomView/Animations/Swift/SimpleSwiftViewController-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -704,8 +744,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZMWCustomView",
@@ -717,6 +759,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZMWCustomView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZMWCustomView/Animations/Swift/SimpleSwiftViewController-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

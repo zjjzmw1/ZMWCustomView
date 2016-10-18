@@ -22,7 +22,7 @@
     [super viewDidLoad];
     
     // frame 方式
-    LabelLabel *labelLabel = [[LabelLabel alloc]initWithFrame:CGRectMake(10, 100, kScreen_Width - 20, 50)];
+    LabelLabel *labelLabel = [[LabelLabel alloc]initWithFrame:CGRectMake(10, 100, Screen_Width - 20, 50)];
     [self.view addSubview:labelLabel];
     [labelLabel updateTwoLabelWithleftTitle:@"行吗打算发地方暗室sdf sad fasdf sadf逢灯萨芬的：" leftLabelFont:[UIFont boldSystemFontOfSize:15] leftTextColor:[UIColor blackColor] rightTitle:@"23ese" rightLabelFont:[UIFont systemFontOfSize:14] rightTextColor:[UIColor blackColor]];
     labelLabel.backgroundColor = [UIColor lightGrayColor];
