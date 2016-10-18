@@ -29,7 +29,6 @@
 @property (strong, nonatomic) UITableView       *tableView;
 @property (strong, nonatomic) NSMutableArray    *dataArray;
 
-
 @property (strong, nonatomic) CLLocationManager *loc; // 必须用属性的方式，用局部变量不行。
 @end
 
@@ -42,10 +41,8 @@
     [self initDataArray];
     // 初始化表格
     [self initTableView];
-    
     // 测试定位功能
     [self testLocationAction];
-    
     
     NSString *str = nil;
     [str uppercaseString];
@@ -72,11 +69,12 @@
 -(void)initTableView {
     // UITableViewStyleGrouped 的话，表格上下都有一个满格的横线。UITableViewStylePlain 没有。
     self.tableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStyleGrouped];
+    [self.view addSubview:self.tableView];
     /// 但是设置成 UITableViewStyleGrouped 后，表格上面有留白，可以通过 设置 heightForHeaderInSection 高度来 去掉留白.
-    
+    // 注册cell
+    [self.tableView registerClass:[HomeCell class] forCellReuseIdentifier:@"HomeCell"];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    [self.view addSubview:self.tableView];
     // 中间线的颜色、样式
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     self.tableView.separatorColor = [UIColor lightGrayColor];
@@ -85,6 +83,7 @@
     // 内容少于一屏的时候，去掉多余的中间的线。
     UIView *footerV = [[UIView alloc]initWithFrame:CGRectZero];
     [self.tableView setTableFooterView:footerV];
+
 }
 
 #pragma mark - Table view data source
@@ -107,14 +106,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"HomeCell";
-    HomeCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (!cell){
-        cell = [HomeCell homeCellWithReuseIdentifier:CellIdentifier andType:nil];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        
-    }
-
+    HomeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeCell" forIndexPath:indexPath];
     [cell drawCellWithString:[self.dataArray objectAtIndex:indexPath.row] row:indexPath.row count:self.dataArray.count];
     
     return cell;
