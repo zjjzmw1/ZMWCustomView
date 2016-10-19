@@ -31,6 +31,11 @@
     [self initTableView];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
+
 -(void)initDataArray {
     self.dataArray = [NSMutableArray array];
     [self.dataArray addObject:@"简单动画"];

@@ -12,7 +12,7 @@
 
 @interface BezierAnimationViewController ()<UIViewControllerTransitioningDelegate>
 
-@property(nonatomic ,strong)CAShapeLayer *loadingLayer;
+@property(nonatomic ,strong)CAShapeLayer *loadingLayer; // 画圆用的。
 @property(nonatomic ,strong)NSTimer *timer;
 
 @end
@@ -22,7 +22,7 @@
 
 -(instancetype)init{
     if(self = [super init]){
-        self.transitioningDelegate = self;
+        self.transitioningDelegate = self; // 这个代理，是把默认的presentVC的动画更改了。
     }
     return self;
 }
@@ -32,14 +32,15 @@
     
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.image = nil;
+    imageView.backgroundColor = [UIColor greenColor];
     imageView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
     [self.view addSubview:imageView];
     imageView.userInteractionEnabled = YES;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(pop:)];
     [imageView addGestureRecognizer:tap];
-    //有兴趣的可以把上面注释，把这里放开，看看效果
-        [self drawCircle];
-        [self drawHalfCircle];
+    //有兴趣的可以把上面注释，把这里放开，看看效果  -- 动态画圆
+//    [self drawCircle];
+//    [self drawHalfCircle];
 }
 
 #pragma -mark UIViewControllerTransitioningDelegate
@@ -55,8 +56,6 @@
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-
 
 #pragma -mark 画loading
 - (CAShapeLayer *)drawCircle {
