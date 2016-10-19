@@ -8,11 +8,14 @@
 
 #import "SimpleAnimationViewController.h"
 #import "SimpleMasonryViewController.h"     // masonry方式
+#import "AnimationTextField.h"              // 自定义动画输入框
 
 @interface SimpleAnimationViewController ()
 
-@property (nonatomic, strong) UIView        *positionView;      // 移动View
-@property (nonatomic, strong) UIView        *positionView1;     // 移动View1
+@property (nonatomic, strong) UIView                *positionView;          // 移动View
+@property (nonatomic, strong) UIView                *positionView1;         // 移动View1
+
+@property (nonatomic, strong) AnimationTextField    *animationTextField;    // 自定义动画输入框
 
 @end
 
@@ -20,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor greenColor];
     [self initAllView];
     __weak typeof(self) wSelf = self;
     [self rightButtonWithName:@"masonry方式" image:nil block:^(UIButton *btn) {
@@ -42,6 +46,12 @@
     self.positionView1 = [[UIView alloc] initWithFrame:CGRectMake(10, 80, 50, 50)];
     self.positionView1.backgroundColor = [UIColor blueColor];
     [self.view addSubview:self.positionView1];
+    
+    // 动画输入框
+    self.animationTextField = [[AnimationTextField alloc] initWithFrame:CGRectMake(20, 200, Screen_Width - 20*2, 50)];
+    self.animationTextField.annLabel.text = @"用户名";
+    [self.view addSubview:self.animationTextField];
+    
 }
 
 #pragma mark - 动画方法

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B24447A71DB718C40054D91E /* AnimationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B24447A61DB718C40054D91E /* AnimationTextField.m */; };
 		B294D4281DB62A1400372280 /* SimpleMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B294D4271DB62A1400372280 /* SimpleMasonryViewController.m */; };
 		B294D42B1DB62F5300372280 /* SimpleSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B294D42A1DB62F5300372280 /* SimpleSwiftViewController.swift */; };
 		B2F2DB071DB61EAC00BAD3CF /* AnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F2DB061DB61EAC00BAD3CF /* AnimationListViewController.m */; };
@@ -77,6 +78,8 @@
 /* Begin PBXFileReference section */
 		6786BDE48FB0EC4EA4C4183A /* Pods-ZMWCustomView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMWCustomView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZMWCustomView/Pods-ZMWCustomView.release.xcconfig"; sourceTree = "<group>"; };
 		A7A317D4FBA2CBD59C6F3E2B /* Pods-ZMWCustomView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMWCustomView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZMWCustomView/Pods-ZMWCustomView.debug.xcconfig"; sourceTree = "<group>"; };
+		B24447A51DB718C40054D91E /* AnimationTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTextField.h; sourceTree = "<group>"; };
+		B24447A61DB718C40054D91E /* AnimationTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTextField.m; sourceTree = "<group>"; };
 		B294D4261DB62A1400372280 /* SimpleMasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleMasonryViewController.h; sourceTree = "<group>"; };
 		B294D4271DB62A1400372280 /* SimpleMasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleMasonryViewController.m; sourceTree = "<group>"; };
 		B294D4291DB62F5300372280 /* SimpleSwiftViewController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleSwiftViewController-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -207,6 +210,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B24447A41DB718610054D91E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B24447A51DB718C40054D91E /* AnimationTextField.h */,
+				B24447A61DB718C40054D91E /* AnimationTextField.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B294D4241DB629F500372280 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +240,7 @@
 		B2F2DB021DB61E5A00BAD3CF /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				B24447A41DB718610054D91E /* Views */,
 				B294D4241DB629F500372280 /* Masonry */,
 				B294D4251DB629F500372280 /* Swift */,
 				B2F2DB031DB61E8400BAD3CF /* Cells */,
@@ -488,8 +501,9 @@
 				TargetAttributes = {
 					B2F987C01D1D75A2005D60C5 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 72D439SU53;
+						DevelopmentTeam = PK5586DWHF;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -584,6 +598,7 @@
 				FFB6FE5F1D2FA6CF00008868 /* UserModel.m in Sources */,
 				B294D42B1DB62F5300372280 /* SimpleSwiftViewController.swift in Sources */,
 				B2F987F31D1D7902005D60C5 /* DJTextField.m in Sources */,
+				B24447A71DB718C40054D91E /* AnimationTextField.m in Sources */,
 				B2F987C91D1D75A2005D60C5 /* AppDelegate.m in Sources */,
 				FFFFDDB61D2A725600EB259F /* EmptyViewController.m in Sources */,
 				B2F987EB1D1D78D1005D60C5 /* UIView+Utils.m in Sources */,
@@ -721,6 +736,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PK5586DWHF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZMWCustomView",
@@ -748,6 +764,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PK5586DWHF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZMWCustomView",
