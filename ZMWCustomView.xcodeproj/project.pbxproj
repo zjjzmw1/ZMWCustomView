@@ -769,7 +769,7 @@
 				INFOPLIST_FILE = ZMWCustomView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZMWCustomView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZMWCustomView1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZMWCustomView/Animations/Swift/SimpleSwiftViewController-Bridging-Header.h";
@@ -797,7 +797,7 @@
 				INFOPLIST_FILE = ZMWCustomView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZMWCustomView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZMWCustomView1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZMWCustomView/Animations/Swift/SimpleSwiftViewController-Bridging-Header.h";
