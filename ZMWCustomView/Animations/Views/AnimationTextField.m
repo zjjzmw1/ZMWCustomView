@@ -52,18 +52,15 @@
 
 #pragma mark - textField 文字变化的监听
 -(void)obserValue:(NSNotification *)obj{
-    CGFloat y = _annLabel.frame.origin.y;
-    CGFloat x = _annLabel.frame.origin.x;
-    
     if(_textField.text.length != 0 && !_moved){ // 有文字输入了
-        [self moveAnimation:x y:y]; // 移动到上面
+        [self moveAnimation]; // 移动到上面
     }else if(_textField.text.length == 0 && _moved){ // 没有文字输入并且之前有文字输入
-        [self backAnimation:x y:y]; // 还原到下面
+        [self backAnimation]; // 还原到下面
     }
 }
 
 #pragma mark - 注释移动到上面
--(void)moveAnimation:(CGFloat)x y:(CGFloat)y {
+-(void)moveAnimation {
     _annLabel.font = [UIFont systemFontOfSize:10.f];
     [UIView animateWithDuration:0.15 animations:^{
         _annLabel.alpha = 1;
@@ -74,7 +71,7 @@
 }
 
 #pragma mark - 注释还原到和textField重合
--(void)backAnimation:(CGFloat)x y:(CGFloat)y {
+-(void)backAnimation {
     _annLabel.font = [UIFont systemFontOfSize:15.f];
     [UIView animateWithDuration:0.15 animations:^{
         _moved = NO;
@@ -82,6 +79,5 @@
         _lineLayer.frame = CGRectMake(0, 0, 0, kLineHeight);
     }];
 }
-
 
 @end
