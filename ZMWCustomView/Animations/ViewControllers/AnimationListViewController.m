@@ -10,7 +10,7 @@
 #import "AnimationListCell.h"
 
 #import "SimpleAnimationViewController.h"       // 简单动画
-
+#import "CABasicAniamtionViewController.h"      // CABasic相关动画
 
 
 @interface AnimationListViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -34,6 +34,7 @@
 -(void)initDataArray {
     self.dataArray = [NSMutableArray array];
     [self.dataArray addObject:@"简单动画"];
+    [self.dataArray addObject:@"CABasic相关动画"];
 }
 
 -(void)initTableView {
@@ -83,7 +84,9 @@
     BaseViewController *vc = [[BaseViewController alloc]init];
 
     if (indexPath.row == 0) {
-        vc = [[SimpleAnimationViewController alloc]init];
+        vc = [[SimpleAnimationViewController alloc] init];
+    } else if (indexPath.row == 1) {
+        vc = [[CABasicAniamtionViewController alloc] init];
     }
     
     vc.title = self.dataArray[indexPath.row];

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B24447A71DB718C40054D91E /* AnimationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B24447A61DB718C40054D91E /* AnimationTextField.m */; };
+		B24447AA1DB725430054D91E /* CABasicAniamtionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24447A91DB725430054D91E /* CABasicAniamtionViewController.m */; };
+		B24447AD1DB725970054D91E /* BezierAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24447AC1DB725970054D91E /* BezierAnimationViewController.m */; };
+		B24447B01DB72AA60054D91E /* AnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B24447AF1DB72AA60054D91E /* AnimationButton.m */; };
+		B24447B31DB72E810054D91E /* FourPingTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B24447B21DB72E810054D91E /* FourPingTransition.m */; };
 		B294D4281DB62A1400372280 /* SimpleMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B294D4271DB62A1400372280 /* SimpleMasonryViewController.m */; };
 		B294D42B1DB62F5300372280 /* SimpleSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B294D42A1DB62F5300372280 /* SimpleSwiftViewController.swift */; };
 		B2F2DB071DB61EAC00BAD3CF /* AnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F2DB061DB61EAC00BAD3CF /* AnimationListViewController.m */; };
@@ -80,6 +84,14 @@
 		A7A317D4FBA2CBD59C6F3E2B /* Pods-ZMWCustomView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMWCustomView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZMWCustomView/Pods-ZMWCustomView.debug.xcconfig"; sourceTree = "<group>"; };
 		B24447A51DB718C40054D91E /* AnimationTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTextField.h; sourceTree = "<group>"; };
 		B24447A61DB718C40054D91E /* AnimationTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTextField.m; sourceTree = "<group>"; };
+		B24447A81DB725430054D91E /* CABasicAniamtionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAniamtionViewController.h; sourceTree = "<group>"; };
+		B24447A91DB725430054D91E /* CABasicAniamtionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAniamtionViewController.m; sourceTree = "<group>"; };
+		B24447AB1DB725970054D91E /* BezierAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierAnimationViewController.h; sourceTree = "<group>"; };
+		B24447AC1DB725970054D91E /* BezierAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierAnimationViewController.m; sourceTree = "<group>"; };
+		B24447AE1DB72AA60054D91E /* AnimationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationButton.h; sourceTree = "<group>"; };
+		B24447AF1DB72AA60054D91E /* AnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationButton.m; sourceTree = "<group>"; };
+		B24447B11DB72E810054D91E /* FourPingTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourPingTransition.h; sourceTree = "<group>"; };
+		B24447B21DB72E810054D91E /* FourPingTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourPingTransition.m; sourceTree = "<group>"; };
 		B294D4261DB62A1400372280 /* SimpleMasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleMasonryViewController.h; sourceTree = "<group>"; };
 		B294D4271DB62A1400372280 /* SimpleMasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleMasonryViewController.m; sourceTree = "<group>"; };
 		B294D4291DB62F5300372280 /* SimpleSwiftViewController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleSwiftViewController-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -215,6 +227,10 @@
 			children = (
 				B24447A51DB718C40054D91E /* AnimationTextField.h */,
 				B24447A61DB718C40054D91E /* AnimationTextField.m */,
+				B24447AE1DB72AA60054D91E /* AnimationButton.h */,
+				B24447AF1DB72AA60054D91E /* AnimationButton.m */,
+				B24447B11DB72E810054D91E /* FourPingTransition.h */,
+				B24447B21DB72E810054D91E /* FourPingTransition.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -265,6 +281,10 @@
 				B2F2DB061DB61EAC00BAD3CF /* AnimationListViewController.m */,
 				B2F2DB0B1DB6253500BAD3CF /* SimpleAnimationViewController.h */,
 				B2F2DB0C1DB6253500BAD3CF /* SimpleAnimationViewController.m */,
+				B24447A81DB725430054D91E /* CABasicAniamtionViewController.h */,
+				B24447A91DB725430054D91E /* CABasicAniamtionViewController.m */,
+				B24447AB1DB725970054D91E /* BezierAnimationViewController.h */,
+				B24447AC1DB725970054D91E /* BezierAnimationViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -590,6 +610,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B24447B31DB72E810054D91E /* FourPingTransition.m in Sources */,
 				B2F9881C1D1F9C1A005D60C5 /* ProgressHUD.m in Sources */,
 				FF23BE821D4B4DFC00F92EA0 /* LabelLabelMasonry.m in Sources */,
 				B2F988131D1F9A04005D60C5 /* AllShareView.m in Sources */,
@@ -606,12 +627,14 @@
 				FFB6FE581D2FA33D00008868 /* RequestBaseManager.m in Sources */,
 				FFBB9FFC1D220FB200901871 /* HomeViewController.m in Sources */,
 				FF23BE4B1D49E87D00F92EA0 /* LabelLabel.m in Sources */,
+				B24447AD1DB725970054D91E /* BezierAnimationViewController.m in Sources */,
 				FF91B5941D33961E00999AEC /* TestCollectionViewController.m in Sources */,
 				FFBB9FFF1D24AB6800901871 /* LabelButtonView.m in Sources */,
 				B2F987F21D1D7902005D60C5 /* CustomLabel.m in Sources */,
 				FFB6FE5C1D2FA6BE00008868 /* UserManager.m in Sources */,
 				B294D4281DB62A1400372280 /* SimpleMasonryViewController.m in Sources */,
 				FF91B5911D3395EB00999AEC /* HomeCell.m in Sources */,
+				B24447B01DB72AA60054D91E /* AnimationButton.m in Sources */,
 				B2F987F41D1D7902005D60C5 /* EmptyView.m in Sources */,
 				B2F987EA1D1D78D1005D60C5 /* UIImage+IOSUtils.m in Sources */,
 				FFB6FE651D2FAC5D00008868 /* NSDictionary+CodeFragments.m in Sources */,
@@ -637,6 +660,7 @@
 				B2F988031D1D799E005D60C5 /* NSString+IOSUtils.m in Sources */,
 				B2F9880E1D1F5E2E005D60C5 /* ToolesDemoViewController.m in Sources */,
 				FFF220101D94D80000CF2E15 /* GaoDeNaviViewController.m in Sources */,
+				B24447AA1DB725430054D91E /* CABasicAniamtionViewController.m in Sources */,
 				FFF220191D94E88900CF2E15 /* GaodeDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
