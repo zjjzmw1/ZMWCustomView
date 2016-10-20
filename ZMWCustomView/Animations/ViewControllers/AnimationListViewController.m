@@ -11,7 +11,7 @@
 
 #import "SimpleAnimationViewController.h"       // 简单动画
 #import "CABasicAniamtionViewController.h"      // CABasic相关动画
-
+#import "CATrasitionViewController.h"           // 转场动画
 
 @interface AnimationListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -40,6 +40,7 @@
     self.dataArray = [NSMutableArray array];
     [self.dataArray addObject:@"简单动画"];
     [self.dataArray addObject:@"CABasic相关动画"];
+    [self.dataArray addObject:@"转场动画"];
 }
 
 -(void)initTableView {
@@ -92,6 +93,8 @@
         vc = [[SimpleAnimationViewController alloc] init];
     } else if (indexPath.row == 1) {
         vc = [[CABasicAniamtionViewController alloc] init];
+    } else if (indexPath.row == 2) {
+        vc = [[CATrasitionViewController alloc] init];
     }
     
     vc.title = self.dataArray[indexPath.row];

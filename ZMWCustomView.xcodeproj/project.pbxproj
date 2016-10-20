@@ -14,6 +14,8 @@
 		B24447B31DB72E810054D91E /* FourPingTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B24447B21DB72E810054D91E /* FourPingTransition.m */; };
 		B294D4281DB62A1400372280 /* SimpleMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B294D4271DB62A1400372280 /* SimpleMasonryViewController.m */; };
 		B294D42B1DB62F5300372280 /* SimpleSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B294D42A1DB62F5300372280 /* SimpleSwiftViewController.swift */; };
+		B2A3EA0A1DB866FE006264BD /* CATrasitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A3EA091DB866FE006264BD /* CATrasitionViewController.m */; };
+		B2A3EA0D1DB86718006264BD /* CATrasitionBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A3EA0C1DB86718006264BD /* CATrasitionBackViewController.m */; };
 		B2F2DB071DB61EAC00BAD3CF /* AnimationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F2DB061DB61EAC00BAD3CF /* AnimationListViewController.m */; };
 		B2F2DB0A1DB61ED500BAD3CF /* AnimationListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F2DB091DB61ED500BAD3CF /* AnimationListCell.m */; };
 		B2F2DB0D1DB6253500BAD3CF /* SimpleAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F2DB0C1DB6253500BAD3CF /* SimpleAnimationViewController.m */; };
@@ -96,6 +98,10 @@
 		B294D4271DB62A1400372280 /* SimpleMasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleMasonryViewController.m; sourceTree = "<group>"; };
 		B294D4291DB62F5300372280 /* SimpleSwiftViewController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleSwiftViewController-Bridging-Header.h"; sourceTree = "<group>"; };
 		B294D42A1DB62F5300372280 /* SimpleSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSwiftViewController.swift; sourceTree = "<group>"; };
+		B2A3EA081DB866FE006264BD /* CATrasitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATrasitionViewController.h; sourceTree = "<group>"; };
+		B2A3EA091DB866FE006264BD /* CATrasitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATrasitionViewController.m; sourceTree = "<group>"; };
+		B2A3EA0B1DB86718006264BD /* CATrasitionBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATrasitionBackViewController.h; sourceTree = "<group>"; };
+		B2A3EA0C1DB86718006264BD /* CATrasitionBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATrasitionBackViewController.m; sourceTree = "<group>"; };
 		B2F2DB051DB61EAC00BAD3CF /* AnimationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationListViewController.h; sourceTree = "<group>"; };
 		B2F2DB061DB61EAC00BAD3CF /* AnimationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationListViewController.m; sourceTree = "<group>"; };
 		B2F2DB081DB61ED500BAD3CF /* AnimationListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationListCell.h; sourceTree = "<group>"; };
@@ -285,6 +291,10 @@
 				B24447A91DB725430054D91E /* CABasicAniamtionViewController.m */,
 				B24447AB1DB725970054D91E /* BezierAnimationViewController.h */,
 				B24447AC1DB725970054D91E /* BezierAnimationViewController.m */,
+				B2A3EA081DB866FE006264BD /* CATrasitionViewController.h */,
+				B2A3EA091DB866FE006264BD /* CATrasitionViewController.m */,
+				B2A3EA0B1DB86718006264BD /* CATrasitionBackViewController.h */,
+				B2A3EA0C1DB86718006264BD /* CATrasitionBackViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -622,6 +632,7 @@
 				B24447A71DB718C40054D91E /* AnimationTextField.m in Sources */,
 				B2F987C91D1D75A2005D60C5 /* AppDelegate.m in Sources */,
 				FFFFDDB61D2A725600EB259F /* EmptyViewController.m in Sources */,
+				B2A3EA0A1DB866FE006264BD /* CATrasitionViewController.m in Sources */,
 				B2F987EB1D1D78D1005D60C5 /* UIView+Utils.m in Sources */,
 				FF91B59B1D33A87C00999AEC /* XLPlainFlowLayout.m in Sources */,
 				FFB6FE581D2FA33D00008868 /* RequestBaseManager.m in Sources */,
@@ -630,6 +641,7 @@
 				B24447AD1DB725970054D91E /* BezierAnimationViewController.m in Sources */,
 				FF91B5941D33961E00999AEC /* TestCollectionViewController.m in Sources */,
 				FFBB9FFF1D24AB6800901871 /* LabelButtonView.m in Sources */,
+				B2A3EA0D1DB86718006264BD /* CATrasitionBackViewController.m in Sources */,
 				B2F987F21D1D7902005D60C5 /* CustomLabel.m in Sources */,
 				FFB6FE5C1D2FA6BE00008868 /* UserManager.m in Sources */,
 				B294D4281DB62A1400372280 /* SimpleMasonryViewController.m in Sources */,
