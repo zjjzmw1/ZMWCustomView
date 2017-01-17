@@ -38,6 +38,7 @@
 		B2F9881B1D1F9C1A005D60C5 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2F988181D1F9C1A005D60C5 /* ProgressHUD.bundle */; };
 		B2F9881C1D1F9C1A005D60C5 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */; };
 		BCC44EAC3D6AD284E4C77FFE /* libPods-ZMWCustomView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F18190ED82448B20666E3725 /* libPods-ZMWCustomView.a */; };
+		BD4504781E2E210C0066FCF0 /* GaoDeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4504771E2E210C0066FCF0 /* GaoDeMapViewController.m */; };
 		FF23BE4B1D49E87D00F92EA0 /* LabelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF23BE4A1D49E87D00F92EA0 /* LabelLabel.m */; };
 		FF23BE4E1D49EF3600F92EA0 /* LabelLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF23BE4D1D49EF3600F92EA0 /* LabelLabelViewController.m */; };
 		FF23BE821D4B4DFC00F92EA0 /* LabelLabelMasonry.m in Sources */ = {isa = PBXBuildFile; fileRef = FF23BE811D4B4DFC00F92EA0 /* LabelLabelMasonry.m */; };
@@ -143,6 +144,8 @@
 		B2F988181D1F9C1A005D60C5 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		B2F988191D1F9C1A005D60C5 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		B2F9881A1D1F9C1A005D60C5 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		BD4504761E2E210C0066FCF0 /* GaoDeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaoDeMapViewController.h; sourceTree = "<group>"; };
+		BD4504771E2E210C0066FCF0 /* GaoDeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaoDeMapViewController.m; sourceTree = "<group>"; };
 		F18190ED82448B20666E3725 /* libPods-ZMWCustomView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZMWCustomView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF23BE491D49E87D00F92EA0 /* LabelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelLabel.h; sourceTree = "<group>"; };
 		FF23BE4A1D49E87D00F92EA0 /* LabelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelLabel.m; sourceTree = "<group>"; };
@@ -429,6 +432,8 @@
 				FFF2200F1D94D80000CF2E15 /* GaoDeNaviViewController.m */,
 				FFF220171D94E88900CF2E15 /* GaodeDataViewController.h */,
 				FFF220181D94E88900CF2E15 /* GaodeDataViewController.m */,
+				BD4504761E2E210C0066FCF0 /* GaoDeMapViewController.h */,
+				BD4504771E2E210C0066FCF0 /* GaoDeMapViewController.m */,
 			);
 			path = CustomViewController;
 			sourceTree = "<group>";
@@ -642,6 +647,7 @@
 				FF91B5941D33961E00999AEC /* TestCollectionViewController.m in Sources */,
 				FFBB9FFF1D24AB6800901871 /* LabelButtonView.m in Sources */,
 				B2A3EA0D1DB86718006264BD /* CATrasitionBackViewController.m in Sources */,
+				BD4504781E2E210C0066FCF0 /* GaoDeMapViewController.m in Sources */,
 				B2F987F21D1D7902005D60C5 /* CustomLabel.m in Sources */,
 				FFB6FE5C1D2FA6BE00008868 /* UserManager.m in Sources */,
 				B294D4281DB62A1400372280 /* SimpleMasonryViewController.m in Sources */,

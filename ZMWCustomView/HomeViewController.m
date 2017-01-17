@@ -23,6 +23,7 @@
 #import "CustomAlertViewController.h"           // 自定义alertView
 #import "LabelLabelViewController.h"            // 自定义左右两个Label的控件
 #import "GaoDeNaviViewController.h"             // 高德导航调研。
+#import "GaoDeMapViewController.h"              // 高德地图内存测试
 
 #import <MapKit/MapKit.h>
 
@@ -66,6 +67,7 @@
     [self.dataArray addObject:@"自定义alertView"];
     [self.dataArray addObject:@"自定义两个label的控件"];
     [self.dataArray addObject:@"高德导航调研"];
+    [self.dataArray addObject:@"高德地图内存测试"];
 }
 
 /// 初始化表格
@@ -142,6 +144,8 @@
         vc = [[LabelLabelViewController alloc]init];
     } else if (indexPath.row == 11) {
         vc = [[GaoDeNaviViewController alloc] init];
+    } else if (indexPath.row == 11) {
+        vc = [[GaoDeMapViewController alloc] init];
     }
     
     vc.title = self.dataArray[indexPath.row];
